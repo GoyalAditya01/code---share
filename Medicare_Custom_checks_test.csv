@@ -1,0 +1,1005 @@
+check_name,check_type,table_name,column_name,failed_records,status,validation_note,failed,passed
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,80061,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,80061,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,80061,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,80061,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,I10,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,4019,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,80053,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,80053,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,80053,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,E785,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,25000,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,25000,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,E119,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,42731,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,4011,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,2724,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,I2510,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,496,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,E039,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,E1122,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,E1122,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,E1165,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,E1165,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,M6281,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,4280,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,E782,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,41401,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,J449,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,G4733,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,N186,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,I4891,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,7242,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,81001,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,81001,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,K219,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,D649,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,5856,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,41400,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,78650,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,78650,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,5990,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,I480,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,7295,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,78605,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,78605,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,2449,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,71516,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,71516,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,2859,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,2720,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,486,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,81003,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,81003,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,N390,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,D631,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,7393,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,N179,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,E559,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,20610,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,20610,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,E7800,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,I5032,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,I5032,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,R0602,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,D509,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,I509,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,E1142,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,E1142,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,G0439,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,G0439,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,M9903,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,36616,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,53081,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,28521,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,I129,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,M5450,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,M542,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,185,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,7020,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,71946,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,F419,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,43491,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,43491,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,1101,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,32723,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,72887,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,C61,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,2809,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,G8929,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,G8929,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,N2581,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,I110,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,5849,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,7391,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,A419,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,B351,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,81002,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,81002,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,71941,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,E1140,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,E1140,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,E1140,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,J189,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,M25561,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,72252,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,F0390,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,51881,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,78900,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,25002,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,M9901,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,M5416,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,M810,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,7862,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,J1100,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,J1100,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,J9601,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,I5022,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,I5022,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,80050,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,80050,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,78609,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,78609,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,L570,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,I130,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,80069,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,80069,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,80069,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,80069,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,CONDITION_OCCURRENCE,R079,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,E1390,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,A4253,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,Q9967,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,E0431,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,E0601,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,A4259,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,A7038,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,A4657,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,E1140,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,E1140,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,E1140,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,E0570,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,A7035,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,A7034,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,A4256,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,A7037,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,E0562,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,A9270,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,A9500,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,K0001,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,53885024510,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,A7031,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,A4604,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,A7030,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,E0260,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,E1392,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,A7046,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,A7032,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,A4258,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,A9502,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,A7033,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,A4239,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,E0143,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,K0195,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,77334,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,C1769,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,K0003,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,K0738,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,A7039,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,A9552,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,E0470,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,V2020,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,A9579,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,53885024450,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,C1894,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,08290320109,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,53885027210,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,A5500,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,Q9966,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,E0590,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,E0590,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,A7003,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,V2781,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,08290320119,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,V2025,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,E0434,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,A4351,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,E1065,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,E1065,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,E1065,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,E0443,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,K0553,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,K0004,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,A9585,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,P9016,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,V2632,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,V2632,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,A4550,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,V2784,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,C1887,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,E0163,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,E0607,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,A4222,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,A9503,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,A4233,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,A4235,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,C1713,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,L3908,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,A4357,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,B4035,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,E0439,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,53885039310,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,Q1003,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,A9505,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,A9575,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,A7005,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,A5512,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,08290320881,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,A5120,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,E0630,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,V2750,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,A4385,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,E0156,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,B4034,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,99073070827,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,E1038,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,L8000,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,08290320122,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,E0971,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,A7036,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,A4221,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,B4152,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,V2200,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,C1776,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,A6216,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DEVICE_EXPOSURE,A6402,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,G0008,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,J1100,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,J1100,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,J3301,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,00003089421,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,J3420,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,J2405,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,J3010,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,00054327099,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,Q4081,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,J2250,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,90662,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,63653117101,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,00071015523,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,00172208380,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,00173069600,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,00406035705,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,00071015623,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,90658,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,00597005801,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,J1644,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,00186504031,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,00310075190,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,00088221905,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,J1030,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,J7050,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,00456321060,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,00186109005,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,J1270,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,00597007541,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,J7030,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,00025152531,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,68180047903,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,J1756,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,00088222033,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,J2704,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,G0009,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,00781261305,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,55111015810,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,J0696,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,J1040,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,60505082901,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,24208046325,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,59762153001,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,00378021610,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,68382013201,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,66582041431,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,J1885,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,00186504082,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,J2501,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,J1200,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,63653117106,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,00074612390,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,00093517144,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,68180051403,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,J0690,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,68180051303,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,68180098103,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,59762154001,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,00378003210,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,00378020810,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,00071015723,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,68180098003,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,J0702,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,00093310905,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,68180051503,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,68180075103,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,00378001801,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,00013830304,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,J7120,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,59762306001,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,65162062711,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,00078035934,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,68180072003,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,00603385632,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,90732,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,00003089321,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,00006027731,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,00378180301,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,51672403201,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,59762033302,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,00093715410,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,68382013210,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,00006003144,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,65862059805,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,00378001805,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,00310075290,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,60505258008,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,00093001298,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,J2785,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,29300012810,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,00093715510,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,00186108805,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,68180051703,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,00591034905,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,68180012202,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,J2469,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,J7040,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,00186504054,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,00186109205,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,DRUG_EXPOSURE,60505025302,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,85025,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,80053,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,80053,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,80053,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,80061,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,80061,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,80061,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,80061,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,83036,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,85610,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,84443,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,80048,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,81001,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,81001,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,85027,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,81003,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,81003,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,82306,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,83735,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,82570,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,84439,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,87086,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,84153,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,81002,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,81002,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,82043,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,82607,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,82565,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,80050,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,80050,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,Z1231,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,83540,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,84484,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,82728,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,2160-0,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,3094-0,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,2823-3,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,2951-2,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,84550,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,85730,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,2345-7,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,82947,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,2075-0,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,83550,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,2028-9,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,17861-6,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,82550,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,82962,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,84100,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,81000,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,81000,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,4544-3,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,84460,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,80076,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,80076,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,80076,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,718-7,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,2885-2,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,1920-8,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,1975-2,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,86140,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,84520,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,Z1211,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,6690-2,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,789-8,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,83615,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,87186,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,83880,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,777-3,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,85652,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,786-4,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,787-2,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,1742-6,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,6768-6,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,1751-7,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,83970,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,82746,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,1985,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,1985,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,87077,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,84450,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,2571-8,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,2093-3,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,13457-7,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,2085-9,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,87088,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,88342,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,742-7,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,D72829,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,1759-0,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,751-8,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,731-0,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,711-2,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,3097-3,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,785-6,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,704-7,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,R7989,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,10834-0,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,G0103,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,83690,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,788-0,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,Z5181,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,84132,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,85018,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,Z125,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,33914-3,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,86900,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,R9720,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,86901,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,79093,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,9830-1,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,84165,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,MEASUREMENT,86850,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,99213,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,99214,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,80053,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,80053,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,80053,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,99212,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,G0463,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,99285,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,99215,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,99203,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,99204,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,V571,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,V571,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,V571,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,V571,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,A0425,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,99211,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,V431,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,V431,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,V431,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,V431,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,3078F,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,1036F,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,Z79899,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,G8427,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,Z992,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,99284,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,99308,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,78079,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,R262,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,1159F,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,V700,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,V700,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,V700,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,99309,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,7812,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,R531,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,V5861,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,G0439,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,G0439,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,1160F,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,3074F,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,Z7901,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,V709,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,V709,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,V709,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,R2689,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,3008F,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,G2211,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,A0427,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,V0481,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,7197,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,99283,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,R2681,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,G8553,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,V4364,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,V4364,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,V4364,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,V103,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,V103,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,V103,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,V433,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,V433,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,V433,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,V433,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,E871,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,E871,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,A0428,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,U071,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,U071,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,99202,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,99205,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,3079F,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,3075F,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,R5383,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,Z7982,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,Z20822,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,1123F,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,80076,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,80076,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,80076,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,Z471,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,E876,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,E876,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,R269,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,Z9181,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,Z794,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,3077F,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,93798,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,A0429,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,V4365,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,Z961,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,R4182,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,4040F,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,1126F,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,78097,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,G8447,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,Z950,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,R296,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,99307,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,99244,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,1101F,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,V580,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,V580,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,V580,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,99254,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,Z98890,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,V4501,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,7993,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,G9341,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,G9341,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,99348,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,Q5001,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,Q5001,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,Z96651,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,R5381,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,F17210,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,F17210,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,G8420,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,99243,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,3044F,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,E875,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,E875,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,99490,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,G0378,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,Z96652,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,Z7984,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,3288F,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,R350,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,V1083,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,V762,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,V762,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,OBSERVATION,V762,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,97110,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,36415,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,99232,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,97140,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,25000,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,25000,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,99233,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,93010,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,97530,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,97112,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,93000,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,88305,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,98941,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,71010,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,92014,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,99223,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,71020,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,90999,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,96372,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,99231,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,93306,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,99222,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,78650,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,78650,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,70450,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,G0283,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,17000,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,Z0000,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,78605,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,78605,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,92012,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,93005,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,71045,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,11721,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,98940,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,20610,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,20610,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,Z23,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,92134,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,97116,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,99239,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,99291,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,17003,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,92015,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,99238,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,G0299,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,97035,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,78609,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,78609,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,V5869,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,92083,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,99397,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,93880,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,92250,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,V7612,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,V571,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,V571,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,V571,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,V571,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,71046,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,96413,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,97535,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,36511,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,36511,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,90471,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,V5789,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,74177,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,67028,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,96375,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,77067,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,73030,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,73030,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,77080,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,V700,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,V700,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,V700,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,77052,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,95117,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,11100,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,66984,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,66984,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,96365,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,51798,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,17110,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,77063,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,97001,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,G0202,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,73630,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,73630,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,71250,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,92133,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,71260,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,96374,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,V709,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,V709,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,V709,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,43310,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,43310,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,72100,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,73562,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,90837,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,93970,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,Z01818,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,74176,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,30000,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,30000,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,60000,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,60000,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,93325,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,97012,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,97010,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,73560,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,93971,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,78452,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,78452,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,00142,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,92004,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,72170,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,43239,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROCEDURE_OCCURRENCE,73510,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,INTERNAL MEDICINE (NEC),null,NOT MAPPED,null,1,0
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,FAMILY PRACTICE,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,RADIOLOGY,null,NOT MAPPED,null,1,0
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,CHIROPRACTOR/DCM,null,NOT MAPPED,null,1,0
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,CARDIOVASCULAR DIS/CARDIOLOGY,null,NOT MAPPED,null,1,0
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,ANESTHESIOLOGY,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,OTHER FACILITY (NEC),null,NOT MAPPED,null,1,0
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,MEDICAL DOCTOR,null,NOT MAPPED,null,1,0
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,OPTOMETRIST,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,ORTHOPAEDIC SURGERY,null,NOT MAPPED,null,1,0
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,ACUTE CARE HOSPITAL,null,NOT MAPPED,null,1,0
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,THERAPY (PHYSICAL),null,NOT MAPPED,null,1,0
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,EMERGENCY MEDICINE,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,OPHTHALMOLOGY,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,PODIATRY,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,SURGEON (NEC),null,NOT MAPPED,null,1,0
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,OBSTETRICS & GYNECOLOGY,null,NOT MAPPED,null,1,0
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,DERMATOLOGY,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,NEUROLOGY,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,SUPPLY CENTER,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,GASTROENTEROLOGY,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,PSYCHIATRY,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,THERAPISTS (SUPPORTIVE),null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,MULTISPECIALTY PHYSICIAN GROUP,null,NOT MAPPED,null,1,0
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,EXTENDED CARE FACILITY,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,HOSPITALIST,null,NOT MAPPED,null,1,0
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,UROLOGY,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,PATHOLOGY,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,TRANSPORTATION,null,NOT MAPPED,null,1,0
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,OTOLARYNGOLOGY,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,PULMONARY DISEASE,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,PSYCHOLOGIST,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,PHYSICAL MEDICINE & REHAB,null,NOT MAPPED,null,1,0
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,ONCOLOGY,null,NOT MAPPED,null,1,0
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,NURSE PRACTITIONER,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,PHYSICIAN ASSISTANT,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,NEPHROLOGY,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,AMBULATORY SURGERY CENTERS,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,HOME HEALTH ORGANIZ/AGENCY,null,NOT MAPPED,null,1,0
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,URGENT CARE FACILITY,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,LABORATORY,null,NOT MAPPED,null,1,0
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,HEARING LABS,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,ENDOCRINOLOGY & METABOLISM,null,NOT MAPPED,null,1,0
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,PLASTIC/MAXILLOFACIAL SURGERY,null,NOT MAPPED,null,1,0
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,PHARMACY,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,PHARMACY,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,PHARMACY,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,INFECTIOUS DISEASE,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,RHEUMATOLOGY,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,NURSING SERVICES,null,NOT MAPPED,null,1,0
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,GENERAL VASCULAR SURGERY,null,NOT MAPPED,null,1,0
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,ALLERGY & IMMUNOLOGY,null,NOT MAPPED,null,1,0
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,NURSE ANESTHETIST,null,NOT MAPPED,null,1,0
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,HEMATOLOGY,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,ACUPUNCTURIST,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,THORACIC SURGERY,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,NEUROLOGICAL SURGERY,null,NOT MAPPED,null,1,0
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,REHABILITATION FACILITIES,null,NOT MAPPED,null,1,0
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,DENTAL SPECIALIST,null,NOT MAPPED,null,1,0
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,PAIN MGMT/PAIN MEDICINE,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,PHARMACIST,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,DENTIST,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,PEDIATRICIAN (NEC),null,NOT MAPPED,null,1,0
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,IMAGING CENTER,null,NOT MAPPED,null,1,0
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,DIETITIAN,null,NOT MAPPED,null,1,0
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,COLON & RECTAL SURGERY,null,NOT MAPPED,null,1,0
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,RENAL DIALYSIS THERAPY,null,NOT MAPPED,null,1,0
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,CARDIOVASCULAR SURGERY,null,NOT MAPPED,null,1,0
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,HOSPICE FACILITY,null,NOT MAPPED,null,1,0
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,NUCLEAR MEDICINE,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,CRITICAL CARE MEDICINE,null,NOT MAPPED,null,1,0
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,SPECIAL CARE FACILITY (NEC),null,NOT MAPPED,null,1,0
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,GERIATRIC MEDICINE,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,OSTEOPATHIC MEDICINE,null,NOT MAPPED,null,1,0
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,CONVALESCENT CARE FACILITY,null,NOT MAPPED,null,1,0
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,MEDICAL TECHNICIAN,null,NOT MAPPED,null,1,0
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,OPTICIAN,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,MENTAL HEALTH FACILITIES,null,NOT MAPPED,null,1,0
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,PEDIATRIC NEPHROLOGY,null,NOT MAPPED,null,1,0
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,THERAPISTS (ALTERNATIVE),null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,TREATMENT CENTER,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,PSYCHIATRIC NURSE,null,NOT MAPPED,null,1,0
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,PUBLIC HEALTH AGENCY,null,NOT MAPPED,null,1,0
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,PREVENTATIVE MEDICINE,null,NOT MAPPED,null,1,0
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,VISION CENTER,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,PEDIATRIC ORTHOPAEDICS,null,NOT MAPPED,null,1,0
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,CHEMICAL DEPEND TREATMENT CTR,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,LONGTERM CARE (NEC),null,NOT MAPPED,null,1,0
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,MIDWIFE,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,PEDIATRIC SURGERY,null,NOT MAPPED,null,1,0
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,MENTAL HEALTH/CHEMICAL DEP NEC,null,NOT MAPPED,null,1,0
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,PEDIATRIC SPECIALIST (NEC),null,NOT MAPPED,null,1,0
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,CARDIOTHORACIC SURGERY,null,NOT MAPPED,null,1,0
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,HEALTH EDUCATOR/AGENCY,null,NOT MAPPED,null,1,0
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,ABDOMINAL SURGERY,null,NOT MAPPED,null,1,0
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,SURGICAL CRITICAL CARE,null,NOT MAPPED,null,1,0
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,CHILD PSYCHIATRY,null,NOT MAPPED,null,1,0
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,NEONATAL,null,NOT MAPPED,null,1,0
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,PROCTOLOGY,null,PASS,null,0,1
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,PEDIATRIC ALLERGY & IMMUNOLOGY,null,NOT MAPPED,null,1,0
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,GENETICS,null,NOT MAPPED,null,1,0
+concept_mapping_accuracy_validation,CONCEPT MAPPING ACCURACY CHECK,PROVIDER,PEDIATRIC CARDIOLOGY,null,NOT MAPPED,null,1,0
+conditional_completeness_validation,CONDITIONAL COMPLETENESS CHECK,BIOMARKER_DETAIL,SPECIMEN_ID,null,PASS,If episode_id populated then specimen_id should be populated,0,1
+conditional_completeness_validation,CONDITIONAL COMPLETENESS CHECK,BIOMARKER_DETAIL,SPECIMEN_RECEIVED_DATE,null,PASS,If result_date populated then specimen_received_date should exist,0,1
+conditional_completeness_validation,CONDITIONAL COMPLETENESS CHECK,CANCER_MODIFIER,MODIFIER_CONCEPT_ID,null,PASS,If modifier_value populated then modifier_concept must exist,0,1
+conditional_completeness_validation,CONDITIONAL COMPLETENESS CHECK,CANCER_MODIFIER,TUMOR_EPISODE_ID,null,PASS,If modifier exists then tumor_episode_id must exist,0,1
+conditional_completeness_validation,CONDITIONAL COMPLETENESS CHECK,CONDITION_OCCURRENCE,CONDITION_START_DATE,null,PASS,If end_date populated then start_date must exist,0,1
+conditional_completeness_validation,CONDITIONAL COMPLETENESS CHECK,CONDITION_OCCURRENCE,VISIT_OCCURRENCE_ID,null,PASS,If visit_detail_id populated then visit_occurrence_id must exist,0,1
+conditional_completeness_validation,CONDITIONAL COMPLETENESS CHECK,DEVICE_EXPOSURE,DEVICE_EXPOSURE_START_DATE,null,PASS,If end_date populated then start_date must exist,0,1
+conditional_completeness_validation,CONDITIONAL COMPLETENESS CHECK,DEVICE_EXPOSURE,VISIT_OCCURRENCE_ID,null,PASS,If visit_detail_id populated then visit_occurrence_id must exist,0,1
+conditional_completeness_validation,CONDITIONAL COMPLETENESS CHECK,DRUG_EXPOSURE,DAYS_SUPPLY,null,PASS,If quantity > 0 then days_supply should be populated,0,1
+conditional_completeness_validation,CONDITIONAL COMPLETENESS CHECK,DRUG_EXPOSURE,DRUG_EXPOSURE_START_DATE,null,PASS,If end_date populated then start_date must exist,0,1
+conditional_completeness_validation,CONDITIONAL COMPLETENESS CHECK,DRUG_EXPOSURE,VISIT_OCCURRENCE_ID,null,PASS,If visit_detail_id populated then visit_occurrence_id must exist,0,1
+conditional_completeness_validation,CONDITIONAL COMPLETENESS CHECK,GENOMIC_MEASUREMENT,GENE_CONCEPT_ID,null,PASS,If value_as_number populated then gene_concept_id should exist,0,1
+conditional_completeness_validation,CONDITIONAL COMPLETENESS CHECK,GENOMIC_MEASUREMENT,SPECIMEN_ID,null,PASS,If genomic measurement exists then specimen_id should be populated,0,1
+conditional_completeness_validation,CONDITIONAL COMPLETENESS CHECK,MEASUREMENT,UNIT_CONCEPT_ID,null,PASS,If unit_source_value populated then unit_concept_id should exist,0,1
+conditional_completeness_validation,CONDITIONAL COMPLETENESS CHECK,MEASUREMENT,VISIT_OCCURRENCE_ID,null,PASS,If visit_detail_id populated then visit_occurrence_id must exist,0,1
+conditional_completeness_validation,CONDITIONAL COMPLETENESS CHECK,OBSERVATION,UNIT_CONCEPT_ID,null,PASS,If value_as_number populated then unit_concept_id should exist,0,1
+conditional_completeness_validation,CONDITIONAL COMPLETENESS CHECK,OBSERVATION,VISIT_OCCURRENCE_ID,null,PASS,If visit_detail_id populated then visit_occurrence_id must exist,0,1
+conditional_completeness_validation,CONDITIONAL COMPLETENESS CHECK,PATHOLOGY_OCCURRENCE,SPECIMEN_ID,null,PASS,If pathology exists then specimen_id should be populated,0,1
+conditional_completeness_validation,CONDITIONAL COMPLETENESS CHECK,PATHOLOGY_OCCURRENCE,TUMOR_EPISODE_ID,null,PASS,If pathology exists then tumor_episode_id must exist,0,1
+conditional_completeness_validation,CONDITIONAL COMPLETENESS CHECK,PROCEDURE_OCCURRENCE,PROCEDURE_DATE,null,PASS,If end_date populated then start_date must exist,0,1
+conditional_completeness_validation,CONDITIONAL COMPLETENESS CHECK,PROCEDURE_OCCURRENCE,VISIT_OCCURRENCE_ID,null,PASS,If visit_detail_id populated then visit_occurrence_id must exist,0,1
+conditional_completeness_validation,CONDITIONAL COMPLETENESS CHECK,TUMOR_DIAGNOSIS,STAGE_GROUP_CONCEPT_ID,null,PASS,If stage_group populated then at least one TNM field must exist,0,1
+conditional_completeness_validation,CONDITIONAL COMPLETENESS CHECK,TUMOR_DIAGNOSIS,TUMOR_EPISODE_ID,null,PASS,If diagnosis_date populated then tumor_episode_id must exist,0,1
+conditional_completeness_validation,CONDITIONAL COMPLETENESS CHECK,TUMOR_EPISODE,EPISODE_START_DATE,null,PASS,If end_date populated then start_date must exist,0,1
+conditional_completeness_validation,CONDITIONAL COMPLETENESS CHECK,TUMOR_TREATMENT,TREATMENT_START_DATE,null,PASS,If end_date populated then start_date must exist,0,1
+conditional_completeness_validation,CONDITIONAL COMPLETENESS CHECK,TUMOR_TREATMENT,TUMOR_EPISODE_ID,null,PASS,If treatment exists then tumor_episode_id must exist,0,1
+conditional_completeness_validation,CONDITIONAL COMPLETENESS CHECK,VISIT_OCCURRENCE,VISIT_START_DATE,null,PASS,If end_date populated then start_date must exist,0,1
+data_validation_rule_check,DATE VALIDATION CHECK,BIOMARKER_DETAIL,SPECIMEN_COLLECTED_DATE vs SPECIMEN_RECEIVED_DATE,0,NO DATA,Validation not applicable because table is empty,0,1
+data_validation_rule_check,DATE VALIDATION CHECK,BIOMARKER_DETAIL,SPECIMEN_RECEIVED_DATE vs RESULT_DATE,0,NO DATA,Validation not applicable because table is empty,0,1
+data_validation_rule_check,DATE VALIDATION CHECK,CANCER_MODIFIER,MODIFIER_DATE within EPISODE range,0,NO DATA,Validation not applicable because table is empty,0,1
+data_validation_rule_check,DATE VALIDATION CHECK,GENOMIC_MEASUREMENT,MEASUREMENT_DATE plausibility,0,NO DATA,Validation not applicable because table is empty,0,1
+data_validation_rule_check,DATE VALIDATION CHECK,PATHOLOGY_OCCURRENCE,PATHOLOGY_DATE within EPISODE range,0,NO DATA,Validation not applicable because table is empty,0,1
+data_validation_rule_check,DATE VALIDATION CHECK,TUMOR_DIAGNOSIS,DIAGNOSIS_DATE within EPISODE range,0,NO DATA,Validation not applicable because table is empty,0,1
+data_validation_rule_check,DATE VALIDATION CHECK,TUMOR_EPISODE,EPISODE_START_DATE vs EPISODE_END_DATE,0,NO DATA,Validation not applicable because table is empty,0,1
+data_validation_rule_check,DATE VALIDATION CHECK,TUMOR_TREATMENT,TREATMENT_END <= EPISODE_END,0,NO DATA,Validation not applicable because table is empty,0,1
+data_validation_rule_check,DATE VALIDATION CHECK,TUMOR_TREATMENT,TREATMENT_START >= EPISODE_START,0,NO DATA,Validation not applicable because table is empty,0,1
+data_validation_rule_check,DATE VALIDATION CHECK,TUMOR_TREATMENT,TREATMENT_START_DATE vs TREATMENT_END_DATE,0,NO DATA,Validation not applicable because table is empty,0,1
+required_field_not_null_validation,REQUIRED FIELD COMPLETENESS CHECK,BIOMARKER_DETAIL,BIOMARKER_DETAIL_CONCEPT_ID,0,NO DATA,Validation not applicable because oncology table is empty,0,1
+required_field_not_null_validation,REQUIRED FIELD COMPLETENESS CHECK,BIOMARKER_DETAIL,BIOMARKER_DETAIL_ID,0,NO DATA,Validation not applicable because oncology table is empty,0,1
+required_field_not_null_validation,REQUIRED FIELD COMPLETENESS CHECK,BIOMARKER_DETAIL,PERSON_ID,0,NO DATA,Validation not applicable because oncology table is empty,0,1
+required_field_not_null_validation,REQUIRED FIELD COMPLETENESS CHECK,CANCER_MODIFIER,CANCER_MODIFIER_ID,0,NO DATA,Validation not applicable because oncology table is empty,0,1
+required_field_not_null_validation,REQUIRED FIELD COMPLETENESS CHECK,CANCER_MODIFIER,MODIFIER_CONCEPT_ID,0,NO DATA,Validation not applicable because oncology table is empty,0,1
+required_field_not_null_validation,REQUIRED FIELD COMPLETENESS CHECK,CANCER_MODIFIER,MODIFIER_DATE,0,NO DATA,Validation not applicable because oncology table is empty,0,1
+required_field_not_null_validation,REQUIRED FIELD COMPLETENESS CHECK,CANCER_MODIFIER,PERSON_ID,0,NO DATA,Validation not applicable because oncology table is empty,0,1
+required_field_not_null_validation,REQUIRED FIELD COMPLETENESS CHECK,GENOMIC_MEASUREMENT,GENOMIC_MEASUREMENT_ID,0,NO DATA,Validation not applicable because oncology table is empty,0,1
+required_field_not_null_validation,REQUIRED FIELD COMPLETENESS CHECK,GENOMIC_MEASUREMENT,MEASUREMENT_CONCEPT_ID,0,NO DATA,Validation not applicable because oncology table is empty,0,1
+required_field_not_null_validation,REQUIRED FIELD COMPLETENESS CHECK,GENOMIC_MEASUREMENT,MEASUREMENT_DATE,0,NO DATA,Validation not applicable because oncology table is empty,0,1
+required_field_not_null_validation,REQUIRED FIELD COMPLETENESS CHECK,GENOMIC_MEASUREMENT,PERSON_ID,0,NO DATA,Validation not applicable because oncology table is empty,0,1
+required_field_not_null_validation,REQUIRED FIELD COMPLETENESS CHECK,PATHOLOGY_OCCURRENCE,PATHOLOGY_CONCEPT_ID,0,NO DATA,Validation not applicable because oncology table is empty,0,1
+required_field_not_null_validation,REQUIRED FIELD COMPLETENESS CHECK,PATHOLOGY_OCCURRENCE,PATHOLOGY_DATE,0,NO DATA,Validation not applicable because oncology table is empty,0,1
+required_field_not_null_validation,REQUIRED FIELD COMPLETENESS CHECK,PATHOLOGY_OCCURRENCE,PATHOLOGY_OCCURRENCE_ID,0,NO DATA,Validation not applicable because oncology table is empty,0,1
+required_field_not_null_validation,REQUIRED FIELD COMPLETENESS CHECK,PATHOLOGY_OCCURRENCE,PERSON_ID,0,NO DATA,Validation not applicable because oncology table is empty,0,1
+required_field_not_null_validation,REQUIRED FIELD COMPLETENESS CHECK,PATHOLOGY_OCCURRENCE,TUMOR_EPISODE_ID,0,NO DATA,Validation not applicable because oncology table is empty,0,1
+required_field_not_null_validation,REQUIRED FIELD COMPLETENESS CHECK,TUMOR_DIAGNOSIS,CONDITION_CONCEPT_ID,0,NO DATA,Validation not applicable because oncology table is empty,0,1
+required_field_not_null_validation,REQUIRED FIELD COMPLETENESS CHECK,TUMOR_DIAGNOSIS,DIAGNOSIS_DATE,0,NO DATA,Validation not applicable because oncology table is empty,0,1
+required_field_not_null_validation,REQUIRED FIELD COMPLETENESS CHECK,TUMOR_DIAGNOSIS,PERSON_ID,0,NO DATA,Validation not applicable because oncology table is empty,0,1
+required_field_not_null_validation,REQUIRED FIELD COMPLETENESS CHECK,TUMOR_DIAGNOSIS,TUMOR_DIAGNOSIS_ID,0,NO DATA,Validation not applicable because oncology table is empty,0,1
+required_field_not_null_validation,REQUIRED FIELD COMPLETENESS CHECK,TUMOR_DIAGNOSIS,TUMOR_EPISODE_ID,0,NO DATA,Validation not applicable because oncology table is empty,0,1
+required_field_not_null_validation,REQUIRED FIELD COMPLETENESS CHECK,TUMOR_EPISODE,EPISODE_CONCEPT_ID,0,NO DATA,Validation not applicable because oncology table is empty,0,1
+required_field_not_null_validation,REQUIRED FIELD COMPLETENESS CHECK,TUMOR_EPISODE,EPISODE_START_DATE,0,NO DATA,Validation not applicable because oncology table is empty,0,1
+required_field_not_null_validation,REQUIRED FIELD COMPLETENESS CHECK,TUMOR_EPISODE,PERSON_ID,0,NO DATA,Validation not applicable because oncology table is empty,0,1
+required_field_not_null_validation,REQUIRED FIELD COMPLETENESS CHECK,TUMOR_EPISODE,TUMOR_EPISODE_ID,0,NO DATA,Validation not applicable because oncology table is empty,0,1
+required_field_not_null_validation,REQUIRED FIELD COMPLETENESS CHECK,TUMOR_TREATMENT,PERSON_ID,0,NO DATA,Validation not applicable because oncology table is empty,0,1
+required_field_not_null_validation,REQUIRED FIELD COMPLETENESS CHECK,TUMOR_TREATMENT,TREATMENT_CONCEPT_ID,0,NO DATA,Validation not applicable because oncology table is empty,0,1
+required_field_not_null_validation,REQUIRED FIELD COMPLETENESS CHECK,TUMOR_TREATMENT,TREATMENT_START_DATE,0,NO DATA,Validation not applicable because oncology table is empty,0,1
+required_field_not_null_validation,REQUIRED FIELD COMPLETENESS CHECK,TUMOR_TREATMENT,TUMOR_EPISODE_ID,0,NO DATA,Validation not applicable because oncology table is empty,0,1
+required_field_not_null_validation,REQUIRED FIELD COMPLETENESS CHECK,TUMOR_TREATMENT,TUMOR_TREATMENT_ID,0,NO DATA,Validation not applicable because oncology table is empty,0,1
+primary_foreign_key_integrity_validation,REFERENTIAL INTEGRITY CHECK,BIOMARKER_DETAIL,EPISODE_ID,0,NO DATA,Validation not applicable because child oncology table is empty,0,1
+primary_foreign_key_integrity_validation,REFERENTIAL INTEGRITY CHECK,BIOMARKER_DETAIL,PERSON_ID,0,NO DATA,Validation not applicable because child oncology table is empty,0,1
+primary_foreign_key_integrity_validation,REFERENTIAL INTEGRITY CHECK,CANCER_MODIFIER,PERSON_ID,0,NO DATA,Validation not applicable because child oncology table is empty,0,1
+primary_foreign_key_integrity_validation,REFERENTIAL INTEGRITY CHECK,CANCER_MODIFIER,TUMOR_EPISODE_ID,0,NO DATA,Validation not applicable because child oncology table is empty,0,1
+primary_foreign_key_integrity_validation,REFERENTIAL INTEGRITY CHECK,GENOMIC_MEASUREMENT,PERSON_ID,0,NO DATA,Validation not applicable because child oncology table is empty,0,1
+primary_foreign_key_integrity_validation,REFERENTIAL INTEGRITY CHECK,GENOMIC_MEASUREMENT,SPECIMEN_ID,0,NO DATA,Validation not applicable because child oncology table is empty,0,1
+primary_foreign_key_integrity_validation,REFERENTIAL INTEGRITY CHECK,PATHOLOGY_OCCURRENCE,SPECIMEN_ID,0,NO DATA,Validation not applicable because child oncology table is empty,0,1
+primary_foreign_key_integrity_validation,REFERENTIAL INTEGRITY CHECK,PATHOLOGY_OCCURRENCE,TUMOR_EPISODE_ID,0,NO DATA,Validation not applicable because child oncology table is empty,0,1
+primary_foreign_key_integrity_validation,REFERENTIAL INTEGRITY CHECK,TUMOR_DIAGNOSIS,PERSON_ID,0,NO DATA,Validation not applicable because child oncology table is empty,0,1
+primary_foreign_key_integrity_validation,REFERENTIAL INTEGRITY CHECK,TUMOR_DIAGNOSIS,TUMOR_EPISODE_ID,0,NO DATA,Validation not applicable because child oncology table is empty,0,1
+primary_foreign_key_integrity_validation,REFERENTIAL INTEGRITY CHECK,TUMOR_EPISODE,PERSON_ID,0,NO DATA,Validation not applicable because child oncology table is empty,0,1
+primary_foreign_key_integrity_validation,REFERENTIAL INTEGRITY CHECK,TUMOR_TREATMENT,PERSON_ID,0,NO DATA,Validation not applicable because child oncology table is empty,0,1
+primary_foreign_key_integrity_validation,REFERENTIAL INTEGRITY CHECK,TUMOR_TREATMENT,TUMOR_EPISODE_ID,0,NO DATA,Validation not applicable because child oncology table is empty,0,1
+future_date_validation,FUTURE DATE VALIDATION,CONDITION_ERA,CONDITION_ERA_END_DATE,0,PASS,null,0,1
+future_date_validation,FUTURE DATE VALIDATION,CONDITION_ERA,CONDITION_ERA_START_DATE,0,PASS,null,0,1
+future_date_validation,FUTURE DATE VALIDATION,CONDITION_OCCURRENCE,CONDITION_END_DATE,0,PASS,null,0,1
+future_date_validation,FUTURE DATE VALIDATION,CONDITION_OCCURRENCE,CONDITION_START_DATE,0,PASS,null,0,1
+future_date_validation,FUTURE DATE VALIDATION,DEATH,DEATH_DATE,0,PASS,null,0,1
+future_date_validation,FUTURE DATE VALIDATION,DEVICE_EXPOSURE,DEVICE_EXPOSURE_END_DATE,17,FAIL,null,1,0
+future_date_validation,FUTURE DATE VALIDATION,DEVICE_EXPOSURE,DEVICE_EXPOSURE_START_DATE,0,PASS,null,0,1
+future_date_validation,FUTURE DATE VALIDATION,DOSE_ERA,DOSE_ERA_END_DATE,722,FAIL,null,1,0
+future_date_validation,FUTURE DATE VALIDATION,DOSE_ERA,DOSE_ERA_START_DATE,0,PASS,null,0,1
+future_date_validation,FUTURE DATE VALIDATION,DRUG_ERA,DRUG_ERA_END_DATE,596,FAIL,null,1,0
+future_date_validation,FUTURE DATE VALIDATION,DRUG_ERA,DRUG_ERA_START_DATE,0,PASS,null,0,1
+future_date_validation,FUTURE DATE VALIDATION,DRUG_EXPOSURE,DRUG_EXPOSURE_END_DATE,601,FAIL,null,1,0
+future_date_validation,FUTURE DATE VALIDATION,DRUG_EXPOSURE,DRUG_EXPOSURE_START_DATE,0,PASS,null,0,1
+future_date_validation,FUTURE DATE VALIDATION,EPISODE,EPISODE_END_DATE,null,FAIL,null,1,0
+future_date_validation,FUTURE DATE VALIDATION,EPISODE,EPISODE_START_DATE,null,FAIL,null,1,0
+future_date_validation,FUTURE DATE VALIDATION,MEASUREMENT,MEASUREMENT_DATE,0,PASS,null,0,1
+future_date_validation,FUTURE DATE VALIDATION,NOTE,NOTE_DATE,null,FAIL,null,1,0
+future_date_validation,FUTURE DATE VALIDATION,NOTE_NLP,NLP_DATE,null,FAIL,null,1,0
+future_date_validation,FUTURE DATE VALIDATION,OBSERVATION,OBSERVATION_DATE,0,PASS,null,0,1
+future_date_validation,FUTURE DATE VALIDATION,OBSERVATION_PERIOD,OBSERVATION_PERIOD_END_DATE,0,PASS,null,0,1
+future_date_validation,FUTURE DATE VALIDATION,OBSERVATION_PERIOD,OBSERVATION_PERIOD_START_DATE,0,PASS,null,0,1
+future_date_validation,FUTURE DATE VALIDATION,PAYER_PLAN_PERIOD,PAYER_PLAN_PERIOD_END_DATE,0,PASS,null,0,1
+future_date_validation,FUTURE DATE VALIDATION,PAYER_PLAN_PERIOD,PAYER_PLAN_PERIOD_START_DATE,0,PASS,null,0,1
+future_date_validation,FUTURE DATE VALIDATION,PROCEDURE_OCCURRENCE,PROCEDURE_DATE,0,PASS,null,0,1
+future_date_validation,FUTURE DATE VALIDATION,PROCEDURE_OCCURRENCE,PROCEDURE_END_DATE,0,PASS,null,0,1
+future_date_validation,FUTURE DATE VALIDATION,SPECIMEN,SPECIMEN_DATE,null,FAIL,null,1,0
+future_date_validation,FUTURE DATE VALIDATION,VISIT_DETAIL,VISIT_DETAIL_END_DATE,0,PASS,null,0,1
+future_date_validation,FUTURE DATE VALIDATION,VISIT_DETAIL,VISIT_DETAIL_START_DATE,0,PASS,null,0,1
+future_date_validation,FUTURE DATE VALIDATION,VISIT_OCCURRENCE,VISIT_END_DATE,0,PASS,null,0,1
+future_date_validation,FUTURE DATE VALIDATION,VISIT_OCCURRENCE,VISIT_START_DATE,0,PASS,null,0,1
+concept_domain_validation,CONCEPT DOMAIN CHECK,BIOMARKER_DETAIL,BIOMARKER_DETAIL_CONCEPT_ID,0,NO DATA,Validation not applicable because oncology table is empty,0,1
+concept_domain_validation,CONCEPT DOMAIN CHECK,BIOMARKER_DETAIL,TEST_TYPE_CONCEPT_ID,0,NO DATA,Validation not applicable because oncology table is empty,0,1
+concept_domain_validation,CONCEPT DOMAIN CHECK,CANCER_MODIFIER,MODIFIER_CONCEPT_ID,0,NO DATA,Validation not applicable because oncology table is empty,0,1
+concept_domain_validation,CONCEPT DOMAIN CHECK,GENOMIC_MEASUREMENT,GENE_CONCEPT_ID,0,NO DATA,Validation not applicable because oncology table is empty,0,1
+concept_domain_validation,CONCEPT DOMAIN CHECK,GENOMIC_MEASUREMENT,MEASUREMENT_CONCEPT_ID,0,NO DATA,Validation not applicable because oncology table is empty,0,1
+concept_domain_validation,CONCEPT DOMAIN CHECK,PATHOLOGY_OCCURRENCE,PATHOLOGY_CONCEPT_ID,0,NO DATA,Validation not applicable because oncology table is empty,0,1
+concept_domain_validation,CONCEPT DOMAIN CHECK,TUMOR_DIAGNOSIS,CONDITION_CONCEPT_ID,0,NO DATA,Validation not applicable because oncology table is empty,0,1
+concept_domain_validation,CONCEPT DOMAIN CHECK,TUMOR_DIAGNOSIS,MORPHOLOGY_CONCEPT_ID,0,NO DATA,Validation not applicable because oncology table is empty,0,1
+concept_domain_validation,CONCEPT DOMAIN CHECK,TUMOR_DIAGNOSIS,TOPOGRAPHY_CONCEPT_ID,0,NO DATA,Validation not applicable because oncology table is empty,0,1
+concept_domain_validation,CONCEPT DOMAIN CHECK,TUMOR_EPISODE,EPISODE_CONCEPT_ID,0,NO DATA,Validation not applicable because oncology table is empty,0,1
+concept_domain_validation,CONCEPT DOMAIN CHECK,TUMOR_TREATMENT,ROUTE_CONCEPT_ID,0,NO DATA,Validation not applicable because oncology table is empty,0,1
+concept_domain_validation,CONCEPT DOMAIN CHECK,TUMOR_TREATMENT,TREATMENT_CONCEPT_ID,0,NO DATA,Validation not applicable because oncology table is empty,0,1
+accepted_value_validation,ACCEPTED VALUES CHECK,LOCATION,ZIP,null,FAIL,ZIP must be 3 digits,1,0
+accepted_value_validation,ACCEPTED VALUES CHECK,LOCATION,STATE,null,PASS,State must be exactly 2 characters,0,1
+accepted_value_validation,ACCEPTED VALUES CHECK,PERSON,GENDER_CONCEPT_ID,null,PASS,"Gender must be 8507, 8532, or 0",0,1
+accepted_value_validation,ACCEPTED VALUES CHECK,PERSON,YEAR_OF_BIRTH,null,FAIL,Year of birth must be between 1900 and current year,1,0
+accepted_value_validation,ACCEPTED VALUES CHECK,PERSON,MONTH_OF_BIRTH,null,PASS,Month of birth must be 1-12,0,1
+accepted_value_validation,ACCEPTED VALUES CHECK,PERSON,DAY_OF_BIRTH,null,PASS,Day of birth must be 1-31,0,1
+accepted_value_validation,ACCEPTED VALUES CHECK,DRUG_EXPOSURE,DAYS_SUPPLY,null,FAIL,Days supply must be >= 0,1,0
+accepted_value_validation,ACCEPTED VALUES CHECK,DRUG_EXPOSURE,QUANTITY,null,FAIL,Quantity must be >= 0,1,0
+source_patient_id_collision_detection,PATIENT ID COLLISION CHECK,CONDITION_OCCURRENCE,PERSON_ID,null,PASS,All person_ids must exist in PERSON table,0,1
+source_patient_id_collision_detection,PATIENT ID COLLISION CHECK,DEATH,PERSON_ID,null,PASS,All person_ids must exist in PERSON table,0,1
+source_patient_id_collision_detection,PATIENT ID COLLISION CHECK,DEVICE_EXPOSURE,PERSON_ID,null,PASS,All person_ids must exist in PERSON table,0,1
+source_patient_id_collision_detection,PATIENT ID COLLISION CHECK,DRUG_EXPOSURE,PERSON_ID,null,PASS,All person_ids must exist in PERSON table,0,1
+source_patient_id_collision_detection,PATIENT ID COLLISION CHECK,MEASUREMENT,PERSON_ID,null,PASS,All person_ids must exist in PERSON table,0,1
+source_patient_id_collision_detection,PATIENT ID COLLISION CHECK,OBSERVATION,PERSON_ID,null,PASS,All person_ids must exist in PERSON table,0,1
+source_patient_id_collision_detection,PATIENT ID COLLISION CHECK,PERSON,PERSON_ID,null,PASS,One person_id must map to exactly one source value,0,1
+source_patient_id_collision_detection,PATIENT ID COLLISION CHECK,PERSON,PERSON_SOURCE_VALUE,null,PASS,person_source_value must not be null,0,1
+source_patient_id_collision_detection,PATIENT ID COLLISION CHECK,PERSON,PERSON_SOURCE_VALUE,null,PASS,One source value must map to exactly one person_id,0,1
+source_patient_id_collision_detection,PATIENT ID COLLISION CHECK,PROCEDURE_OCCURRENCE,PERSON_ID,null,PASS,All person_ids must exist in PERSON table,0,1
+source_patient_id_collision_detection,PATIENT ID COLLISION CHECK,VISIT_OCCURRENCE,PERSON_ID,null,PASS,All person_ids must exist in PERSON table,0,1
+deprecated_concept_usage_validation,DEPRECATED CONCEPT CHECK,CONDITION_OCCURRENCE,CONDITION_CONCEPT_ID,null,PASS,null,0,1
+deprecated_concept_usage_validation,DEPRECATED CONCEPT CHECK,CONDITION_OCCURRENCE,CONDITION_TYPE_CONCEPT_ID,null,PASS,null,0,1
+deprecated_concept_usage_validation,DEPRECATED CONCEPT CHECK,DEVICE_EXPOSURE,DEVICE_CONCEPT_ID,null,PASS,null,0,1
+deprecated_concept_usage_validation,DEPRECATED CONCEPT CHECK,DEVICE_EXPOSURE,DEVICE_TYPE_CONCEPT_ID,null,PASS,null,0,1
+deprecated_concept_usage_validation,DEPRECATED CONCEPT CHECK,DRUG_EXPOSURE,DRUG_CONCEPT_ID,null,PASS,null,0,1
+deprecated_concept_usage_validation,DEPRECATED CONCEPT CHECK,DRUG_EXPOSURE,DRUG_TYPE_CONCEPT_ID,null,PASS,null,0,1
+deprecated_concept_usage_validation,DEPRECATED CONCEPT CHECK,DRUG_EXPOSURE,ROUTE_CONCEPT_ID,null,PASS,null,0,1
+deprecated_concept_usage_validation,DEPRECATED CONCEPT CHECK,MEASUREMENT,MEASUREMENT_CONCEPT_ID,null,PASS,null,0,1
+deprecated_concept_usage_validation,DEPRECATED CONCEPT CHECK,MEASUREMENT,MEASUREMENT_TYPE_CONCEPT_ID,null,PASS,null,0,1
+deprecated_concept_usage_validation,DEPRECATED CONCEPT CHECK,OBSERVATION,OBSERVATION_CONCEPT_ID,null,PASS,null,0,1
+deprecated_concept_usage_validation,DEPRECATED CONCEPT CHECK,OBSERVATION,OBSERVATION_TYPE_CONCEPT_ID,null,PASS,null,0,1
+deprecated_concept_usage_validation,DEPRECATED CONCEPT CHECK,PERSON,ETHNICITY_CONCEPT_ID,null,PASS,null,0,1
+deprecated_concept_usage_validation,DEPRECATED CONCEPT CHECK,PERSON,GENDER_CONCEPT_ID,null,PASS,null,0,1
+deprecated_concept_usage_validation,DEPRECATED CONCEPT CHECK,PERSON,RACE_CONCEPT_ID,null,PASS,null,0,1
+deprecated_concept_usage_validation,DEPRECATED CONCEPT CHECK,PROCEDURE_OCCURRENCE,PROCEDURE_CONCEPT_ID,null,PASS,null,0,1
+deprecated_concept_usage_validation,DEPRECATED CONCEPT CHECK,PROCEDURE_OCCURRENCE,PROCEDURE_TYPE_CONCEPT_ID,null,PASS,null,0,1
+deprecated_concept_usage_validation,DEPRECATED CONCEPT CHECK,VISIT_OCCURRENCE,VISIT_CONCEPT_ID,null,PASS,null,0,1
+deprecated_concept_usage_validation,DEPRECATED CONCEPT CHECK,VISIT_OCCURRENCE,VISIT_TYPE_CONCEPT_ID,null,PASS,null,0,1
+data_freshness_validation,DATA FRESHNESS,null,DATA FRESHNESS / LATENCY - SOURCE MAX DATE VS CDM MAX DATE,null,DATE_GAP_REPORTED,CDM max date is later than source max date; gap reported for derivation/source-filter review,1,0
+aggregation_consistency_validation,AGGREGATION CONSISTENCY,CONDITION_ERA,CONDITION_OCCURRENCE_COUNT_RECONCILIATION,0,PASS,null,0,1
+aggregation_consistency_validation,AGGREGATION CONSISTENCY,DRUG_ERA,DRUG_EXPOSURE_COUNT_RECONCILIATION,0,PASS,null,0,1
+duplicate_record_detection,DUPLICATE CHECK (EXCLUDING PRIMARY KEY),BIOMARKER_DETAIL,null,0,PASS,null,0,1
+duplicate_record_detection,DUPLICATE CHECK (EXCLUDING PRIMARY KEY),CANCER_MODIFIER,null,0,PASS,null,0,1
+duplicate_record_detection,DUPLICATE CHECK (EXCLUDING PRIMARY KEY),CARE_SITE,null,0,PASS,null,0,1
+duplicate_record_detection,DUPLICATE CHECK (EXCLUDING PRIMARY KEY),CDM_SOURCE,null,0,PASS,null,0,1
+duplicate_record_detection,DUPLICATE CHECK (EXCLUDING PRIMARY KEY),CLAIM_DETAIL,null,0,PASS,null,0,1
+duplicate_record_detection,DUPLICATE CHECK (EXCLUDING PRIMARY KEY),COHORT,null,0,PASS,null,0,1
+duplicate_record_detection,DUPLICATE CHECK (EXCLUDING PRIMARY KEY),COHORT_DEFINITION,null,0,PASS,null,0,1
+duplicate_record_detection,DUPLICATE CHECK (EXCLUDING PRIMARY KEY),CONDITION_ERA,null,0,PASS,null,0,1
+duplicate_record_detection,DUPLICATE CHECK (EXCLUDING PRIMARY KEY),CONDITION_OCCURRENCE,null,0,PASS,null,0,1
+duplicate_record_detection,DUPLICATE CHECK (EXCLUDING PRIMARY KEY),COST,null,15,FAIL,null,1,0
+duplicate_record_detection,DUPLICATE CHECK (EXCLUDING PRIMARY KEY),DEATH,null,0,PASS,null,0,1
+duplicate_record_detection,DUPLICATE CHECK (EXCLUDING PRIMARY KEY),DEVICE_EXPOSURE,null,0,PASS,null,0,1
+duplicate_record_detection,DUPLICATE CHECK (EXCLUDING PRIMARY KEY),DOSE_ERA,null,0,PASS,null,0,1
+duplicate_record_detection,DUPLICATE CHECK (EXCLUDING PRIMARY KEY),DRUG_ERA,null,0,PASS,null,0,1
+duplicate_record_detection,DUPLICATE CHECK (EXCLUDING PRIMARY KEY),DRUG_EXPOSURE,null,0,PASS,null,0,1
+duplicate_record_detection,DUPLICATE CHECK (EXCLUDING PRIMARY KEY),EPISODE,null,0,PASS,null,0,1
+duplicate_record_detection,DUPLICATE CHECK (EXCLUDING PRIMARY KEY),EPISODE_EVENT,null,0,PASS,null,0,1
+duplicate_record_detection,DUPLICATE CHECK (EXCLUDING PRIMARY KEY),FACT_RELATIONSHIP,null,0,PASS,null,0,1
+duplicate_record_detection,DUPLICATE CHECK (EXCLUDING PRIMARY KEY),GENOMIC_MEASUREMENT,null,0,PASS,null,0,1
+duplicate_record_detection,DUPLICATE CHECK (EXCLUDING PRIMARY KEY),LOCATION,null,0,PASS,null,0,1
+duplicate_record_detection,DUPLICATE CHECK (EXCLUDING PRIMARY KEY),MEASUREMENT,null,0,PASS,null,0,1
+duplicate_record_detection,DUPLICATE CHECK (EXCLUDING PRIMARY KEY),METADATA,null,0,PASS,null,0,1
+duplicate_record_detection,DUPLICATE CHECK (EXCLUDING PRIMARY KEY),NOTE,null,0,PASS,null,0,1
+duplicate_record_detection,DUPLICATE CHECK (EXCLUDING PRIMARY KEY),NOTE_NLP,null,0,PASS,null,0,1
+duplicate_record_detection,DUPLICATE CHECK (EXCLUDING PRIMARY KEY),OBSERVATION,null,0,PASS,null,0,1
+duplicate_record_detection,DUPLICATE CHECK (EXCLUDING PRIMARY KEY),OBSERVATION_PERIOD,null,0,PASS,null,0,1
+duplicate_record_detection,DUPLICATE CHECK (EXCLUDING PRIMARY KEY),PATHOLOGY_OCCURRENCE,null,0,PASS,null,0,1
+duplicate_record_detection,DUPLICATE CHECK (EXCLUDING PRIMARY KEY),PAYER_PLAN_PERIOD,null,0,PASS,null,0,1
+duplicate_record_detection,DUPLICATE CHECK (EXCLUDING PRIMARY KEY),PERSON,null,0,PASS,null,0,1
+duplicate_record_detection,DUPLICATE CHECK (EXCLUDING PRIMARY KEY),PROCEDURE_OCCURRENCE,null,0,PASS,null,0,1
+duplicate_record_detection,DUPLICATE CHECK (EXCLUDING PRIMARY KEY),PROVIDER,null,0,PASS,null,0,1
+duplicate_record_detection,DUPLICATE CHECK (EXCLUDING PRIMARY KEY),SPECIMEN,null,0,PASS,null,0,1
+duplicate_record_detection,DUPLICATE CHECK (EXCLUDING PRIMARY KEY),TUMOR_DIAGNOSIS,null,0,PASS,null,0,1
+duplicate_record_detection,DUPLICATE CHECK (EXCLUDING PRIMARY KEY),TUMOR_EPISODE,null,0,PASS,null,0,1
+duplicate_record_detection,DUPLICATE CHECK (EXCLUDING PRIMARY KEY),TUMOR_TREATMENT,null,0,PASS,null,0,1
+duplicate_record_detection,DUPLICATE CHECK (EXCLUDING PRIMARY KEY),VISIT_DETAIL,null,0,PASS,null,0,1
+duplicate_record_detection,DUPLICATE CHECK (EXCLUDING PRIMARY KEY),VISIT_OCCURRENCE,null,0,PASS,null,0,1
+patient_coverage_validation,SOURCE VS OMOP PATIENT COVERAGE,null,null,0,PASS,NULL ENROLID values excluded because they are not valid source patient identifiers,0,1
