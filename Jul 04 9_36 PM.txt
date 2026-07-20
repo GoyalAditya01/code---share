@@ -1,0 +1,1210 @@
+Details for Query 55 
+Submitted Time: 2026/07/19 09:34:48
+Duration: 12.0 h
+Succeeded Jobs: 43 44 46 47 48 49 
+Failed Jobs: 42 45 50 
+AQE Plan Versions: 0 1 2 
+ Expand all the details in the query plan visualization  Show experimental metrics
+ Plan Visualization
+PhotonWriteStage
+stage duration: total (min, med, max (stageId: taskId))
+298.84 h (0 ms, 5.6 m, 10.53 h (stage 89.0: task 10404))
+PhotonShuffleMapStage
+stage duration: total (min, med, max (stageId: taskId))
+38.3 m (1.2 s, 1.4 s, 2.4 s (stage 83.0: task 10280))
+PhotonShuffleMapStage
+stage duration: total (min, med, max (stageId: taskId))
+4.5 s (386 ms, 463 ms, 824 ms (stage 75.0: task 8548))
+PhotonShuffleMapStage
+stage duration: total (min, med, max (stageId: taskId))
+197 ms (23 ms, 37 ms, 54 ms (stage 72.0: task 8449))
+WholeStageCodegen (1)
+duration: 369 ms
+PhotonResultStage
+stage duration: 194 ms
+PhotonShuffleMapStage
+stage duration: total (min, med, max (stageId: taskId))
+161 ms (49 ms, 55 ms, 57 ms (stage 77.0: task 8552))
+PhotonShuffleMapStage
+stage duration: total (min, med, max (stageId: taskId))
+1.6 s (209 ms, 651 ms, 692 ms (stage 70.0: task 8438))
+0
+156,719,335,665
+156,719,335,665
+275,730,322,926
+275,730,322,926
+275,730,322,926
+275,730,322,926
+275,730,322,926
+275,730,322,926
+275,730,322,926
+318,845,796,914
+318,845,796,914
+6,310,001,069
+6,350,142,802
+7,262,395,352
+7,262,395,352
+7,263,435,695
+7,263,435,695
+5,819,198
+2,909,599
+2,909,599
+2,909,599
+85,033,394
+29,220
+14,610
+14,610
+14,610
+5,776,762,492
+1,966,456
+1,966,456
+1,966,456
+2,909,599
+0
+2,909,599
+1,152,162
+192,027
+192,027
+424,837
+424,837
+424,837
+2,966,827
+AdaptiveSparkPlan (52)
+ResultQueryStage (51)
+Execute WriteIntoDeltaCommand (50) +
+PhotonParquetWriter (48) +
+PhotonGroupingAgg (47) +
+PhotonWindow (46) +
+PhotonProject (45) +
+PhotonWindow (44) +
+PhotonProject (43) +
+PhotonSort (42) +
+PhotonProject (41) +
+PhotonGroupingAgg (40) +
+PhotonProject (39) +
+PhotonBroadcastHashJoin (38) +
+PhotonGroupingAgg (25) +
+PhotonShuffleExchangeSource (24) +
+AQEShuffleRead (23) +
+PhotonShuffleExchangeSink (20) +
+PhotonGroupingAgg (19) +
+PhotonProject (18) +
+PhotonBroadcastHashJoin (17) +
+PhotonShuffleExchangeSource (15) +
+AQEShuffleRead (14) +
+PhotonShuffleExchangeSink (11) +
+PhotonProject (10) +
+PhotonBroadcastHashJoin (9) +
+PhotonScan parquet dvmt_rwpl.athena_concept_mapping.concept_ancestor (1) +
+PhotonShuffleExchangeSource (7) +
+AQEShuffleRead (6) +
+PhotonShuffleExchangeSink (3) +
+PhotonProject (2) +
+PhotonScan parquet dvmt_rwpl.athena_concept_mapping.concept (1) +
+PhotonScan parquet dvmt_rwpl.marketscan_commercial_cdm_26q1_int.drug_exposure (1) +
+SubqueryBroadcast +
+AdaptiveSparkPlan (10)
+ResultQueryStage (9)
+CollectLimit (8) +
+ColumnarToRow (7) +
+PhotonGroupingAgg (5) +
+PhotonShuffleExchangeSource (4) +
+AQEShuffleRead (3) +
+ReusedExchange (1)
+PhotonShuffleMapStage (12) +
+PhotonShuffleExchangeSource (12) +
+PhotonShuffleExchangeSink (9) +
+PhotonGroupingAgg (8) +
+PhotonShuffleExchangeSource (7) +
+AQEShuffleRead (6) +
+PhotonShuffleExchangeSink (3) +
+PhotonGroupingAgg (2) +
+PhotonScan parquet dvmt_rwpl.athena_concept_mapping.drug_strength (1) +
+ Text Execution Summary
+Completed in 43200037 ms
+Node                                                                                 | # Tasks | Duration total (min, med, max)                           | # Rows          | Est # Rows | Peak Mem total (min, med, max)                                      
+-------------------------------------------------------------------------------------+---------+----------------------------------------------------------+-----------------+------------+---------------------------------------------------------------------
+*PhotonShuffleMapStage                                                               | -       | 38.3 m (1.2 s, 1.4 s, 2.4 s (stage 83.0: task 10280))    | 0               | -          | 494.9 GiB (301.2 MiB, 303.2 MiB, 496.0 MiB (stage 83.0: task 10284))
+-*(1): PhotonScan parquet dvmt_rwpl.marketscan_commercial_cdm_26q1_int.drug_exposure | -       | 5.7 m (136 ms, 201 ms, 341 ms (stage 83.0: task 8940))   | 5,776,762,492   | -          | 27.7 GiB (17.2 MiB, 17.2 MiB, 19.4 MiB (stage 83.0: task 10285))    
+-*(8): CollectLimit                                                                  | -       | -                                                        | -               | -          | -                                                                   
+-*(9): ResultQueryStage                                                              | -       | -                                                        | -               | -          | -                                                                   
+-*(10): AdaptiveSparkPlan                                                            | -       | -                                                        | -               | -          | -                                                                   
+-*(14): AQEShuffleRead                                                               | -       | -                                                        | -               | -          | -                                                                   
+-*(15): PhotonShuffleExchangeSource                                                  | -       | 148 ms (0 ms, 0 ms, 56 ms (stage 83.0: task 8704))       | 5,819,198       | -          | -                                                                   
+-*(17): PhotonBroadcastHashJoin                                                      | -       | 9.3 m (246 ms, 327 ms, 562 ms (stage 83.0: task 8724))   | 7,263,435,695   | -          | 228.0 MiB (0.0 B, 0.0 B, 114.0 MiB (stage 83.0: task 8697))         
+-*(18): PhotonProject                                                                | -       | 9.9 m (265 ms, 349 ms, 584 ms (stage 83.0: task 8724))   | 7,263,435,695   | -          | -                                                                   
+-*(19): PhotonGroupingAgg                                                            | -       | 11.7 m (320 ms, 412 ms, 718 ms (stage 83.0: task 10281)) | 7,262,395,352   | -          | 12.9 GiB (8.0 MiB, 8.0 MiB, 8.0 MiB (stage 83.0: task 8645))        
+-*(20): PhotonShuffleExchangeSink                                                    | -       | 38.3 m (1.2 s, 1.4 s, 2.4 s (stage 83.0: task 10280))    | 7,262,395,352   | -          | 261.4 GiB (156.0 MiB, 158.0 MiB, 352.0 MiB (stage 83.0: task 10284))
+*PhotonShuffleMapStage                                                               | -       | 4.5 s (386 ms, 463 ms, 824 ms (stage 75.0: task 8548))   | 0               | -          | 1341.4 MiB (148.0 MiB, 149.0 MiB, 150.0 MiB (stage 75.0: task 8559))
+-*(1): PhotonScan parquet dvmt_rwpl.athena_concept_mapping.concept_ancestor          | -       | 2.3 s (157 ms, 245 ms, 492 ms (stage 75.0: task 8548))   | 85,033,394      | -          | 153.4 MiB (16.0 MiB, 17.0 MiB, 18.0 MiB (stage 75.0: task 8559))    
+-*(6): AQEShuffleRead                                                                | -       | -                                                        | -               | -          | -                                                                   
+-*(7): PhotonShuffleExchangeSource                                                   | -       | 42 ms (0 ms, 0 ms, 28 ms (stage 75.0: task 8548))        | 29,220          | -          | -                                                                   
+-*(9): PhotonBroadcastHashJoin                                                       | -       | 3.7 s (303 ms, 391 ms, 712 ms (stage 75.0: task 8548))   | 2,909,599       | -          | 4.5 MiB (0.0 B, 0.0 B, 2.3 MiB (stage 75.0: task 8549))             
+-*(10): PhotonProject                                                                | -       | 3.8 s (304 ms, 392 ms, 713 ms (stage 75.0: task 8548))   | 2,909,599       | -          | -                                                                   
+-*(11): PhotonShuffleExchangeSink                                                    | -       | 4.5 s (386 ms, 463 ms, 824 ms (stage 75.0: task 8548))   | 2,909,599       | -          | 36.0 MiB (4.0 MiB, 4.0 MiB, 4.0 MiB (stage 75.0: task 8549))        
+*PhotonResultStage                                                                   | -       | 194 ms                                                   | 0               | -          | 172.0 MiB                                                           
+-*(3): AQEShuffleRead                                                                | -       | -                                                        | -               | -          | -                                                                   
+-*(4): PhotonShuffleExchangeSource                                                   | -       | 60 ms                                                    | 2,909,599       | -          | -                                                                   
+-*(5): PhotonGroupingAgg                                                             | -       | 208 ms                                                   | 1,966,456       | -          | 44.0 MiB                                                            
+*PhotonShuffleMapStage                                                               | -       | 161 ms (49 ms, 55 ms, 57 ms (stage 77.0: task 8552))     | 0               | -          | 415.0 MiB (136.8 MiB, 136.8 MiB, 141.5 MiB (stage 77.0: task 8552)) 
+-*(6): AQEShuffleRead                                                                | -       | -                                                        | -               | -          | -                                                                   
+-*(7): PhotonShuffleExchangeSource                                                   | -       | 40 ms (11 ms, 14 ms, 14 ms (stage 77.0: task 8552))      | 424,837         | -          | -                                                                   
+-*(8): PhotonGroupingAgg                                                             | -       | 110 ms (33 ms, 37 ms, 39 ms (stage 77.0: task 8552))     | 192,027         | -          | 18.0 MiB (5.0 MiB, 5.0 MiB, 8.0 MiB (stage 77.0: task 8552))        
+-*(9): PhotonShuffleExchangeSink                                                     | -       | 162 ms (49 ms, 55 ms, 57 ms (stage 77.0: task 8552))     | 192,027         | -          | 17.0 MiB (4.8 MiB, 4.8 MiB, 7.5 MiB (stage 77.0: task 8552))        
+*PhotonWriteStage                                                                    | -       | 298.84 h (0 ms, 5.6 m, 10.53 h (stage 89.0: task 10404)) | 0               | -          | 3.0 TiB (0.0 B, 4.6 GiB, 73.6 GiB (stage 89.0: task 10852))         
+-*(12): PhotonShuffleExchangeSource                                                  | -       | 22.9 s (0 ms, 0 ms, 9.5 s (stage 89.0: task 10585))      | 1,152,162       | -          | -                                                                   
+-*(23): AQEShuffleRead                                                               | -       | -                                                        | -               | -          | -                                                                   
+-*(24): PhotonShuffleExchangeSource                                                  | -       | 44.2 m (0 ms, 1.7 s, 3.5 m (stage 89.0: task 10859))     | 6,350,142,802   | -          | -                                                                   
+-*(25): PhotonGroupingAgg                                                            | -       | 1.67 h (0 ms, 4.5 s, 3.7 m (stage 89.0: task 10859))     | 6,310,001,069   | -          | 315.6 GiB (0.0 B, 272.0 MiB, 5.3 GiB (stage 89.0: task 10852))      
+-*(38): PhotonBroadcastHashJoin                                                      | -       | 2.73 h (0 ms, 8.4 s, 6.2 m (stage 89.0: task 10852))     | 318,845,796,914 | -          | 72.0 MiB (0.0 B, 0.0 B, 12.0 MiB (stage 89.0: task 10293))          
+-*(39): PhotonProject                                                                | -       | 4.13 h (0 ms, 10.8 s, 10.8 m (stage 89.0: task 10852))   | 318,845,796,914 | -          | -                                                                   
+-*(40): PhotonGroupingAgg                                                            | -       | 119.31 h (0 ms, 2.0 m, 4.22 h (stage 89.0: task 10404))  | 275,730,322,926 | -          | 1985.2 GiB (0.0 B, 3.3 GiB, 73.4 GiB (stage 89.0: task 10852))      
+-*(41): PhotonProject                                                                | -       | 119.39 h (0 ms, 2.0 m, 4.22 h (stage 89.0: task 10404))  | 275,730,322,926 | -          | -                                                                   
+-*(42): PhotonSort                                                                   | -       | 215.09 h (0 ms, 4.1 m, 7.27 h (stage 89.0: task 10404))  | 275,730,322,926 | -          | 2027.3 GiB (0.0 B, 3.5 GiB, 62.7 GiB (stage 89.0: task 10852))      
+-*(43): PhotonProject                                                                | -       | 215.15 h (0 ms, 4.1 m, 7.28 h (stage 89.0: task 10404))  | 275,730,322,926 | -          | -                                                                   
+-*(44): PhotonWindow                                                                 | -       | 218.90 h (0 ms, 4.2 m, 7.36 h (stage 89.0: task 10404))  | 275,730,322,926 | -          | 1518.4 MiB (0.0 B, 3.0 MiB, 3.3 MiB (stage 89.0: task 10826))       
+-*(45): PhotonProject                                                                | -       | 219.88 h (0 ms, 4.2 m, 7.37 h (stage 89.0: task 10404))  | 275,730,322,926 | -          | -                                                                   
+-*(46): PhotonWindow                                                                 | -       | 221.73 h (0 ms, 4.3 m, 7.41 h (stage 89.0: task 10404))  | 275,730,322,926 | -          | 1160.0 MiB (0.0 B, 2.3 MiB, 2.3 MiB (stage 89.0: task 10338))       
+-*(47): PhotonGroupingAgg                                                            | -       | 286.53 h (0 ms, 5.3 m, 10.20 h (stage 89.0: task 10404)) | 156,719,335,665 | -          | 1877.2 GiB (0.0 B, 1954.0 MiB, 61.0 GiB (stage 89.0: task 10856))   
+-*(48): PhotonParquetWriter                                                          | -       | 298.84 h (0 ms, 5.6 m, 10.53 h (stage 89.0: task 10404)) | 156,719,335,665 | -          | 57.0 GiB (0.0 B, 145.2 MiB, 145.8 MiB (stage 89.0: task 10476))     
+*WholeStageCodegen (1)                                                               | -       | 369 ms                                                   | -               | -          | -                                                                   
+-*(7): ColumnarToRow                                                                 | -       | -                                                        | 1,966,456       | -          | -                                                                   
+(12): PhotonShuffleMapStage                                                          | -       | 4.5 s (386 ms, 463 ms, 824 ms (stage 75.0: task 8548))   | 0               | -          | 1341.4 MiB (148.0 MiB, 149.0 MiB, 150.0 MiB (stage 75.0: task 8559))
+(50): Execute WriteIntoDeltaCommand                                                  | -       | -                                                        | 0               | -          | -                                                                   
+(51): ResultQueryStage                                                               | -       | -                                                        | -               | -          | -                                                                   
+(52): AdaptiveSparkPlan                                                              | -       | -                                                        | -               | -          | -                                                                   
+
+Data Read from IO Cache (Cache Hits)	Data Written to IO Cache (Cache Misses)	Cache Hit Ratio
+43.3 GiB	449.9 MiB	99.00 %
+ Details
+== Physical Plan ==
+AdaptiveSparkPlan (52)
++- == Current Plan ==
+   ResultQueryStage (51), Statistics(sizeInBytes=1529.3 GiB, ColumnStat: N/A)
+   +- Execute WriteIntoDeltaCommand (50)
+      +- PhotonWriteStage (49)
+         +- PhotonParquetWriter (48)
+            +- PhotonGroupingAgg (47)
+               +- PhotonWindow (46)
+                  +- PhotonProject (45)
+                     +- PhotonWindow (44)
+                        +- PhotonProject (43)
+                           +- PhotonSort (42)
+                              +- PhotonProject (41)
+                                 +- PhotonGroupingAgg (40)
+                                    +- PhotonProject (39)
+                                       +- PhotonBroadcastHashJoin LeftOuter (38)
+                                          :- PhotonGroupingAgg (25)
+                                          :  +- PhotonShuffleExchangeSource (24)
+                                          :     +- AQEShuffleRead (23)
+                                          :        +- ShuffleQueryStage (22), Statistics(sizeInBytes=209.6 GiB, rowCount=7.26E+9, [PERSON_ID#6894L -> ColumnStat(distinctCount: 150571320, min: 0, max: 13735305554110, nullCount: 0, avgLen: 8, maxLen: 8, histogram: N/A, version: 2), QUANTITY#6904 -> ColumnStat(distinctCount: 3, min: -1.0, max: 1.0, nullCount: 768236822, avgLen: 4, maxLen: 4, histogram: N/A, version: 2), DAYS_SUPPLY#6905 -> ColumnStat(distinctCount: 990, min: -999, max: 999, nullCount: 768236822, avgLen: 4, maxLen: 4, histogram: N/A, version: 2), DRUG_CONCEPT_ID#6857 -> ColumnStat(distinctCount: 2336, min: 262, max: 600000012, nullCount: 0, avgLen: 4, maxLen: 4, histogram: N/A, version: 2), DRUG_EXPOSURE_START_DATE#6896 -> ColumnStat(distinctCount: 8084, min: 12052, max: 20401, nullCount: 0, avgLen: 4, maxLen: 4, histogram: N/A, version: 2)], isRuntime=true)
+                                          :           +- PhotonShuffleMapStage (21)
+                                          :              +- PhotonShuffleExchangeSink (20)
+                                          :                 +- PhotonGroupingAgg (19)
+                                          :                    +- PhotonProject (18)
+                                          :                       +- PhotonBroadcastHashJoin Inner (17)
+                                          :                          :- PhotonShuffleExchangeSource (15)
+                                          :                          :  +- AQEShuffleRead (14)
+                                          :                          :     +- ShuffleQueryStage (13), Statistics(sizeInBytes=22.6 MiB, rowCount=2.91E+6, [descendant_concept_id#6917 -> ColumnStat(distinctCount: 14611, min: 262, max: 600000012, nullCount: 0, avgLen: 4, maxLen: 4, histogram: N/A, version: 2), concept_id#6930 -> ColumnStat(distinctCount: 2336, min: 262, max: 600000012, nullCount: 0, avgLen: 4, maxLen: 4, histogram: N/A, version: 2)], isRuntime=true)
+                                          :                          :        +- PhotonShuffleMapStage (12)
+                                          :                          :           +- PhotonShuffleExchangeSink (11)
+                                          :                          :              +- PhotonProject (10)
+                                          :                          :                 +- PhotonBroadcastHashJoin Inner (9)
+                                          :                          :                    :- PhotonScan parquet dvmt_rwpl.athena_concept_mapping.concept_ancestor (1)
+                                          :                          :                    +- PhotonShuffleExchangeSource (8)
+                                          :                          :                       +- AQEShuffleRead (7)
+                                          :                          :                          +- ShuffleQueryStage (6), Statistics(sizeInBytes=160.0 KiB, rowCount=1.46E+4, [concept_id#6930 -> ColumnStat(distinctCount: 2336, min: 0, max: 600000012, nullCount: 0, avgLen: 4, maxLen: 4, histogram: N/A, version: 2)], isRuntime=true)
+                                          :                          :                             +- PhotonShuffleMapStage (5)
+                                          :                          :                                +- PhotonShuffleExchangeSink (4)
+                                          :                          :                                   +- PhotonProject (3)
+                                          :                          :                                      +- PhotonScan parquet dvmt_rwpl.athena_concept_mapping.concept (2)
+                                          :                          +- PhotonScan parquet dvmt_rwpl.marketscan_commercial_cdm_26q1_int.drug_exposure (16)
+                                          +- PhotonShuffleExchangeSource (37)
+                                             +- ShuffleQueryStage (36), Statistics(sizeInBytes=2.7 MiB, rowCount=1.92E+5, [AMOUNT_VALUE#6954 -> ColumnStat(distinctCount: 2822, min: 1.0E-9, max: 2.5E11, nullCount: 192027, avgLen: 8, maxLen: 8, histogram: N/A, version: 2), AMOUNT_UNIT_CONCEPT_ID#6955 -> ColumnStat(distinctCount: 31, min: 8510, max: 45744815, nullCount: 192027, avgLen: 4, maxLen: 4, histogram: N/A, version: 2), NUMERATOR_VALUE#6956 -> ColumnStat(distinctCount: 7705, min: 2.0E-14, max: 2.34E15, nullCount: 192027, avgLen: 8, maxLen: 8, histogram: N/A, version: 2), INGREDIENT_CONCEPT_ID#6953 -> ColumnStat(distinctCount: 37368, min: 32763, max: 46287712, nullCount: 0, avgLen: 4, maxLen: 4, histogram: N/A, version: 2), NUMERATOR_UNIT_CONCEPT_ID#6957 -> ColumnStat(distinctCount: 27, min: 8510, max: 45744816, nullCount: 192027, avgLen: 4, maxLen: 4, histogram: N/A, version: 2)], isRuntime=true)
+                                                +- PhotonShuffleMapStage (35)
+                                                   +- PhotonShuffleExchangeSink (34)
+                                                      +- PhotonGroupingAgg (33)
+                                                         +- PhotonShuffleExchangeSource (32)
+                                                            +- AQEShuffleRead (31)
+                                                               +- ShuffleQueryStage (30), Statistics(sizeInBytes=6.6 MiB, rowCount=4.25E+5, [AMOUNT_VALUE#6954 -> ColumnStat(distinctCount: 2822, min: 1.0E-9, max: 2.5E11, nullCount: 424837, avgLen: 8, maxLen: 8, histogram: N/A, version: 2), AMOUNT_UNIT_CONCEPT_ID#6955 -> ColumnStat(distinctCount: 31, min: 8510, max: 45744815, nullCount: 424837, avgLen: 4, maxLen: 4, histogram: N/A, version: 2), NUMERATOR_VALUE#6956 -> ColumnStat(distinctCount: 7705, min: 2.0E-14, max: 2.34E15, nullCount: 424837, avgLen: 8, maxLen: 8, histogram: N/A, version: 2), INGREDIENT_CONCEPT_ID#6953 -> ColumnStat(distinctCount: 37368, min: 32763, max: 46287712, nullCount: 0, avgLen: 4, maxLen: 4, histogram: N/A, version: 2), NUMERATOR_UNIT_CONCEPT_ID#6957 -> ColumnStat(distinctCount: 27, min: 8510, max: 45744816, nullCount: 424837, avgLen: 4, maxLen: 4, histogram: N/A, version: 2)], isRuntime=true)
+                                                                  +- PhotonShuffleMapStage (29)
+                                                                     +- PhotonShuffleExchangeSink (28)
+                                                                        +- PhotonGroupingAgg (27)
+                                                                           +- PhotonScan parquet dvmt_rwpl.athena_concept_mapping.drug_strength (26)
+
+
+(1) PhotonScan parquet dvmt_rwpl.athena_concept_mapping.concept_ancestor
+Output [2]: [ancestor_concept_id#6916, descendant_concept_id#6917]
+DictionaryFilters: [NOT (descendant_concept_id#6917 = 0)]
+Location: PreparedDeltaFileIndex [abfss://rwpl@codvmtus6abfstestdev001.dfs.core.windows.net/data/trusted/rwpl-nonconf/athena_concept_mapping/__unitystorage/schemas/da0d2092-5b31-4e99-b20b-fa223d07ddfc/tables/a8a5b173-b8e9-4d89-974f-ef0f771c0990]
+OptionalDataFilters: [hashedrelationcontains(ANCESTOR_CONCEPT_ID#6916)]
+ReadSchema: struct<ancestor_concept_id:int,descendant_concept_id:int>
+RequiredDataFilters: [isnotnull(descendant_concept_id#6917), isnotnull(ancestor_concept_id#6916), NOT (descendant_concept_id#6917 = 0)]
+
+(2) PhotonScan parquet dvmt_rwpl.athena_concept_mapping.concept
+Output [4]: [concept_id#6930, vocabulary_id#6933, concept_class_id#6934, invalid_reason#6939]
+DictionaryFilters: [(vocabulary_id#6933 = RxNorm), (concept_class_id#6934 = Ingredient)]
+Location: PreparedDeltaFileIndex [abfss://rwpl@codvmtus6abfstestdev001.dfs.core.windows.net/data/trusted/rwpl-nonconf/athena_concept_mapping/__unitystorage/schemas/da0d2092-5b31-4e99-b20b-fa223d07ddfc/tables/074047a8-1572-4558-b78b-5167e6b1ad8f]
+ReadSchema: struct<concept_id:int,vocabulary_id:string,concept_class_id:string,invalid_reason:string>
+RequiredDataFilters: [isnotnull(concept_id#6930), isnotnull(vocabulary_id#6933), isnotnull(concept_class_id#6934), isnull(invalid_reason#6939), (vocabulary_id#6933 = RxNorm), (concept_class_id#6934 = Ingredient)]
+
+(3) PhotonProject
+Input [4]: [concept_id#6930, vocabulary_id#6933, concept_class_id#6934, invalid_reason#6939]
+Arguments: [concept_id#6930]
+
+(4) PhotonShuffleExchangeSink
+Input [1]: [concept_id#6930]
+Arguments: hashpartitioning(CONCEPT_ID#6930, 1600)
+
+(5) PhotonShuffleMapStage
+Input [1]: [concept_id#6930]
+Arguments: ENSURE_REQUIREMENTS, [id=#8656]
+
+(6) ShuffleQueryStage
+Output [1]: [concept_id#6930]
+Arguments: 1, Statistics(sizeInBytes=160.0 KiB, rowCount=1.46E+4, [concept_id#6930 -> ColumnStat(distinctCount: 2336, min: 0, max: 600000012, nullCount: 0, avgLen: 4, maxLen: 4, histogram: N/A, version: 2)], isRuntime=true)
+
+(7) AQEShuffleRead
+Input [1]: [concept_id#6930]
+Arguments: ebj
+
+(8) PhotonShuffleExchangeSource
+Input [1]: [concept_id#6930]
+
+(9) PhotonBroadcastHashJoin
+Left keys [1]: [ANCESTOR_CONCEPT_ID#6916]
+Right keys [1]: [CONCEPT_ID#6930]
+Join type: Inner
+Join condition: None
+
+(10) PhotonProject
+Input [3]: [ancestor_concept_id#6916, descendant_concept_id#6917, concept_id#6930]
+Arguments: [descendant_concept_id#6917, concept_id#6930]
+
+(11) PhotonShuffleExchangeSink
+Input [2]: [descendant_concept_id#6917, concept_id#6930]
+Arguments: hashpartitioning(DESCENDANT_CONCEPT_ID#6917, 1600)
+
+(12) PhotonShuffleMapStage
+Input [2]: [descendant_concept_id#6917, concept_id#6930]
+Arguments: ENSURE_REQUIREMENTS, [id=#9674]
+
+(13) ShuffleQueryStage
+Output [2]: [descendant_concept_id#6917, concept_id#6930]
+Arguments: 4, Statistics(sizeInBytes=22.6 MiB, rowCount=2.91E+6, [descendant_concept_id#6917 -> ColumnStat(distinctCount: 14611, min: 262, max: 600000012, nullCount: 0, avgLen: 4, maxLen: 4, histogram: N/A, version: 2), concept_id#6930 -> ColumnStat(distinctCount: 2336, min: 262, max: 600000012, nullCount: 0, avgLen: 4, maxLen: 4, histogram: N/A, version: 2)], isRuntime=true)
+
+(14) AQEShuffleRead
+Input [2]: [descendant_concept_id#6917, concept_id#6930]
+Arguments: ebj
+
+(15) PhotonShuffleExchangeSource
+Input [2]: [descendant_concept_id#6917, concept_id#6930]
+
+(16) PhotonScan parquet dvmt_rwpl.marketscan_commercial_cdm_26q1_int.drug_exposure
+Output [6]: [PERSON_ID#6894L, DRUG_CONCEPT_ID#6895, DRUG_EXPOSURE_START_DATE#6896, DRUG_EXPOSURE_END_DATE#6898, QUANTITY#6904, DAYS_SUPPLY#6905]
+DictionaryFilters: [NOT (DRUG_CONCEPT_ID#6895 = 0)]
+Location: PreparedDeltaFileIndex [abfss://rwpl@codvmtus6abfstestdev001.dfs.core.windows.net/data/foundation/rwpl-csi/marketscan_commercial_CDM_26q1_int/__unitystorage/schemas/1cd03fc2-03f7-4abf-8339-40b9a03bd5be/tables/b562b851-762f-4993-850a-395e5def0443]
+OptionalDataFilters: [hashedrelationcontains(DRUG_CONCEPT_ID#6895)]
+ReadSchema: struct<PERSON_ID:bigint,DRUG_CONCEPT_ID:int,DRUG_EXPOSURE_START_DATE:date,DRUG_EXPOSURE_END_DATE:date,QUANTITY:float,DAYS_SUPPLY:int>
+RequiredDataFilters: [isnotnull(DRUG_CONCEPT_ID#6895), NOT (DRUG_CONCEPT_ID#6895 = 0)]
+
+(17) PhotonBroadcastHashJoin
+Left keys [1]: [DESCENDANT_CONCEPT_ID#6917]
+Right keys [1]: [DRUG_CONCEPT_ID#6895]
+Join type: Inner
+Join condition: None
+
+(18) PhotonProject
+Input [8]: [descendant_concept_id#6917, concept_id#6930, PERSON_ID#6894L, DRUG_CONCEPT_ID#6895, DRUG_EXPOSURE_START_DATE#6896, DRUG_EXPOSURE_END_DATE#6898, QUANTITY#6904, DAYS_SUPPLY#6905]
+Arguments: [PERSON_ID#6894L, CONCEPT_ID#6930 AS DRUG_CONCEPT_ID#6857, DRUG_EXPOSURE_START_DATE#6896, coalesce(cast(DRUG_EXPOSURE_END_DATE#6898 as timestamp), timestampadd(DAY, cast(coalesce(DAYS_SUPPLY#6905, 0) as bigint), cast(DRUG_EXPOSURE_START_DATE#6896 as timestamp), Some(Etc/UTC)), cast(DRUG_EXPOSURE_START_DATE#6896 as timestamp)) AS DRUG_EXPOSURE_END_DATE#6858, QUANTITY#6904, DAYS_SUPPLY#6905]
+
+(19) PhotonGroupingAgg
+Input [6]: [PERSON_ID#6894L, DRUG_CONCEPT_ID#6857, DRUG_EXPOSURE_START_DATE#6896, DRUG_EXPOSURE_END_DATE#6858, QUANTITY#6904, DAYS_SUPPLY#6905]
+Arguments: [PERSON_ID#6894L, DRUG_CONCEPT_ID#6857, DRUG_EXPOSURE_START_DATE#6896, DRUG_EXPOSURE_END_DATE#6858, knownfloatingpointnormalized(normalizenanandzero(QUANTITY#6904)) AS QUANTITY#6904, DAYS_SUPPLY#6905], [PERSON_ID#6894L, DRUG_CONCEPT_ID#6857, DRUG_EXPOSURE_START_DATE#6896, DRUG_EXPOSURE_END_DATE#6858, QUANTITY#6904, DAYS_SUPPLY#6905], false
+
+(20) PhotonShuffleExchangeSink
+Input [6]: [PERSON_ID#6894L, DRUG_CONCEPT_ID#6857, DRUG_EXPOSURE_START_DATE#6896, DRUG_EXPOSURE_END_DATE#6858, QUANTITY#6904, DAYS_SUPPLY#6905]
+Arguments: hashpartitioning(DRUG_CONCEPT_ID#6857, 1600)
+
+(21) PhotonShuffleMapStage
+Input [6]: [PERSON_ID#6894L, DRUG_CONCEPT_ID#6857, DRUG_EXPOSURE_START_DATE#6896, DRUG_EXPOSURE_END_DATE#6858, QUANTITY#6904, DAYS_SUPPLY#6905]
+Arguments: ENSURE_REQUIREMENTS, [id=#12232]
+
+(22) ShuffleQueryStage
+Output [6]: [PERSON_ID#6894L, DRUG_CONCEPT_ID#6857, DRUG_EXPOSURE_START_DATE#6896, DRUG_EXPOSURE_END_DATE#6858, QUANTITY#6904, DAYS_SUPPLY#6905]
+Arguments: 8, Statistics(sizeInBytes=209.6 GiB, rowCount=7.26E+9, [PERSON_ID#6894L -> ColumnStat(distinctCount: 150571320, min: 0, max: 13735305554110, nullCount: 0, avgLen: 8, maxLen: 8, histogram: N/A, version: 2), QUANTITY#6904 -> ColumnStat(distinctCount: 3, min: -1.0, max: 1.0, nullCount: 768236822, avgLen: 4, maxLen: 4, histogram: N/A, version: 2), DAYS_SUPPLY#6905 -> ColumnStat(distinctCount: 990, min: -999, max: 999, nullCount: 768236822, avgLen: 4, maxLen: 4, histogram: N/A, version: 2), DRUG_CONCEPT_ID#6857 -> ColumnStat(distinctCount: 2336, min: 262, max: 600000012, nullCount: 0, avgLen: 4, maxLen: 4, histogram: N/A, version: 2), DRUG_EXPOSURE_START_DATE#6896 -> ColumnStat(distinctCount: 8084, min: 12052, max: 20401, nullCount: 0, avgLen: 4, maxLen: 4, histogram: N/A, version: 2)], isRuntime=true)
+
+(23) AQEShuffleRead
+Input [6]: [PERSON_ID#6894L, DRUG_CONCEPT_ID#6857, DRUG_EXPOSURE_START_DATE#6896, DRUG_EXPOSURE_END_DATE#6858, QUANTITY#6904, DAYS_SUPPLY#6905]
+Arguments: coalesced
+
+(24) PhotonShuffleExchangeSource
+Input [6]: [PERSON_ID#6894L, DRUG_CONCEPT_ID#6857, DRUG_EXPOSURE_START_DATE#6896, DRUG_EXPOSURE_END_DATE#6858, QUANTITY#6904, DAYS_SUPPLY#6905]
+
+(25) PhotonGroupingAgg
+Input [6]: [PERSON_ID#6894L, DRUG_CONCEPT_ID#6857, DRUG_EXPOSURE_START_DATE#6896, DRUG_EXPOSURE_END_DATE#6858, QUANTITY#6904, DAYS_SUPPLY#6905]
+Arguments: [PERSON_ID#6894L, DRUG_CONCEPT_ID#6857, DRUG_EXPOSURE_START_DATE#6896, DRUG_EXPOSURE_END_DATE#6858, QUANTITY#6904, DAYS_SUPPLY#6905], [PERSON_ID#6894L, DRUG_CONCEPT_ID#6857, DRUG_EXPOSURE_START_DATE#6896, DRUG_EXPOSURE_END_DATE#6858, QUANTITY#6904, DAYS_SUPPLY#6905], true
+
+(26) PhotonScan parquet dvmt_rwpl.athena_concept_mapping.drug_strength
+Output [5]: [ingredient_concept_id#6953, amount_value#6954, amount_unit_concept_id#6955, numerator_value#6956, numerator_unit_concept_id#6957]
+Location: PreparedDeltaFileIndex [abfss://rwpl@codvmtus6abfstestdev001.dfs.core.windows.net/data/trusted/rwpl-nonconf/athena_concept_mapping/__unitystorage/schemas/da0d2092-5b31-4e99-b20b-fa223d07ddfc/tables/db6f9302-61e6-43d2-8b48-739a726822fb]
+ReadSchema: struct<ingredient_concept_id:int,amount_value:double,amount_unit_concept_id:int,numerator_value:double,numerator_unit_concept_id:int>
+RequiredDataFilters: [isnotnull(ingredient_concept_id#6953)]
+
+(27) PhotonGroupingAgg
+Input [5]: [ingredient_concept_id#6953, amount_value#6954, amount_unit_concept_id#6955, numerator_value#6956, numerator_unit_concept_id#6957]
+Arguments: [INGREDIENT_CONCEPT_ID#6953, AMOUNT_UNIT_CONCEPT_ID#6955, NUMERATOR_UNIT_CONCEPT_ID#6957, knownfloatingpointnormalized(normalizenanandzero(AMOUNT_VALUE#6954)) AS AMOUNT_VALUE#6954, knownfloatingpointnormalized(normalizenanandzero(NUMERATOR_VALUE#6956)) AS NUMERATOR_VALUE#6956], [INGREDIENT_CONCEPT_ID#6953, AMOUNT_UNIT_CONCEPT_ID#6955, NUMERATOR_UNIT_CONCEPT_ID#6957, AMOUNT_VALUE#6954, NUMERATOR_VALUE#6956], false
+
+(28) PhotonShuffleExchangeSink
+Input [5]: [INGREDIENT_CONCEPT_ID#6953, AMOUNT_UNIT_CONCEPT_ID#6955, NUMERATOR_UNIT_CONCEPT_ID#6957, AMOUNT_VALUE#6954, NUMERATOR_VALUE#6956]
+Arguments: hashpartitioning(INGREDIENT_CONCEPT_ID#6953, 1600)
+
+(29) PhotonShuffleMapStage
+Input [5]: [INGREDIENT_CONCEPT_ID#6953, AMOUNT_UNIT_CONCEPT_ID#6955, NUMERATOR_UNIT_CONCEPT_ID#6957, AMOUNT_VALUE#6954, NUMERATOR_VALUE#6956]
+Arguments: ENSURE_REQUIREMENTS, [id=#8681]
+
+(30) ShuffleQueryStage
+Output [5]: [INGREDIENT_CONCEPT_ID#6953, AMOUNT_UNIT_CONCEPT_ID#6955, NUMERATOR_UNIT_CONCEPT_ID#6957, AMOUNT_VALUE#6954, NUMERATOR_VALUE#6956]
+Arguments: 3, Statistics(sizeInBytes=6.6 MiB, rowCount=4.25E+5, [AMOUNT_VALUE#6954 -> ColumnStat(distinctCount: 2822, min: 1.0E-9, max: 2.5E11, nullCount: 424837, avgLen: 8, maxLen: 8, histogram: N/A, version: 2), AMOUNT_UNIT_CONCEPT_ID#6955 -> ColumnStat(distinctCount: 31, min: 8510, max: 45744815, nullCount: 424837, avgLen: 4, maxLen: 4, histogram: N/A, version: 2), NUMERATOR_VALUE#6956 -> ColumnStat(distinctCount: 7705, min: 2.0E-14, max: 2.34E15, nullCount: 424837, avgLen: 8, maxLen: 8, histogram: N/A, version: 2), INGREDIENT_CONCEPT_ID#6953 -> ColumnStat(distinctCount: 37368, min: 32763, max: 46287712, nullCount: 0, avgLen: 4, maxLen: 4, histogram: N/A, version: 2), NUMERATOR_UNIT_CONCEPT_ID#6957 -> ColumnStat(distinctCount: 27, min: 8510, max: 45744816, nullCount: 424837, avgLen: 4, maxLen: 4, histogram: N/A, version: 2)], isRuntime=true)
+
+(31) AQEShuffleRead
+Input [5]: [INGREDIENT_CONCEPT_ID#6953, AMOUNT_UNIT_CONCEPT_ID#6955, NUMERATOR_UNIT_CONCEPT_ID#6957, AMOUNT_VALUE#6954, NUMERATOR_VALUE#6956]
+Arguments: coalesced
+
+(32) PhotonShuffleExchangeSource
+Input [5]: [INGREDIENT_CONCEPT_ID#6953, AMOUNT_UNIT_CONCEPT_ID#6955, NUMERATOR_UNIT_CONCEPT_ID#6957, AMOUNT_VALUE#6954, NUMERATOR_VALUE#6956]
+
+(33) PhotonGroupingAgg
+Input [5]: [INGREDIENT_CONCEPT_ID#6953, AMOUNT_UNIT_CONCEPT_ID#6955, NUMERATOR_UNIT_CONCEPT_ID#6957, AMOUNT_VALUE#6954, NUMERATOR_VALUE#6956]
+Arguments: [INGREDIENT_CONCEPT_ID#6953, AMOUNT_UNIT_CONCEPT_ID#6955, NUMERATOR_UNIT_CONCEPT_ID#6957, AMOUNT_VALUE#6954, NUMERATOR_VALUE#6956], [INGREDIENT_CONCEPT_ID#6953, AMOUNT_UNIT_CONCEPT_ID#6955, NUMERATOR_UNIT_CONCEPT_ID#6957, AMOUNT_VALUE#6954, NUMERATOR_VALUE#6956], true
+
+(34) PhotonShuffleExchangeSink
+Input [5]: [INGREDIENT_CONCEPT_ID#6953, AMOUNT_UNIT_CONCEPT_ID#6955, NUMERATOR_UNIT_CONCEPT_ID#6957, AMOUNT_VALUE#6954, NUMERATOR_VALUE#6956]
+Arguments: SinglePartition
+
+(35) PhotonShuffleMapStage
+Input [5]: [INGREDIENT_CONCEPT_ID#6953, AMOUNT_UNIT_CONCEPT_ID#6955, NUMERATOR_UNIT_CONCEPT_ID#6957, AMOUNT_VALUE#6954, NUMERATOR_VALUE#6956]
+Arguments: EXECUTOR_BROADCAST, [id=#10537]
+
+(36) ShuffleQueryStage
+Output [5]: [INGREDIENT_CONCEPT_ID#6953, AMOUNT_UNIT_CONCEPT_ID#6955, NUMERATOR_UNIT_CONCEPT_ID#6957, AMOUNT_VALUE#6954, NUMERATOR_VALUE#6956]
+Arguments: 5, Statistics(sizeInBytes=2.7 MiB, rowCount=1.92E+5, [AMOUNT_VALUE#6954 -> ColumnStat(distinctCount: 2822, min: 1.0E-9, max: 2.5E11, nullCount: 192027, avgLen: 8, maxLen: 8, histogram: N/A, version: 2), AMOUNT_UNIT_CONCEPT_ID#6955 -> ColumnStat(distinctCount: 31, min: 8510, max: 45744815, nullCount: 192027, avgLen: 4, maxLen: 4, histogram: N/A, version: 2), NUMERATOR_VALUE#6956 -> ColumnStat(distinctCount: 7705, min: 2.0E-14, max: 2.34E15, nullCount: 192027, avgLen: 8, maxLen: 8, histogram: N/A, version: 2), INGREDIENT_CONCEPT_ID#6953 -> ColumnStat(distinctCount: 37368, min: 32763, max: 46287712, nullCount: 0, avgLen: 4, maxLen: 4, histogram: N/A, version: 2), NUMERATOR_UNIT_CONCEPT_ID#6957 -> ColumnStat(distinctCount: 27, min: 8510, max: 45744816, nullCount: 192027, avgLen: 4, maxLen: 4, histogram: N/A, version: 2)], isRuntime=true)
+
+(37) PhotonShuffleExchangeSource
+Input [5]: [INGREDIENT_CONCEPT_ID#6953, AMOUNT_UNIT_CONCEPT_ID#6955, NUMERATOR_UNIT_CONCEPT_ID#6957, AMOUNT_VALUE#6954, NUMERATOR_VALUE#6956]
+
+(38) PhotonBroadcastHashJoin
+Left keys [1]: [DRUG_CONCEPT_ID#6857]
+Right keys [1]: [INGREDIENT_CONCEPT_ID#6953]
+Join type: LeftOuter
+Join condition: None
+
+(39) PhotonProject
+Input [11]: [PERSON_ID#6894L, DRUG_CONCEPT_ID#6857, DRUG_EXPOSURE_START_DATE#6896, DRUG_EXPOSURE_END_DATE#6858, QUANTITY#6904, DAYS_SUPPLY#6905, INGREDIENT_CONCEPT_ID#6953, AMOUNT_UNIT_CONCEPT_ID#6955, NUMERATOR_UNIT_CONCEPT_ID#6957, AMOUNT_VALUE#6954, NUMERATOR_VALUE#6956]
+Arguments: [PERSON_ID#6894L, DRUG_CONCEPT_ID#6857, coalesce(AMOUNT_UNIT_CONCEPT_ID#6955, NUMERATOR_UNIT_CONCEPT_ID#6957, 0) AS UNIT_CONCEPT_ID#6859, ((coalesce(AMOUNT_VALUE#6954, NUMERATOR_VALUE#6956, 1.0) * coalesce(cast(QUANTITY#6904 as double), 1.0)) / cast(coalesce(if ((DAYS_SUPPLY#6905 = 0)) null else cast(DAYS_SUPPLY#6905 as bigint), (timestampdiff(DAY, cast(DRUG_EXPOSURE_START_DATE#6896 as timestamp), DRUG_EXPOSURE_END_DATE#6858, Some(Etc/UTC)) + 1), 1) as double)) AS DOSE_VALUE#6860, DRUG_EXPOSURE_START_DATE#6896 AS DOSE_START_DATE#6861, DRUG_EXPOSURE_END_DATE#6858 AS DOSE_END_DATE#6862]
+
+(40) PhotonGroupingAgg
+Input [6]: [PERSON_ID#6894L, DRUG_CONCEPT_ID#6857, UNIT_CONCEPT_ID#6859, DOSE_VALUE#6860, DOSE_START_DATE#6861, DOSE_END_DATE#6862]
+Arguments: [PERSON_ID#6894L, DRUG_CONCEPT_ID#6857, UNIT_CONCEPT_ID#6859, knownfloatingpointnormalized(normalizenanandzero(DOSE_VALUE#6860)) AS DOSE_VALUE#6860, DOSE_START_DATE#6861, DOSE_END_DATE#6862], [PERSON_ID#6894L, DRUG_CONCEPT_ID#6857, UNIT_CONCEPT_ID#6859, DOSE_VALUE#6860, DOSE_START_DATE#6861, DOSE_END_DATE#6862], true
+
+(41) PhotonProject
+Input [6]: [PERSON_ID#6894L, DRUG_CONCEPT_ID#6857, UNIT_CONCEPT_ID#6859, DOSE_VALUE#6860, DOSE_START_DATE#6861, DOSE_END_DATE#6862]
+Arguments: [PERSON_ID#6894L, DRUG_CONCEPT_ID#6857, UNIT_CONCEPT_ID#6859, DOSE_VALUE#6860, DOSE_START_DATE#6861, DOSE_END_DATE#6862, knownfloatingpointnormalized(normalizenanandzero(DOSE_VALUE#6860)) AS _sort_order0#11242]
+
+(42) PhotonSort
+Input [7]: [PERSON_ID#6894L, DRUG_CONCEPT_ID#6857, UNIT_CONCEPT_ID#6859, DOSE_VALUE#6860, DOSE_START_DATE#6861, DOSE_END_DATE#6862, _sort_order0#11242]
+Arguments: [PERSON_ID#6894L ASC NULLS FIRST, DRUG_CONCEPT_ID#6857 ASC NULLS FIRST, UNIT_CONCEPT_ID#6859 ASC NULLS FIRST, knownfloatingpointnormalized(normalizenanandzero(DOSE_VALUE#6860)) ASC NULLS FIRST, DOSE_START_DATE#6861 ASC NULLS FIRST, DOSE_END_DATE#6862 ASC NULLS FIRST]
+
+(43) PhotonProject
+Input [7]: [PERSON_ID#6894L, DRUG_CONCEPT_ID#6857, UNIT_CONCEPT_ID#6859, DOSE_VALUE#6860, DOSE_START_DATE#6861, DOSE_END_DATE#6862, _sort_order0#11242]
+Arguments: [PERSON_ID#6894L, DRUG_CONCEPT_ID#6857, UNIT_CONCEPT_ID#6859, DOSE_VALUE#6860, DOSE_START_DATE#6861, DOSE_END_DATE#6862]
+
+(44) PhotonWindow
+Input [6]: [PERSON_ID#6894L, DRUG_CONCEPT_ID#6857, UNIT_CONCEPT_ID#6859, DOSE_VALUE#6860, DOSE_START_DATE#6861, DOSE_END_DATE#6862]
+Arguments: [PERSON_ID#6894L, DRUG_CONCEPT_ID#6857, UNIT_CONCEPT_ID#6859, DOSE_VALUE#6860, DOSE_START_DATE#6861, DOSE_END_DATE#6862, max(DOSE_END_DATE#6862) windowspecdefinition(PERSON_ID#6894L, DRUG_CONCEPT_ID#6857, UNIT_CONCEPT_ID#6859, DOSE_VALUE#6860, DOSE_START_DATE#6861 ASC NULLS FIRST, DOSE_END_DATE#6862 ASC NULLS FIRST, specifiedwindowframe(RowFrame, unboundedpreceding$(), -1)) AS PREVIOUS_MAX_END_DATE#6863]
+
+(45) PhotonProject
+Input [7]: [PERSON_ID#6894L, DRUG_CONCEPT_ID#6857, UNIT_CONCEPT_ID#6859, DOSE_VALUE#6860, DOSE_START_DATE#6861, DOSE_END_DATE#6862, PREVIOUS_MAX_END_DATE#6863]
+Arguments: [PERSON_ID#6894L, DRUG_CONCEPT_ID#6857, UNIT_CONCEPT_ID#6859, DOSE_VALUE#6860, DOSE_START_DATE#6861, DOSE_END_DATE#6862, CASE WHEN isnull(PREVIOUS_MAX_END_DATE#6863) THEN 0 WHEN (cast(DOSE_START_DATE#6861 as timestamp) > timestampadd(DAY, 30, PREVIOUS_MAX_END_DATE#6863, Some(Etc/UTC))) THEN 1 ELSE 0 END AS ERA_START_FLAG#6864]
+
+(46) PhotonWindow
+Input [7]: [PERSON_ID#6894L, DRUG_CONCEPT_ID#6857, UNIT_CONCEPT_ID#6859, DOSE_VALUE#6860, DOSE_START_DATE#6861, DOSE_END_DATE#6862, ERA_START_FLAG#6864]
+Arguments: [PERSON_ID#6894L, DRUG_CONCEPT_ID#6857, UNIT_CONCEPT_ID#6859, DOSE_VALUE#6860, DOSE_START_DATE#6861, DOSE_END_DATE#6862, sum(ERA_START_FLAG#6864) windowspecdefinition(PERSON_ID#6894L, DRUG_CONCEPT_ID#6857, UNIT_CONCEPT_ID#6859, DOSE_VALUE#6860, DOSE_START_DATE#6861 ASC NULLS FIRST, DOSE_END_DATE#6862 ASC NULLS FIRST, specifiedwindowframe(RowFrame, unboundedpreceding$(), currentrow$())) AS ERA_GROUP#6865L]
+
+(47) PhotonGroupingAgg
+Input [7]: [PERSON_ID#6894L, DRUG_CONCEPT_ID#6857, UNIT_CONCEPT_ID#6859, DOSE_VALUE#6860, DOSE_START_DATE#6861, DOSE_END_DATE#6862, ERA_GROUP#6865L]
+Arguments: [PERSON_ID#6894L, DRUG_CONCEPT_ID#6857, knownfloatingpointnormalized(normalizenanandzero(DOSE_VALUE#6860)) AS DOSE_VALUE#6860, UNIT_CONCEPT_ID#6859, ERA_GROUP#6865L], [min(DOSE_START_DATE#6861), max(DOSE_END_DATE#6862)], [min(DOSE_START_DATE)#6974, max(DOSE_END_DATE)#6975], [monotonically_increasing_id() AS DOSE_ERA_ID#6850L, PERSON_ID#6894L, DRUG_CONCEPT_ID#6857, UNIT_CONCEPT_ID#6859, cast(DOSE_VALUE#6860 as float) AS DOSE_VALUE#6854, min(DOSE_START_DATE)#6974 AS DOSE_ERA_START_DATE#6855, cast(max(DOSE_END_DATE)#6975 as date) AS DOSE_ERA_END_DATE#6856], true
+
+(48) PhotonParquetWriter
+Input [7]: [DOSE_ERA_ID#6850L, PERSON_ID#6894L, DRUG_CONCEPT_ID#6857, UNIT_CONCEPT_ID#6859, DOSE_VALUE#6854, DOSE_ERA_START_DATE#6855, DOSE_ERA_END_DATE#6856]
+Arguments: [DOSE_ERA_ID#6850L, PERSON_ID#6894L, DRUG_CONCEPT_ID#6857, UNIT_CONCEPT_ID#6859, DOSE_VALUE#6854, DOSE_ERA_START_DATE#6855, DOSE_ERA_END_DATE#6856]
+
+(49) PhotonWriteStage
+Input: []
+
+(50) Execute WriteIntoDeltaCommand
+Input: []
+Arguments: OutputSpec(abfss://rwpl@codvmtus6abfstestdev001.dfs.core.windows.net/data/foundation/rwpl-csi/marketscan_commercial_CDM_26q1_int/__unitystorage/schemas/1cd03fc2-03f7-4abf-8339-40b9a03bd5be/tables/6439cb28-898d-4e75-a8ae-2fb95c45e6d9,Map(),List(DOSE_ERA_ID#6850L, PERSON_ID#6851L, DRUG_CONCEPT_ID#6852, UNIT_CONCEPT_ID#6853, DOSE_VALUE#6854, DOSE_ERA_START_DATE#6855, DOSE_ERA_END_DATE#6856))
+
+(51) ResultQueryStage
+Output: []
+Arguments: 10, Statistics(sizeInBytes=1529.3 GiB, ColumnStat: N/A)
+
+(52) AdaptiveSparkPlan
+Output: []
+Arguments: isFinalPlan=false
+
+===== Subqueries =====
+
+Subquery:1 Hosting operator id = 16 Hosting Expression = DRUG_CONCEPT_ID#6895 IN dynamicpruning#7343
+AdaptiveSparkPlan (62)
++- == Final Plan ==
+   ResultQueryStage (61), Statistics(sizeInBytes=171.2 KiB, rowCount=1.46E+4, [DESCENDANT_CONCEPT_ID#6917 -> ColumnStat(distinctCount: 14611, min: 262, max: 600000012, nullCount: 0, avgLen: 4, maxLen: 4, histogram: N/A, version: 2)], isRuntime=true)
+   +- CollectLimit (60)
+      +- * ColumnarToRow (59)
+         +- PhotonResultStage (58)
+            +- PhotonGroupingAgg (57)
+               +- PhotonShuffleExchangeSource (56)
+                  +- AQEShuffleRead (55)
+                     +- ShuffleQueryStage (54), Statistics(sizeInBytes=22.6 MiB, rowCount=2.91E+6, [descendant_concept_id#6917 -> ColumnStat(distinctCount: 14611, min: 262, max: 600000012, nullCount: 0, avgLen: 4, maxLen: 4, histogram: N/A, version: 2), concept_id#6930 -> ColumnStat(distinctCount: 2336, min: 262, max: 600000012, nullCount: 0, avgLen: 4, maxLen: 4, histogram: N/A, version: 2)], isRuntime=true)
+                        +- ReusedExchange (53)
+
+
+(53) ReusedExchange [Reuses operator id: 12]
+Output [2]: [descendant_concept_id#6917, concept_id#6930]
+
+(54) ShuffleQueryStage
+Output [2]: [descendant_concept_id#6917, concept_id#6930]
+Arguments: 7, Statistics(sizeInBytes=22.6 MiB, rowCount=2.91E+6, [descendant_concept_id#6917 -> ColumnStat(distinctCount: 14611, min: 262, max: 600000012, nullCount: 0, avgLen: 4, maxLen: 4, histogram: N/A, version: 2), concept_id#6930 -> ColumnStat(distinctCount: 2336, min: 262, max: 600000012, nullCount: 0, avgLen: 4, maxLen: 4, histogram: N/A, version: 2)], isRuntime=true)
+
+(55) AQEShuffleRead
+Input [2]: [descendant_concept_id#6917, concept_id#6930]
+Arguments: ebj
+
+(56) PhotonShuffleExchangeSource
+Input [2]: [descendant_concept_id#6917, concept_id#6930]
+
+(57) PhotonGroupingAgg
+Input [2]: [descendant_concept_id#6917, concept_id#6930]
+Arguments: [DESCENDANT_CONCEPT_ID#6917], [DESCENDANT_CONCEPT_ID#6917], true
+
+(58) PhotonResultStage
+Input [1]: [DESCENDANT_CONCEPT_ID#6917]
+
+(59) ColumnarToRow [codegen id : 1]
+Input [1]: [DESCENDANT_CONCEPT_ID#6917]
+
+(60) CollectLimit
+Input [1]: [DESCENDANT_CONCEPT_ID#6917]
+Arguments: 3000001
+
+(61) ResultQueryStage
+Output [1]: [DESCENDANT_CONCEPT_ID#6917]
+Arguments: 9, Statistics(sizeInBytes=171.2 KiB, rowCount=1.46E+4, [DESCENDANT_CONCEPT_ID#6917 -> ColumnStat(distinctCount: 14611, min: 262, max: 600000012, nullCount: 0, avgLen: 4, maxLen: 4, histogram: N/A, version: 2)], isRuntime=true)
+
+(62) AdaptiveSparkPlan
+Output [1]: [DESCENDANT_CONCEPT_ID#6917]
+Arguments: isFinalPlan=true
+
+
+
+== Photon Explanation ==
+The query is fully supported by Photon.
+== Optimizer Statistics (table names per statistics state) ==
+  missing = 
+  partial = 
+  full    = concept, concept_ancestor, drug_exposure, drug_strength
+
+ SQL / DataFrame Properties
+Name	Value
+com.databricks.safe.ketao.testFlag3	false
+fs.s3a.ifNoneMatch.star.enabled	true
+fs.s3a.ifNoneMatch.star.encryptedHeadProbe.enabled	true
+org.apache.spark.sql.util.dynamicSparkConfigUtils.applied	true
+spark.connect.session.connectML.enabled	true
+spark.connect.session.planCompression.threshold	10485760
+spark.databricks.abTesting.leadSampleRate	0.0
+spark.databricks.abTesting.supportNonDeltaFileFormat	false
+spark.databricks.acl.secureCatalogBatchFilterDatabases	true
+spark.databricks.acl.secureCatalogBatchFilterTables	true
+spark.databricks.acl.secureCatalogCheckUsageOnCatalog	true
+spark.databricks.adaptive.bloomFilter.explicitScheduling.enableForCommands	true
+spark.databricks.adaptive.bloomFilterUseExtrapolatedInfoForInFlightStages	true
+spark.databricks.adaptive.broadcastByCostPqe.enabled	true
+spark.databricks.adaptive.dfpExplicitSchedulingWithRBF.enabled	false
+spark.databricks.adaptive.dpp.explicitSchedulingOfBuildProbeSides	true
+spark.databricks.adaptive.dppExplicitScheduling.broadcastJoins.enabled	true
+spark.databricks.adaptive.dppExplicitScheduling.broadcastJoinsWithCostModel.enabled	true
+spark.databricks.adaptive.forceCancelSkewedShuffleStageInBroadcastJoin.enabled	true
+spark.databricks.adaptive.forceLocalShuffleReader	true
+spark.databricks.adaptive.lightReplanning.enabled	false
+spark.databricks.adaptive.localShuffleReader.divideBlocksBySize	true
+spark.databricks.adaptive.rewriteNonEquiOuterJoinWithPreservedSideBroadcast.enabled	false
+spark.databricks.adaptive.skewJoin.explosionCheck.enabled	true
+spark.databricks.aether.dynamicScanDML.enabled	true
+spark.databricks.ai.adaptiveBatch.initialSize	4
+spark.databricks.ai.adaptiveBatch.maxRetries	100
+spark.databricks.ai.adaptiveBatch.partitionJitterEnabled	true
+spark.databricks.ai.adaptiveBatch.retriableInvokeStatusCodes	UNAVAILABLE,RESOURCE_EXHAUSTED,DEADLINE_EXCEEDED,ABORTED,CANCELLED
+spark.databricks.ai.adaptiveBatch.retryMaxDelayMs	120000
+spark.databricks.ai.grpc.sync.retriableStatusCodes	UNAVAILABLE,RESOURCE_EXHAUSTED,DEADLINE_EXCEEDED,ABORTED,CANCELLED
+spark.databricks.analyzer.resolveRelationsCacheRelationsFromNestedViews	false
+spark.databricks.autottl.enabled	true
+spark.databricks.autottl.streamingTable.enabled	true
+spark.databricks.autotune.clusterByAuto.preview.enabled	true
+spark.databricks.autotune.maintenance.autoClustering.preserveHierarchicalColumnsAfterReplace	false
+spark.databricks.autotune.maintenance.autoClusteringUpdate.scv.timeoutMs	1500000
+spark.databricks.autotune.maintenance.client.enableCheckpointHistogram	false
+spark.databricks.autotune.maintenance.client.pushIntervalMinutes	1
+spark.databricks.autotune.maintenance.enableColumnUsageTrackingIntegration	true
+spark.databricks.autotune.maintenance.enableMetricsForAllUCManagedTables	true
+spark.databricks.autotune.maintenance.enableMultipleColumnOrPredicateTracking	true
+spark.databricks.autotune.maintenance.enableWorkloadScanMetricsApi	true
+spark.databricks.autotune.maintenance.liquidAuto.scanMetric.minTableSizeMB	200
+spark.databricks.autotune.maintenance.pushCompleteWorkloadScanMetrics	true
+spark.databricks.autotune.maintenance.pushUnusedColumnInfo	true
+spark.databricks.autotune.maintenance.ucPoNonAuto.scanMetric.sampleRate	0.4
+spark.databricks.autotune.maintenance.workloadBasedMetricsForAlterTableSendFullDataSkippingColumns	true
+spark.databricks.behaviorChange.SC167689LogDataFrameCacheOperation	false
+spark.databricks.behaviorChange.SEC11193UncheckedInsertOverwriteDirPlans	true
+spark.databricks.behaviorChange.ucIsolationRule.hivesimpleudf.enforce	true
+spark.databricks.behaviorChange.ucIsolationRule.javamethod.enforce	true
+spark.databricks.behaviorChange.ucIsolationRule.other.enforce	true
+spark.databricks.behaviorChange.ucIsolationRule.pythonudf.enforce	false
+spark.databricks.behaviorChange.ucIsolationRule.pythonudtf.enforce	false
+spark.databricks.behaviorChange.ucIsolationRule.reflect.enforce	true
+spark.databricks.behaviorChange.ucIsolationRule.scalaudf.enforce	false
+spark.databricks.behaviorChange.ucIsolationRule.scripttransformation.enforce	true
+spark.databricks.bigquery.mapDatetimeToTimestampNTZ	true
+spark.databricks.bigquery.sc200171	materializationEnabled,maxParallelism,preferredMinParallelism,allowedPushdowns,bqChannelPoolSize,readDataFormat,arrowCompressionCodec
+spark.databricks.bigquery.supportTimestampNTZConversionForWrites	true
+spark.databricks.catalog.hiveMetastorePlaceholderPathFixForDbfs.enabled	true
+spark.databricks.cloudFiles.adjustBackfillBeginMs	1d
+spark.databricks.cloudFiles.aws.restrictSNSPolicyPrincipalAndAccount	false
+spark.databricks.cloudFiles.cleanSource.enabled	true
+spark.databricks.cloudFiles.csms.alwaysUpdateContinuationToken	*********(redacted)
+spark.databricks.cloudFiles.csms.enableByDefault	true
+spark.databricks.cloudFiles.csms.preview.enabled	true
+spark.databricks.cloudFiles.listingV2.enabled	false
+spark.databricks.cloudFiles.recordEventChanges	false
+spark.databricks.cloudFiles.recordEventChanges.tryFlushOnCommitBatchComplete.enabled	true
+spark.databricks.cloudFiles.rocksDB.logLevel	ERROR
+spark.databricks.cloudFiles.rocksDB.wal.readerCoordination.enabled	false
+spark.databricks.cloudFiles.rocksDB.wal.sizeLimitMB	0
+spark.databricks.cloudFiles.rocksDB.wal.ttlSeconds	-1
+spark.databricks.cloudFiles.sftp.enabled	true
+spark.databricks.cloudFiles.typeWidening.allowAllTypeChanges	true
+spark.databricks.cloudfiles.inferPartitionSchemaInSingleVariantColumn.enabled	true
+spark.databricks.cloudfiles.state.allowStreamingTableNonOwnerAccess	true
+spark.databricks.collectVariantDataSkippingStats	true
+spark.databricks.connector.bigquery.loadNamespaceFallbackEnabled	true
+spark.databricks.connector.fabric.throwOnInvalidDataItemType	true
+spark.databricks.connector.fabricConnectorSupported	true
+spark.databricks.connector.mssql.pushdownBooleanLiteralAsCompare	true
+spark.databricks.connector.mssqlserver.driverVersion	current
+spark.databricks.connector.mysql.tlsCertificateEnabled	false
+spark.databricks.connector.oracle.properlyCompileJava8Values	true
+spark.databricks.connector.snowflakeStrategyAllowEmptyProjection	false
+spark.databricks.connector.sqldw.quoteIdentifiersLakehouseFederation	true
+spark.databricks.connector.sqlserver.tlsCertificateEnabled	true
+spark.databricks.connector.teradata.connectionCharset	UTF8
+spark.databricks.dataLineage.2hop.dbnsEndpoint	http://lineage-proxy-classic.privileged.dbns.databricks.com
+spark.databricks.dataLineage.clearColumnTableV2.enabled	true
+spark.databricks.dataLineage.columnOptimization.enabled	false
+spark.databricks.dataLineage.columnOptimizationV2.enabled	true
+spark.databricks.dataLineage.mergeIntoV2Enabled	false
+spark.databricks.dataLineage.tempTable.enabled	false
+spark.databricks.dbrActivityRecorder.deltaEvents.enabled	true
+spark.databricks.default.table.parquet.compression.codec	zstd
+spark.databricks.delta.allFilesInCrc.shortCircuitLogReplay.enabled	false
+spark.databricks.delta.alterTableSetManaged.copy.enabled	true
+spark.databricks.delta.alterTableSetManaged.enabled	true
+spark.databricks.delta.alterTableSetManaged.move.enabled	true
+spark.databricks.delta.alterTableSetManaged.skipVacuumableFiles	true
+spark.databricks.delta.alterTableSetManaged.uniformIceberg.supported	true
+spark.databricks.delta.alterTableUnsetManaged.enabled	true
+spark.databricks.delta.alwaysPropagateUCTableId	false
+spark.databricks.delta.catalog.update.precommitDryRunForOverwrite.enabled	false
+spark.databricks.delta.catalog.update.uc.etagValidation.enabled	true
+spark.databricks.delta.catalog.update.ucAlwaysEnableMetadataSync	false
+spark.databricks.delta.catalogManaged.autoFinishMigration	false
+spark.databricks.delta.catalogManaged.commitMigrationToCommitTransaction.enabled	true
+spark.databricks.delta.catalogManaged.metadataComparison.enabled	true
+spark.databricks.delta.catalogOwned.allowCreateOrUpgrade	true
+spark.databricks.delta.changeDataFeed.readTimeCDCReader.enabled	true
+spark.databricks.delta.changeDataFeed.streamingReadTimeCDCReader.enabled	true
+spark.databricks.delta.checkConstraints.validation.enabled	ASSERT
+spark.databricks.delta.checkpoint.lastCheckpointFileWriteLockEnabled	false
+spark.databricks.delta.conflictDetection.rowLevelConflictDetection.cacheDataSkippingFilters	true
+spark.databricks.delta.conflictDetection.skipConcurrentAppendCheckForInPlaceFileMetadataUpdates	true
+spark.databricks.delta.coordinatedCommits.resolveSessionTempTableNamespace.enabled	false
+spark.databricks.delta.coordinatedCommits.uc.atomicCatalogUpdateEnabled	true
+spark.databricks.delta.dataSkipping.tolerateMissingStatsForWorkloadBasedColumns	true
+spark.databricks.delta.dataskipping.directAddFileMaterialization.enabled	true
+spark.databricks.delta.dataskipping.subexecutions.qplTracking.enabled	true
+spark.databricks.delta.dataskipping.supportConvertTimezone.enabled	false
+spark.databricks.delta.dataskipping.supportDateFormatExprs.enabled	false
+spark.databricks.delta.dataskipping.supportParseUnixTimestamp.enabled	false
+spark.databricks.delta.dataskipping.supportTimestampDiff.enabled	true
+spark.databricks.delta.dbiManagedIcebergTable.enabled	true
+spark.databricks.delta.defaultClusterByAuto.enabled	false
+spark.databricks.delta.delete.metadataOnlyDelete.enabled	true
+spark.databricks.delta.delete.metadataOnlyDelete.shadowMode.rate	1.0
+spark.databricks.delta.deltaCommitSummary.refreshOnMiss.enabled	false
+spark.databricks.delta.deltaLog.minorCompaction.async.enabled	true
+spark.databricks.delta.deltaLog.throwDeltaIOExceptionForUnsupportedFileSystem	true
+spark.databricks.delta.deltaLogUpdate.ccUseGetCommitsForFreshnessEnabled	false
+spark.databricks.delta.deltaLogUpdate.useHeadForUcManagedTables	true
+spark.databricks.delta.dr.tableChangeDetection.ucUpdate.useDrApi	true
+spark.databricks.delta.dr.uc.etagValidation.enabled	true
+spark.databricks.delta.dropTable.ShallowCloneProtection.enabled	false
+spark.databricks.delta.enableTableRedirectV2	true
+spark.databricks.delta.featureEnablement.workloadBasedColumns.conflictResolution.enabled	true
+spark.databricks.delta.generatedColumn.maskValidation.enabled	ASSERT
+spark.databricks.delta.generatedColumn.validateOnWrite.enabled	ASSERT
+spark.databricks.delta.identifierExtraction.newCodePath.enabled	true
+spark.databricks.delta.incrementalChecksumOnRead.numCommitsThreshold	20
+spark.databricks.delta.incrementalSmallTable.cache.enabled	false
+spark.databricks.delta.insert.preserveNullSourceStructs	true
+spark.databricks.delta.lastCommitVersionInSession	177
+spark.databricks.delta.liquid.eagerClustering.aqeLateStage.fastPath.enabled	true
+spark.databricks.delta.liquid.fixInvalidStateAfterPhaseOut	true
+spark.databricks.delta.liquid.kdTreeConflictResolution.enabled	true
+spark.databricks.delta.liquid.kdTreeLoader.recomputeOnZeroMetrics.enabled	true
+spark.databricks.delta.liquid.lazyClustering.postOptimizeCompaction.enabled	true
+spark.databricks.delta.liquid.lazyClustering.tagFiles.batchSize	-1
+spark.databricks.delta.liquid.optimizeFullWhere.enabled	true
+spark.databricks.delta.liquidConversion.preview.enabled	true
+spark.databricks.delta.liquidConversion.uniform.preview.enabled	true
+spark.databricks.delta.logging.async.enabled	false
+spark.databricks.delta.logging.darMigrationCodepath.enabled	true
+spark.databricks.delta.managed.delta.autoEnablement.checkpointPolicy.enabled	false
+spark.databricks.delta.managed.delta.autoEnablement.columnMapping.mode.enabled	false
+spark.databricks.delta.managed.delta.autoEnablement.enableDeletionVectors.enabled	false
+spark.databricks.delta.managed.delta.autoEnablement.enableRowTracking.enabled	false
+spark.databricks.delta.managed.delta.autoEnablement.feature.catalogManaged.enabled	true
+spark.databricks.delta.managed.delta.autoEnablement.parquet.format.version.enabled	true
+spark.databricks.delta.managed.iceberg.autoEnablement.feature.catalogManaged.enabled	false
+spark.databricks.delta.merge.checksumSource	OFF
+spark.databricks.delta.merge.checksumSource.photonOnly	true
+spark.databricks.delta.merge.disableSourceMaterializationNotAllowed	true
+spark.databricks.delta.merge.preserveNullSourceStructs	true
+spark.databricks.delta.mst.allowDeltaSharing	true
+spark.databricks.delta.mst.allowDeltaSharingCloudToken	*********(redacted)
+spark.databricks.delta.mst.allowDescribeQuery	false
+spark.databricks.delta.mst.allowedUnknownMultiInstanceRelationsForReads	
+spark.databricks.delta.mst.blockThriftCatalogMetadataOperations	true
+spark.databricks.delta.mst.preview.enabled	true
+spark.databricks.delta.optimize.checksum.enable	DISABLED
+spark.databricks.delta.optimizeMetadataQuery.clusteredTable.enabled	true
+spark.databricks.delta.optimizeMetadataQuery.shadowExecution.rate	0.0
+spark.databricks.delta.partitionedTable.staticScan.allowed	false
+spark.databricks.delta.prepareDeltaScan.dedupRelationsByReference	true
+spark.databricks.delta.readclone.postCommit.skipFullUpdatesEnabled	MANAGED,MANAGED_SHALLOW_CLONE
+spark.databricks.delta.schema.alter.uc.etagValidation.enabled	true
+spark.databricks.delta.skipping.experimentalFilters.validationRate	0.01
+spark.databricks.delta.skipping.experimentalFilters.validationSelectivity	0.01
+spark.databricks.delta.skipping.partitionLikeFilters.enabled	true
+spark.databricks.delta.smartClone.dlt.uc.etagValidation.enabled	true
+spark.databricks.delta.snapshotHint.supportUcExternalTables	false
+spark.databricks.delta.snapshotHint.write.lengthThreshold	358400
+spark.databricks.delta.spark.databricks.execution.resultCaching.versionChangeCheckEnabled	true
+spark.databricks.delta.spark.sql.delta.sharing.cdfStreamingAutoResolveResponseFormat	false
+spark.databricks.delta.spark.sql.delta.sharing.enableAutoResolveForCdf	false
+spark.databricks.delta.spark.sql.delta.sharing.streamingAutoResolveResponseFormat	false
+spark.databricks.delta.sql.commands.analyzeTableComputeStorage.enabled	true
+spark.databricks.delta.sqlSnapshotReconstruction.removeRepartition	true
+spark.databricks.delta.stMv.useBackingTableCatalogForCommands	true
+spark.databricks.delta.stats.limitPerVariant	0
+spark.databricks.delta.stats.localCache.maxNumFiles	12000
+spark.databricks.delta.table.uc.etagValidation.enabled	true
+spark.databricks.delta.typeWidening.allowAutomaticWidening	ALWAYS
+spark.databricks.delta.typeWidening.enableStreamingSchemaTracking	false
+spark.databricks.delta.uniform.iceberg.allowMixedDataChange	false
+spark.databricks.delta.uniform.iceberg.v3.enabled	true
+spark.databricks.delta.uniform.ingress.autoRefresh.enabled	true
+spark.databricks.delta.uniform.ingress.enableOnFederation	true
+spark.databricks.delta.uniform.ingress.enableOnFederation.sfdc	true
+spark.databricks.delta.uniform.readIcebergEnabled	false
+spark.databricks.delta.universalFormatCompatibility.postCommitRefresh.enabled	true
+spark.databricks.delta.unsetManaged.timeWindowInDays	14
+spark.databricks.delta.usageLogging.latencyAccumulatorMetrics	true
+spark.databricks.delta.vacuum.enforceDeletedFileAndLogRetentionDurationCompatibility	true
+spark.databricks.delta.vacuum.enforceTimeTravelWithinDeletedFileRetentionDuration	true
+spark.databricks.delta.vacuum.entityStorageLocation.enabled	true
+spark.databricks.delta.vacuum.retentionWindowIgnore.enabled	true
+spark.databricks.delta.variantShredding.autoEnable.betaMode	false
+spark.databricks.delta.variantShredding.forceUsePreviewTableFeature	false
+spark.databricks.delta.versionChecksum.forcedValidationInterval	-1
+spark.databricks.delta.versionChecksum.forcedValidationNewTableThresholdMs	1777618800000
+spark.databricks.delta.versionChecksum.forcedValidationRestrictToUCManagedTables	false
+spark.databricks.delta.write.escapeBackticksWhenDroppingNullType	true
+spark.databricks.delta.write.keepNullStructsWithNullType	true
+spark.databricks.delta.writePartitionColumnsToParquet	true
+spark.databricks.delta.writeWithDroppedNullTypeWithSchemaEvolutionThrow	true
+spark.databricks.deltaSharing.createShareWithBudgetPolicy	true
+spark.databricks.deltaSharing.replaceTriggerAvailableNowWithTriggerOnce	true
+spark.databricks.deltaSharing.shareWithHistoryByDefault	false
+spark.databricks.dlt.externalMetadata.refreshPolicy	LATEST_COMMIT_ONLY_IF_NOT_EXISTS
+spark.databricks.dlt.mvAsTable.enabled	true
+spark.databricks.docingest.apdfl.sandbox.enabled	false
+spark.databricks.docingest.batchEval.size	32
+spark.databricks.docingest.client.v2.enabled	true
+spark.databricks.docingest.contentElementTypes.excluded	
+spark.databricks.docingest.logging.maxContentLength	0
+spark.databricks.docingest.maxDocumentPages	1000
+spark.databricks.docingest.pagination.concurrency	4
+spark.databricks.docingest.pdf.drawFlags	USE_ANNOT_FACES
+spark.databricks.docingest.stage2.descriptionModel	databricks-gemma-3-12b
+spark.databricks.docingest.version.default	2.0
+spark.databricks.docingest.version.supported	2.0
+spark.databricks.dynamicConf.demoFlag14	false
+spark.databricks.dynamicConf.demoFlag17	false
+spark.databricks.dynamicConf.demoFlag4	1
+spark.databricks.dynamicConf.demoFlag7	false
+spark.databricks.dynamicConf.emily.testFlag	false
+spark.databricks.dynamicConf.saca.killswitch-rampup-bool	true
+spark.databricks.dynamicSparkConf.snapshotId	1784338664
+spark.databricks.es1708412TolerantConstantFolding	true
+spark.databricks.execution.timeout	2147483647
+spark.databricks.filelisting.trackFileScanPartitionPlanningMemoryAllocation	true
+spark.databricks.fs.azure.shared.threadpool.enabled	false
+spark.databricks.fs.wasb.writes.etag.enabled	true
+spark.databricks.geo.spatial.rangeShuffle.enabled	true
+spark.databricks.geo.st.booleanSetOperations.legacy	false
+spark.databricks.hive.hmshandler.retry.configs.enabled	true
+spark.databricks.hive.metastore.client.enableConnectionInfoLogging	true
+spark.databricks.hive.metastore.client.ignoreEmptyStringLocation	false
+spark.databricks.internalHms.hmshandler.retry.attempts	3
+spark.databricks.io.listKeysWithPrefix.azure.enabled	true
+spark.databricks.io.native.adlgen2.read.taskSamplePercent	100
+spark.databricks.io.native.adlgen2.streamingRead.taskSamplePercent	0
+spark.databricks.io.native.adlgen2.write.taskSamplePercent	100
+spark.databricks.io.native.gcs.read.taskSamplePercent	100
+spark.databricks.io.native.gcs.streamingRead.taskSamplePercent	0
+spark.databricks.io.native.gcs.write.taskSamplePercent	100
+spark.databricks.io.native.s3.streamingRead.taskSamplePercent	0
+spark.databricks.io.native.s3.write.taskSamplePercent	0
+spark.databricks.io.parquet.nativeFrameReader.prefetchingQueueSize	100
+spark.databricks.io.parquet.readAfterWrite.mode	OFF
+spark.databricks.io.parquet.rowBased.nativeFrameReader.taskSamplePercent	100
+spark.databricks.io.parquet.vectorized.nativeFrameReader.taskSamplePercent	100
+spark.databricks.io.parquet.writeParquetFormatVersion.enabled	true
+spark.databricks.io.parquet.writeSparkImageLabel.enabled	true
+spark.databricks.jdbc.useDialectInSavePartition	true
+spark.databricks.listagg.singlePassAggregate.enabled	true
+spark.databricks.logging.queryProfile.captureAllAnalysisExceptions	true
+spark.databricks.logging.queryProfile.logReferencedObjectsForRlsCm.enabled	false
+spark.databricks.logging.queryProfile.skipSizeInBytes	true
+spark.databricks.logging.usage.migration.dualLogPercentProbabilitiesIngestion	{"controlPlane":{},"dataPlane":{"thriftOperation":{"lP":100,"uP":100,"lC":0},"thriftOperationStart":{"lP":100,"uP":100,"lC":0}}}
+spark.databricks.nonDelta.partitionFormat.enabled	false
+spark.databricks.optimizer.BaseFilterHistoricalCardinalitiesOSSKillswitch.enabled	true
+spark.databricks.optimizer.assignNewExprIdsInDecorrelation	false
+spark.databricks.optimizer.assignNewExprIdsInlineCTEs	false
+spark.databricks.optimizer.autoRangeJoin.enabled	true
+spark.databricks.optimizer.avoidInliningAIFunctions.enabled	false
+spark.databricks.optimizer.bloomFilter.disableIfReducingBhjOverApplicationSide	true
+spark.databricks.optimizer.capFilteredRowByRowCountAfterPruning	false
+spark.databricks.optimizer.decorrelateQueriesWithVariantFields.enabled	false
+spark.databricks.optimizer.doNotMergeInvalidAutoStatistics.enabled	true
+spark.databricks.optimizer.doNotUseInvalidAutoStatistics.enabled	true
+spark.databricks.optimizer.dynamicFilePruning.passThroughJoin	true
+spark.databricks.optimizer.dynamicPruning.linkNestedFiltersInCanonicalization	false
+spark.databricks.optimizer.dynamicPruningFilterCostModel.deltaTableSizeThreshold	0
+spark.databricks.optimizer.dynamicPruningFilterCostModel.parameters	USE_EST_JOIN_SELECTIVITY_IF_NO_CLUSTERING_METRIC=0
+spark.databricks.optimizer.eliminateSortsBelowWindowWithOrderBy	true
+spark.databricks.optimizer.optimizeInvertedLiteralIn.enabled	true
+spark.databricks.optimizer.optimizeLimit.customPartitionSelection	false
+spark.databricks.optimizer.optimizeLimit.maxLimit	10001
+spark.databricks.optimizer.optimizeSchemaOfVariantForStruct.enabled	true
+spark.databricks.optimizer.pushDownTopKThroughGenerate	false
+spark.databricks.optimizer.pushFilterThroughSample.enabled	true
+spark.databricks.optimizer.rankFilterEarlyStop.unpartitioned.maxLimit	50000
+spark.databricks.optimizer.removeSortBelowShuffle	true
+spark.databricks.optimizer.reorderPredicatesUseInputSizeThreshold	false
+spark.databricks.optimizer.rerunSchemaPruningAfterSubqueryDecorrelation.enabled	false
+spark.databricks.optimizer.rewriteSingleDistinctAggregateEnabled	false
+spark.databricks.optimizer.singlePartition.convertEmptyFileScanToLocalRelation	false
+spark.databricks.optimizer.structSizeInBytesEstimateIncludeSchemaPruning.enabled	true
+spark.databricks.optimizer.useOldSelectivityDetector	true
+spark.databricks.optimizer.useStructFieldReferencesForLikelySelectivePred.enabled	true
+spark.databricks.optimizer.window.reverse.shrinking.conservative	false
+spark.databricks.photon.addBackFinalSort.skip	true
+spark.databricks.photon.approxTopK.enabled	true
+spark.databricks.photon.arrowPysparkUDF.enabled	true
+spark.databricks.photon.cartesianProduct.enabled	true
+spark.databricks.photon.cleanupResources.enabled	false
+spark.databricks.photon.columnarToRow.enabled	true
+spark.databricks.photon.columnarToRowDeltaMetadataQueries.enabled	false
+spark.databricks.photon.columnarToRowNested.enabled	true
+spark.databricks.photon.concatWsArraySupport.enabled	true
+spark.databricks.photon.deletedRecordCountsHistogramAgg.enabled	true
+spark.databricks.photon.fileSizeHistogramAgg.enabled	true
+spark.databricks.photon.hashJoin.estimateBuildKeyNdv.enabled	true
+spark.databricks.photon.hashJoin.twoLevelHashTable.enabled	true
+spark.databricks.photon.hllUnionAggGroupingNonGrouping.enabled	true
+spark.databricks.photon.jniStringToDecimal	false
+spark.databricks.photon.laglead.ignoreNulls.enabled	false
+spark.databricks.photon.listagg.rewrite.enabled	true
+spark.databricks.photon.mapZipWith.enabled	true
+spark.databricks.photon.maxMinByNestedTypes.enabled	true
+spark.databricks.photon.maxMinNestedTypes.enabled	true
+spark.databricks.photon.nullType.enabled	true
+spark.databricks.photon.oneRowRelationRowToColumnar.enabled	true
+spark.databricks.photon.outputHashCodeForBloomFilter.enabled	false
+spark.databricks.photon.photonRowToColumnarSnowflakePlan.enabled	true
+spark.databricks.photon.searchFunction.enabled	true
+spark.databricks.photon.shuffleSinkColumnOrientedArray.enabled	true
+spark.databricks.photon.shuffleSinkColumnOrientedStruct.enabled	true
+spark.databricks.photon.spatialJoinRecursiveSpilling.enabled	true
+spark.databricks.photon.structuredOomErrorClasses.enabled	true
+spark.databricks.photon.topk.aggressiveThreshold.enabled	false
+spark.databricks.photon.topk.offset.enabled	false
+spark.databricks.photon.topk.scanPruningFilterPushdown.enabled	true
+spark.databricks.photon.window.nthvalue.slidingframe	false
+spark.databricks.pipelines.allowAlterNonDBSQLPipeline	true
+spark.databricks.pipelines.allowMVSTChangeOwner	true
+spark.databricks.pipelines.dbsql.allowExpectations	true
+spark.databricks.pipelines.forwardUCCacheToChildQE	false
+spark.databricks.pipelines.moveTableBetweenPipelines.materializedView.enabled	true
+spark.databricks.pipelines.moveTableBetweenPipelines.streamingTable.enabled	true
+spark.databricks.pipelines.stDmlCatalogManagedSupport	true
+spark.databricks.pipelines.syncSTBackingTableColumnComment.enabled	false
+spark.databricks.pipelines.syncSTBackingTableComment.enabled	false
+spark.databricks.pipelines.useCredentialHelperForDltClientApiToken	*********(redacted)
+spark.databricks.prefetchingReader.binary.enabled	true
+spark.databricks.prefetchingReader.compressedFiles.enabled	false
+spark.databricks.prefetchingReader.csv.enabled	true
+spark.databricks.prefetchingReader.json.enabled	true
+spark.databricks.prefetchingReader.text.enabled	true
+spark.databricks.prefetchingReader.xml.enabled	true
+spark.databricks.pyspark.udf.isolation.factory.idleWorkerMaxPoolSize	99999
+spark.databricks.pyspark.udt.allowUnpickle	false
+spark.databricks.pyspark.udt.importTypeCheck	true
+spark.databricks.pyspark.udt.log	true
+spark.databricks.remoteFiltering.ES1890727	true
+spark.databricks.remoteFiltering.ES1899676_null_literal_fix.enabled	false
+spark.databricks.remoteFiltering.enableClientShutdown	false
+spark.databricks.remoteFiltering.enableServerlessSessionLocalPropagation	true
+spark.databricks.remoteFiltering.resolveMergeIntoV2PostHoc	false
+spark.databricks.remoteFiltering.retryChangedSession	true
+spark.databricks.remoteFiltering.retryClosedSession	true
+spark.databricks.remoteFiltering.retryRstStreamClosedStream	true
+spark.databricks.remoteFiltering.scanapi.billingInfoName	external_compatibility_billing_info
+spark.databricks.remoteFiltering.sendBillingInfo	true
+spark.databricks.remoteQueryTVFEnabled	false
+spark.databricks.rewriteViewCatalogInUcOnlyMode	true
+spark.databricks.reyden.saferSessionTest	2
+spark.databricks.rlsCm.multipleTables.exception.enabled	true
+spark.databricks.rowColumnControlsAllowlistRule.rule.enabled	false
+spark.databricks.safer.dimensionVerificationFlag	30
+spark.databricks.safespark.dcsVnext.timeout.enabled	true
+spark.databricks.safespark.dispatcher.externalThreadDumpProvider.enabled	false
+spark.databricks.safespark.sandbox.dispatcher.sandboxapi.executiontypes	PYTHON_WORKER,SCALAR
+spark.databricks.safespark.sandbox.dispatcher.sandboxapi.traffic.enabled	true
+spark.databricks.safespark.scalaSandbox.memoryPerCore.mib	300
+spark.databricks.safespark.serverless.driver.activeSandboxRule.enabledExecutionTypes	BASH,UDTF
+spark.databricks.safespark.ucPythonUDF.sandboxReuse.enabled	true
+spark.databricks.safespark.ucPythonUDF.sandboxSharing.planning.enabled	true
+spark.databricks.scan.fileListingSkipConversionForAddFile	false
+spark.databricks.scan.useRelativePathsDuringFileListing	*********(redacted)
+spark.databricks.shuffle.cleanupResources.enabled	false
+spark.databricks.sparkconnect.driverCapacity.queryRejection.enabled	true
+spark.databricks.sql.ES_1355131	false
+spark.databricks.sql.SC-214978	true
+spark.databricks.sql.SC215896GeneratorLcaLoggingEnabled	true
+spark.databricks.sql.UCUDFOnPySparkCodePath.enabled	true
+spark.databricks.sql.ai.partitionProcessor.aimdLimiter.enabled	true
+spark.databricks.sql.ai.partitionProcessor.aimdLimiter.max	200
+spark.databricks.sql.ai.partitionProcessor.globalMaxInFlightElements	10240
+spark.databricks.sql.ai.partitionProcessor.maxBufferedResults	512
+spark.databricks.sql.ai.partitionProcessor.maxInFlightElements	200
+spark.databricks.sql.ai.partitionProcessor.maxWaitTimeSeconds	172800
+spark.databricks.sql.ai.remoteFunction.grpc.initialRetryInterval	100
+spark.databricks.sql.ai.remoteFunction.grpc.maxRetryInterval	10000
+spark.databricks.sql.ai.remoteFunction.grpc.retryIntervalJitterFactor	1.0
+spark.databricks.sql.ai.remoteFunction.grpc.richArguments.enabled	false
+spark.databricks.sql.ai.remoteFunction.hermes.extendedTypeConversion.enabled	true
+spark.databricks.sql.aiGenerateTableDesc.enabled	false
+spark.databricks.sql.allowDroppingDLTMaterializedViewStreamingTable	true
+spark.databricks.sql.alterTable.fieldMasks.enabled	true
+spark.databricks.sql.blockUnencryptedSecretInRTAS	*********(redacted)
+spark.databricks.sql.blockUnsupportedRemoteDataSourcesBeforeGatewayEdgeCheck	false
+spark.databricks.sql.cloudFiles.gdrive.changeFeed.enabled	false
+spark.databricks.sql.dlt.rewriteStaleBackingTableIdentifier.enabled	true
+spark.databricks.sql.excel.enabled	true
+spark.databricks.sql.excel.minZipInflateRatio	1.0E-32
+spark.databricks.sql.excel.writer.enabled	false
+spark.databricks.sql.expression.aiFunctions.repartition	0
+spark.databricks.sql.externalMetadata.postHook.incrementalUpdateOnly	true
+spark.databricks.sql.externalUDF.clientImage.enabled	false
+spark.databricks.sql.externalUDF.clientImage.supportedMinVersion	3
+spark.databricks.sql.externalUDF.tcp.userTimeout	*********(redacted)
+spark.databricks.sql.fsUtils.listShadowingSampleRate	0.2
+spark.databricks.sql.fsUtils.listUseFilesEndpoint	true
+spark.databricks.sql.functions.aiForecast.enabled	false
+spark.databricks.sql.functions.aiFunctions.adaptiveThreadPool.clusterSizeBasedGlobalParallelism.scaleFactor	512.0
+spark.databricks.sql.functions.aiFunctions.adaptiveThreadPool.debugLogEnabled	true
+spark.databricks.sql.functions.aiFunctions.adaptiveThreadPool.dynamicPoolSizeEnabled	false
+spark.databricks.sql.functions.aiFunctions.adaptiveThreadPool.enabled	true
+spark.databricks.sql.functions.aiFunctions.adaptiveThreadPool.maxPoolSize	2048
+spark.databricks.sql.functions.aiFunctions.adaptiveThreadPool.maxPoolSize.aiParseDocument	64
+spark.databricks.sql.functions.aiFunctions.adaptiveThreadPool.scaleUpThresholdCurrentQpsIncreaseRatio	0.0
+spark.databricks.sql.functions.aiFunctions.adaptiveThreadPool.scaleUpThresholdSuccessRatio	0.95
+spark.databricks.sql.functions.aiFunctions.adaptiveThreadPool.scaleUpThresholdTotalQpsIncreaseRatio	0.0
+spark.databricks.sql.functions.aiFunctions.adaptiveThreadPool.taskWaitTimeInSeconds	1000
+spark.databricks.sql.functions.aiFunctions.adaptiveThreadPool.threadKeepAliveTimeInSeconds	600
+spark.databricks.sql.functions.aiFunctions.adaptiveThreadPool.useDynamicTaskQueueExecutor	false
+spark.databricks.sql.functions.aiFunctions.batch.aiQuery.embedding.request.size	40
+spark.databricks.sql.functions.aiFunctions.batch.execution.size	2048
+spark.databricks.sql.functions.aiFunctions.batchInferenceApi.enabled	true
+spark.databricks.sql.functions.aiFunctions.batchSession.enabled	true
+spark.databricks.sql.functions.aiFunctions.batchSession.terminate.enabled	true
+spark.databricks.sql.functions.aiFunctions.createBatchSessionOnExecutor	false
+spark.databricks.sql.functions.aiFunctions.decimal.dataType.enabled	true
+spark.databricks.sql.functions.aiFunctions.embeddingsEndpointName	databricks-gte-large-en
+spark.databricks.sql.functions.aiFunctions.extract.tileMetadata.enabled	true
+spark.databricks.sql.functions.aiFunctions.grpc.enabled	true
+spark.databricks.sql.functions.aiFunctions.hermes.aiQuery.failOnError.enabled	false
+spark.databricks.sql.functions.aiFunctions.hermes.envelopeUnwrap.enabled	false
+spark.databricks.sql.functions.aiFunctions.hermes.errorTemplate.enabled	true
+spark.databricks.sql.functions.aiFunctions.hermes.partitionProcessorConf.enabled	true
+spark.databricks.sql.functions.aiFunctions.hermesEnabledFunctions	ai_classify,ai_extract,ai_prep_search,ai_parse_document,ai_search
+spark.databricks.sql.functions.aiFunctions.includeWorkspaceUrl	*********(redacted)
+spark.databricks.sql.functions.aiFunctions.model.parameters.enabled	true
+spark.databricks.sql.functions.aiFunctions.modelEndpointTypeParsing.enabled	true
+spark.databricks.sql.functions.aiFunctions.multiModality.model.list	databricks-llama-4-maverick,databricks-claude-sonnet-4,databricks-claude-3-7-sonnet,databricks-gemma-3-12b,databricks-gpt-5,databricks-gpt-5-mini,databricks-gpt-5-nano,databricks-gpt-5-1,databricks-gpt-5-2,databricks-gemini-2-5-flash,databricks-gemini-2-5-pro,databricks-gemini-3-flash,databricks-gemini-3-pro,databricks-claude-haiku-4-5
+spark.databricks.sql.functions.aiFunctions.multiModality.useCapabilitiesApi	true
+spark.databricks.sql.functions.aiFunctions.nullInputJsonOutput	{"response":null,"error_message":null}
+spark.databricks.sql.functions.aiFunctions.purposeBuiltFunctions.batch.execution.enabled	true
+spark.databricks.sql.functions.aiFunctions.purposeBuiltFunctions.translate.instruction	### Instruction Translate the provided text to %s, and output only the translated text in the target language in this format: <DBSQLAI>translated text</DBSQLAI>. If the text is already in the target language, output the provided text. ### Text %s
+spark.databricks.sql.functions.aiFunctions.registry.enabled	true
+spark.databricks.sql.functions.aiFunctions.remoteFunction.grpc.batch.maxConcurrentRequests	2048
+spark.databricks.sql.functions.aiFunctions.remoteHttpClient.maxConnections	2048
+spark.databricks.sql.functions.aiFunctions.remoteHttpClient.timeoutInSeconds	360
+spark.databricks.sql.functions.aiFunctions.safe.inference.enabled	true
+spark.databricks.sql.functions.aiFunctions.useDedicatedHttpClient	true
+spark.databricks.sql.functions.aiFunctions.useGrpcForSessionManagement	true
+spark.databricks.sql.functions.aiFunctions.vectorSearch.initialRetryIntervalMillis	1000
+spark.databricks.sql.functions.aiFunctions.vectorSearch.maxRetryInterval	120000
+spark.databricks.sql.functions.aiFunctions.vectorSearch.retryIntervalMultiplierFactor	2.0
+spark.databricks.sql.functions.aiGen.endpointName	databricks-meta-llama-3-3-70b-instruct
+spark.databricks.sql.functions.aiQuery.hybrid.reasoning.foundation.model.list	databricks-claude-3-7-sonnet,databricks-gemini-2-5-pro,databricks-gemini-2-5-flash,databricks-gemini-3-flash
+spark.databricks.sql.functions.aiQuery.openAI.oSeries.model.list	o1-mini,o1,o3-mini,o3,o4-mini,gpt-5,gpt-5-mini,gpt-5-nano,GPT-5,GPT-5 Mini,GPT-5 Nano
+spark.databricks.sql.functions.aiQuery.temperature.whitelistMode.enabled	true
+spark.databricks.sql.functions.aiQuery.ucModelService.enabled	false
+spark.databricks.sql.functions.aiTopDrivers.enabled	false
+spark.databricks.sql.functions.externalUDFs.trackedAsDependency	false
+spark.databricks.sql.functions.readFiles.inferredPartitionTypes.mode	inferType
+spark.databricks.sql.functions.vectorSearch.enabled	true
+spark.databricks.sql.functions.vectorSearch.use.indexIdentifierOnly	true
+spark.databricks.sql.gdrive.metadataColumn.enabled	false
+spark.databricks.sql.ignoreRedactNonUTF8Binary	true
+spark.databricks.sql.ingestion.autoloader.enableS3StorageKeyOptions	true
+spark.databricks.sql.internalHms.exponentialBackoff.enabled	true
+spark.databricks.sql.jdbc.enableLakeguardDriver	true
+spark.databricks.sql.jdbc.lakeguard.writes.enabled	true
+spark.databricks.sql.jdbcDialectForbidQueriesWithForbiddenKeywords	true
+spark.databricks.sql.jdbcDialectIgnoreQueriesWithForbiddenKeywords	false
+spark.databricks.sql.json.inferDecimalTypeFixEnabled	true
+spark.databricks.sql.materializedViewWithMesa	true
+spark.databricks.sql.metadataColumn.cloudMetadata.enabled	true
+spark.databricks.sql.metricView.alterWithFieldMasks.enabled	true
+spark.databricks.sql.metricView.composedMaterialization.enabled	true
+spark.databricks.sql.metricView.enabled	true
+spark.databricks.sql.metricView.filterOnMeasure.enabled	true
+spark.databricks.sql.metricView.materializations.enabled	true
+spark.databricks.sql.metricView.materializations.nested.enabled	true
+spark.databricks.sql.metricView.materializations.windowMeasure.enabled	true
+spark.databricks.sql.metricView.oneToManyJoin.enabled	true
+spark.databricks.sql.metricView.refresh.enabled	true
+spark.databricks.sql.metricView.rely.noFanout.enabled	true
+spark.databricks.sql.metricView.rollup.enabled	true
+spark.databricks.sql.metricView.scalarWindowFunction.enabled	true
+spark.databricks.sql.metricView.semanticMetadataPropagation.enabled	true
+spark.databricks.sql.metricView.snowflake.join.enabled	true
+spark.databricks.sql.metricView.temporary.enabled	true
+spark.databricks.sql.metricView.v2.namespaceSourceAliases.enabled	true
+spark.databricks.sql.metricView.viewMatching.enabled	true
+spark.databricks.sql.metricView.windowFilterPushDown.enabled	true
+spark.databricks.sql.metricView.windowOffset.enabled	true
+spark.databricks.sql.metricView.windowRange.inclusivity.enabled	true
+spark.databricks.sql.metricView.windowStructSubstitution.enabled	true
+spark.databricks.sql.metricView.yaml.v11.enabled	true
+spark.databricks.sql.metricViewV2.dataLineage.enabled	true
+spark.databricks.sql.metricViewV2.enabled	true
+spark.databricks.sql.metricViewV2.qualifyResolution.enabled	true
+spark.databricks.sql.optimizer.AnalyzeTableStalenessThreshold	0
+spark.databricks.sql.optimizer.allowNullDownPropagationOnExpressionArguments	false
+spark.databricks.sql.optimizer.analyzeSupportForStruct.enabled	OFF
+spark.databricks.sql.optimizer.analyzeTruncateColumnsAtLimit.enabled	true
+spark.databricks.sql.optimizer.bloomFilterRuntimeValidation.enabled	true
+spark.databricks.sql.optimizer.collectTableStatisticsOnDataLoad.enabled	true
+spark.databricks.sql.optimizer.collectWorkloadBasedDataSkipping.enabled	false
+spark.databricks.sql.optimizer.collectWorkloadBasedDataSkippingForColumnMapping.enabled	true
+spark.databricks.sql.optimizer.discardColumnStatsWithTooLongKeys.enabled	true
+spark.databricks.sql.optimizer.ensureRequirementsDP.tracing	false
+spark.databricks.sql.optimizer.ignoreUnsupportedTypesInAnalyze.enabled	true
+spark.databricks.sql.optimizer.includeAllDMLForPredictiveAnalyzeMetrics	true
+spark.databricks.sql.optimizer.insertShuffleAboveBuildForJoinWithSelectiveHints	true
+spark.databricks.sql.optimizer.lateralJoinPreserveOuterSemantics	true
+spark.databricks.sql.optimizer.replaceAlias.maxExpressionNumNodes	100000
+spark.databricks.sql.optimizer.requireStronglyConsistentStatsForDataSkipping.enabled	true
+spark.databricks.sql.optimizer.runtimeFiltersMaterializedProbeAsShuffleBoundary	true
+spark.databricks.sql.optimizer.sanitizeAutoStatsForTablesWithRLSCM.enabled	false
+spark.databricks.sql.optimizer.showStatsUsageInExplain.enabled	true
+spark.databricks.sql.optimizer.statisticsOnLoadForPartitionColumns.enabled	true
+spark.databricks.sql.optimizer.statisticsOnLoadForStructWithString.enabled	true
+spark.databricks.sql.optimizer.statisticsOnLoadSelectDeltaColumnsWithPrecedence	true
+spark.databricks.sql.optimizer.statisticsOnLoadTruncateColumnsAtLimit.enabled	true
+spark.databricks.sql.optimizer.statisticsOnLoadWithColumnMapping.enabled	true
+spark.databricks.sql.optimizer.statisticsOnLoadWithSchemaEvolution.enabled	true
+spark.databricks.sql.optimizer.statsOnDataLoadWithRowidTracking.enabled	true
+spark.databricks.sql.optimizer.storeOptimizerStatsForStructField.enabled	false
+spark.databricks.sql.optimizer.useLocalShuffleForCTEReuse.enabled	false
+spark.databricks.sql.optimizer.useStableResultMarkerForRuntimeFilters	true
+spark.databricks.sql.pipelines.pipelineConvertParentTableIdPropertyOnDeltaTableCreate.enable	true
+spark.databricks.sql.pipelines.useExplicitParentTableAndPipelineIdInCreateStagingTable.enable	true
+spark.databricks.sql.pythonUDTF.enabled	true
+spark.databricks.sql.pythonVectorizedUDF.strictIsolationSyntax.enabled	true
+spark.databricks.sql.readCommentFromTopLevelMVST	true
+spark.databricks.sql.redactSecretsInOptimizer	*********(redacted)
+spark.databricks.sql.replaceTable.tempTableNameCollisionCheck.enabled	true
+spark.databricks.sql.rowColumnAccess.blockLiteralParseableColumnNameAsPolicyParameter.enabled	true
+spark.databricks.sql.rowColumnAccess.blockQueriesWithAmbiguousLiteralParseablePolicyParameters.enabled	true
+spark.databricks.sql.rowColumnAccess.castOnAbacColumnTypeMismatch.enabled	true
+spark.databricks.sql.rowColumnAccess.generatedColumnValidation.enabled	ASSERT
+spark.databricks.sql.rowColumnAccess.implicitPoliciesNew.enabled	true
+spark.databricks.sql.rowColumnAccess.regenerateCteRefOutput.enabled	true
+spark.databricks.sql.rowColumnAccess.syncCteRefOutputTypes.enabled	true
+spark.databricks.sql.rowColumnAccess.syncMaskOutputTypes.enabled	true
+spark.databricks.sql.rowColumnAccess.useEffectivePolicies.enabled	true
+spark.databricks.sql.scripting.executionV2.enabled	true
+spark.databricks.sql.sdp.usingIceberg.enabled	true
+spark.databricks.sql.semanticMetadata.describe.allTables.enabled	false
+spark.databricks.sql.semanticMetadata.describe.enabled	true
+spark.databricks.sql.sharepoint.metadataColumn.enabled	false
+spark.databricks.sql.showStatisticsPropertiesInDescribeExtended	false
+spark.databricks.sql.singlePassResolver.enableExtractValueResolution	true
+spark.databricks.sql.singlePassResolver.enableParameterResolution	true
+spark.databricks.sql.singlePassResolver.enableScriptingVariableResolution	true
+spark.databricks.sql.singlePassResolver.enableTempVariableResolution	true
+spark.databricks.sql.singlePassResolver.enableTrustedPlanResolution	true
+spark.databricks.sql.stMv.newResolution.allowNoPE	false
+spark.databricks.sql.streamingTable.externalMetadata.postCommitRefresh.enabled	true
+spark.databricks.sql.streamingTable.sharedResolution.enabled	true
+spark.databricks.sql.tempTable.blockDatabricksJobs	false
+spark.databricks.sql.tempTable.createEnabled	true
+spark.databricks.sql.tempTable.qualifyOnly.assertMutableEnabled	true
+spark.databricks.sql.tempTable.replaceEnabled	true
+spark.databricks.sql.uc.pythonUDTF.polymorphic.enabled	true
+spark.databricks.sql.udf.connectionEnvironmentSettings.enabled	true
+spark.databricks.sql.view.legacy.schemaEvolution	false
+spark.databricks.sqldw.datetimeoffsetStringMapping.enabled	true
+spark.databricks.sqlgateway.confOverlayStatementScopedKeys	
+spark.databricks.sqlgateway.history.profile.backgroundBuildEnabled	true
+spark.databricks.sqlservice.history.connect.commands.writeStreamOperationStartEnabled	true
+spark.databricks.sqlservice.history.enableSessionScopedQueryStatusPublish	true
+spark.databricks.sqlservice.history.isQPLV2Enabled	true
+spark.databricks.sqlservice.history.isSqlgatewayHistoryProxyArmeriaClientEnabled	true
+spark.databricks.sqlservice.history.liveQueryProfile.plansMaxSizeBytes	41943040
+spark.databricks.sqlservice.history.multiBatchProfileEnabled	true
+spark.databricks.sqlservice.history.processExecutorMetricsUpdate	true
+spark.databricks.sqlservice.history.queryParametersEnabled	true
+spark.databricks.sqlservice.history.sqlScriptBatchEnabled	true
+spark.databricks.sqlservice.history.sqlScriptCallStackLimit	65535
+spark.databricks.sqlservice.insights.selectiveJoinEnabled	false
+spark.databricks.streaming.dynamicAdmissionControl.cloudFiles.enabled	true
+spark.databricks.streaming.foreachBatch.clonedSessionBehavior.enabled	false
+spark.databricks.streaming.foreachBatch.sessionHolderUserTagsFallbackForSdp.enabled	*********(redacted)
+spark.databricks.streaming.kafka.azureScopeDomainMatchEnabled	false
+spark.databricks.streaming.queryException.propagateUnderlyingErrorInfo.enabled	true
+spark.databricks.table.parquet.compression.codec.enabled	true
+spark.databricks.tableSummarySystemTable.pushMetrics.enabled	true
+spark.databricks.thriftserver.enableComplexTypeNullParameters.enabled	true
+spark.databricks.thriftserver.parserBasedParameterSubstitution	true
+spark.databricks.unityCatalog.2hop.rpcAllowlist	*********(redacted)
+spark.databricks.unityCatalog.SEC11193DescendIntoChildPlans	false
+spark.databricks.unityCatalog.SEC16443DescendIntoTrustedPlan	false
+spark.databricks.unityCatalog.allowSetHmsCatalog	true
+spark.databricks.unityCatalog.alterCatalogDropConnection.enabled	true
+spark.databricks.unityCatalog.batchSizeForTableFetchForShowTablesExtended	100
+spark.databricks.unityCatalog.checkRule.comparing.enabled	false
+spark.databricks.unityCatalog.checkRule.iterative.enabled	false
+spark.databricks.unityCatalog.client.UCSEWithMessageTemplateAndClass.enabled	true
+spark.databricks.unityCatalog.clientWithCaller.enabled	true
+spark.databricks.unityCatalog.connectionDfOptionInjection.enabled	true
+spark.databricks.unityCatalog.connectionDfWritesOptionInjection.enabled	true
+spark.databricks.unityCatalog.connectionDfWritesOptionInjection.enabledForPythonDataSources	false
+spark.databricks.unityCatalog.dr.pcstRemoteAccessEnabled	true
+spark.databricks.unityCatalog.fineGrainedDmlPermissions.enabled	false
+spark.databricks.unityCatalog.forceMetadataSnapshotBatchUpdate	true
+spark.databricks.unityCatalog.foreignEnitiesConversionCommands.enabled	true
+spark.databricks.unityCatalog.forwardEtagInUpdate	false
+spark.databricks.unityCatalog.glue.federation.enabled	true
+spark.databricks.unityCatalog.grpcDestination	http://managed-catalog-classic.privileged.dbns.databricks.com
+spark.databricks.unityCatalog.grpcDestinationUnsharded	http://managed-catalog-classic-unsharded.privileged.dbns.databricks.com
+spark.databricks.unityCatalog.hmsDisabledInfoLogging.enabled	true
+spark.databricks.unityCatalog.includeTemporaryCredentialsInBulkGetMetadata	*********(redacted)
+spark.databricks.unityCatalog.lakehouseFederation.commentOnForeignTable.enabled	false
+spark.databricks.unityCatalog.lakehouseFederation.fetchForeignComments.enabled	false
+spark.databricks.unityCatalog.lakehouseFederation.preserveUCComments.enabled	false
+spark.databricks.unityCatalog.mcsc.initialCatalogParam.enabled	true
+spark.databricks.unityCatalog.mcsc.unityCatalogEnabledParam.enabled	true
+spark.databricks.unityCatalog.metadataCache.versioned.enabled	false
+spark.databricks.unityCatalog.normalizeSameForeignTableInfoCheck	true
+spark.databricks.unityCatalog.pathPermissionCacheDynamicTtlMs	10000
+spark.databricks.unityCatalog.pathPermissionCachingMode	CachingEnabledMode
+spark.databricks.unityCatalog.prefetchWriteAndDdlTargets	false
+spark.databricks.unityCatalog.pythonDataSource.connectionDfOptionInjection.enabled	false
+spark.databricks.unityCatalog.samDerivation.enabled	false
+spark.databricks.unityCatalog.samDerivation.mode	DISABLED
+spark.databricks.unityCatalog.samRegistry.eventsCollector.config	{}
+spark.databricks.unityCatalog.setForeignSchemaManagedLocation.enabled	true
+spark.databricks.unityCatalog.setManagedLocation.enabled	true
+spark.databricks.unityCatalog.sftpConnection.disableStrictHostKeyCheck	false
+spark.databricks.unityCatalog.sftpConnection.enabled	true
+spark.databricks.unityCatalog.skipForeignMetadataSyncOnListTablesWithSchemaPattern	false
+spark.databricks.unityCatalog.ucSecretsDbUtils.enabled	*********(redacted)
+spark.databricks.unityCatalog.ucSecretsDdl.enabled	*********(redacted)
+spark.databricks.unityCatalog.useGRPC.enabled	false
+spark.databricks.unityCatalog.validateSQLUDFDependencies	false
+spark.databricks.unityCatalog.volume.sam.readAuthzEval.enabled	true
+spark.databricks.unityCatalog.volumePathPermissionCache.dynamicTtl.millis	10000
+spark.databricks.unityCatalog.volumePathPermissionCache.enabled	true
+spark.databricks.unstructured.default.officeRenderMode	robust
+spark.databricks.unstructured.render.timeout.seconds	1800
+spark.databricks.useVariantDataSkippingStats	true
+spark.databricks.variant.shreddingBeta.enabled	false
+spark.delta.sharing.client.sparkParquetIOCache.enabled	true
+spark.delta.sharing.client.useStructuralSchemaMatch	true
+spark.delta.sharing.network.asyncQueryTimeout	1800000
+spark.delta.sharing.network.useAsyncQuery	true
+spark.delta.sharing.query.includeEndStreamAction	true
+spark.sql.analyzer.dontDeduplicateExpressionIfExprIdInOutput	false
+spark.sql.copyInto.timeout.threadDump.enabled	false
+spark.sql.cte.recursion.enabled	true
+spark.sql.excel.streaming.enabled	true
+spark.sql.functions.remoteHttpClient.retryOn400TimeoutError	true
+spark.sql.functions.remoteHttpClient.retryOnSocketTimeoutException	true
+spark.sql.insertIntoReplaceUsing.disallowMisalignedColumns.enabled	true
+spark.sql.insertIntoReplaceUsing.oldDPOCodePath.enabled	true
+spark.sql.legacy.codingErrorAction	true
+spark.sql.legacy.useLegacyXMLParser.migrationValidation.enabled	false
+spark.sql.optimizer.checkDynamicFilePruningExprEligibility	true
+spark.sql.optimizer.checkDynamicFilePruningExprHasMinMaxStats	true
+spark.sql.optimizer.datasourceV2JoinPushdown	false
+spark.sql.optimizer.optimizeCsvJsonExprs.useSchemaField	false
+spark.sql.scripting.enabled	true
+spark.sql.scripting.maxNumberOfCharacters	1000000
+spark.sql.scripting.maxNumberOfLines	30000
+spark.sql.searchIndex.useQueryRewrite	false
+spark.sql.shuffle.orderIndependentChecksum.enableQueryLevelRollbackOnMismatch	true
+spark.sql.skipIndexForTextSearch.enabled	false
+spark.sql.skipIndexForTextSearch.ngramIndex.parameterCalculation	true
+spark.sql.skipIndexForTextSearch.rowsBatchSize	32
+spark.sql.streaming.optimizer.subqueryEarlyUnnesting.enabled	false
+spark.sql.validateColumnNamesSync.throwException	true
+spark.sql.variant.pushVariantIntoScan	true
+spark.sql.variant.pushVariantIntoScan.deferCastError	true
+spark.sql.variant.writeShredding.enabled	true
