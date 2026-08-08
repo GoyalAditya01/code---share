@@ -1,0 +1,6350 @@
+marketscan: # Unique identifier for MarketScan Commercial dataset
+  commercial: 
+    source_data_catalog: dvmt_rwem
+    source_data_db: rwd_marketscan_commercial_{refresh} 
+
+    prerequisite_data_catalog: dvmt_rwre
+    prerequisite_data_db: rwd_reference_athena_{athena_refresh}
+    prerequisite_table_list:
+          - pre_req_table_id: 1
+            table_name: CONCEPT
+          - pre_req_table_id: 2
+            table_name: CONCEPT_ANCESTOR
+          - pre_req_table_id: 3
+            table_name: CONCEPT_CLASS
+          - pre_req_table_id: 4
+            table_name: CONCEPT_RELATIONSHIP
+          - pre_req_table_id: 5
+            table_name: CONCEPT_SYNONYM
+          - pre_req_table_id: 6
+            table_name: DOMAIN
+          - pre_req_table_id: 7
+            table_name: CONCEPT_SYNONYM
+          - pre_req_table_id: 8
+            table_name: DRUG_STRENGTH
+          - pre_req_table_id: 9
+            table_name: RELATIONSHIP
+          - pre_req_table_id: 10
+            table_name: VOCABULARY   
+          - pre_req_table_id: 11
+            table_name: CONCEPT_CPT4
+
+    prerequisite_lookup_data_catalog: dvmt_rwpl
+    prerequisite_lookup_data_db: "{source}_{dataset}_omop_{refresh}_lookup"   
+    prerequisite_lookup_table_list:  
+      - pre_req_lookup_table_id: 1
+        table_name: SPECIALTY_MAPPINGS
+
+      - pre_req_lookup_table_id: 2
+        table_name: METADATA_PARAMETERS
+
+      - pre_req_lookup_table_id: 3
+        table_name: MEASUREMENT_UNIT_MAPPINGS
+
+
+    reference_data_catalog: dvmt_rwem
+    reference_data_db: rwd_marketscan_commercial_claims_ref
+
+    reference_table_list:
+      - ref_table_id: 1
+        table_name: stdprov
+      - ref_table_id: 2
+        table_name: stdplac
+      - ref_table_id: 3
+        table_name: redbook
+      - ref_table_id: 4
+        table_name: geoloc
+
+
+
+    source_table_list:
+      - source_table_id: 1
+        table_name: a_enrollsum
+        columns:
+          - name: age
+            type: smallint
+            nullable: true
+          - name: agegrp
+            type: string
+            nullable: true
+          - name: dattyp1
+            type: smallint
+            nullable: true
+          - name: dattyp10
+            type: smallint
+            nullable: true
+          - name: dattyp11
+            type: smallint
+            nullable: true
+          - name: dattyp12
+            type: smallint
+            nullable: true
+          - name: dattyp2
+            type: smallint
+            nullable: true
+          - name: dattyp3
+            type: smallint
+            nullable: true
+          - name: dattyp4
+            type: smallint
+            nullable: true
+          - name: dattyp5
+            type: smallint
+            nullable: true
+          - name: dattyp6
+            type: smallint
+            nullable: true
+          - name: dattyp7
+            type: smallint
+            nullable: true
+          - name: dattyp8
+            type: smallint
+            nullable: true
+          - name: dattyp9
+            type: smallint
+            nullable: true
+          - name: dobyr
+            type: smallint
+            nullable: true
+          - name: eeclass
+            type: string
+            nullable: true
+          - name: eestatu
+            type: string
+            nullable: true
+          - name: efamid
+            type: bigint
+            nullable: true
+          - name: egeoloc
+            type: string
+            nullable: true
+          - name: empcty
+            type: int
+            nullable: true
+          - name: emprel
+            type: string
+            nullable: true
+          - name: empzip
+            type: smallint
+            nullable: true
+          - name: enrind1
+            type: smallint
+            nullable: true
+          - name: enrind10
+            type: smallint
+            nullable: true
+          - name: enrind11
+            type: smallint
+            nullable: true
+          - name: enrind12
+            type: smallint
+            nullable: true
+          - name: enrind2
+            type: smallint
+            nullable: true
+          - name: enrind3
+            type: smallint
+            nullable: true
+          - name: enrind4
+            type: smallint
+            nullable: true
+          - name: enrind5
+            type: smallint
+            nullable: true
+          - name: enrind6
+            type: smallint
+            nullable: true
+          - name: enrind7
+            type: smallint
+            nullable: true
+          - name: enrind8
+            type: smallint
+            nullable: true
+          - name: enrind9
+            type: smallint
+            nullable: true
+          - name: enrmon
+            type: smallint
+            nullable: true
+          - name: enrolid
+            type: bigint
+            nullable: true
+          - name: fin_ind
+            type: bigint
+            nullable: true
+          - name: hlthplan
+            type: string
+            nullable: true
+          - name: indstry
+            type: string
+            nullable: true
+          - name: medadv1
+            type: smallint
+            nullable: true
+          - name: medadv2
+            type: smallint
+            nullable: true
+          - name: medadv3
+            type: smallint
+            nullable: true
+          - name: medadv4
+            type: smallint
+            nullable: true
+          - name: medadv5
+            type: smallint
+            nullable: true
+          - name: medadv6
+            type: smallint
+            nullable: true
+          - name: medadv7
+            type: smallint
+            nullable: true
+          - name: medadv8
+            type: smallint
+            nullable: true
+          - name: medadv9
+            type: smallint
+            nullable: true
+          - name: medadv10
+            type: smallint
+            nullable: true
+          - name: medadv11
+            type: smallint
+            nullable: true
+          - name: medadv12
+            type: smallint
+            nullable: true
+          - name: memday1
+            type: smallint
+            nullable: true
+          - name: memday10
+            type: smallint
+            nullable: true
+          - name: memday11
+            type: smallint
+            nullable: true
+          - name: memday12
+            type: smallint
+            nullable: true
+          - name: memday2
+            type: smallint
+            nullable: true
+          - name: memday3
+            type: smallint
+            nullable: true
+          - name: memday4
+            type: smallint
+            nullable: true
+          - name: memday5
+            type: smallint
+            nullable: true
+          - name: memday6
+            type: smallint
+            nullable: true
+          - name: memday7
+            type: smallint
+            nullable: true
+          - name: memday8
+            type: smallint
+            nullable: true
+          - name: memday9
+            type: smallint
+            nullable: true
+          - name: memdays
+            type: smallint
+            nullable: true
+          - name: mhsacovg
+            type: string
+            nullable: true
+          - name: msa
+            type: int
+            nullable: true
+          - name: mswgtkey
+            type: string
+            nullable: true
+          - name: phyflag
+            type: string
+            nullable: true
+          - name: plnkey1
+            type: int
+            nullable: true
+          - name: plnkey10
+            type: int
+            nullable: true
+          - name: plnkey11
+            type: int
+            nullable: true
+          - name: plnkey12
+            type: int
+            nullable: true
+          - name: plnkey2
+            type: int
+            nullable: true
+          - name: plnkey3
+            type: int
+            nullable: true
+          - name: plnkey4
+            type: int
+            nullable: true
+          - name: plnkey5
+            type: int
+            nullable: true
+          - name: plnkey6
+            type: int
+            nullable: true
+          - name: plnkey7
+            type: int
+            nullable: true
+          - name: plnkey8
+            type: int
+            nullable: true
+          - name: plnkey9
+            type: int
+            nullable: true
+          - name: plntyp1
+            type: int
+            nullable: true
+          - name: plntyp10
+            type: int
+            nullable: true
+          - name: plntyp11
+            type: int
+            nullable: true
+          - name: plntyp12
+            type: int
+            nullable: true
+          - name: plntyp2
+            type: int
+            nullable: true
+          - name: plntyp3
+            type: int
+            nullable: true
+          - name: plntyp4
+            type: int
+            nullable: true
+          - name: plntyp5
+            type: int
+            nullable: true
+          - name: plntyp6
+            type: int
+            nullable: true
+          - name: plntyp7
+            type: int
+            nullable: true
+          - name: plntyp8
+            type: int
+            nullable: true
+          - name: plntyp9
+            type: int
+            nullable: true
+          - name: region
+            type: string
+            nullable: true
+          - name: rx
+            type: string
+            nullable: true
+          - name: seqnum
+            type: bigint
+            nullable: true
+          - name: sex
+            type: string
+            nullable: true
+          - name: version
+            type: string
+            nullable: true
+          - name: wgtkey
+            type: smallint
+            nullable: true
+          - name: year
+            type: smallint
+            nullable: true
+      - source_table_id: 2
+        table_name: d_pharm
+        columns:
+          - name: age
+            type: smallint
+            nullable: true
+          - name: agegrp
+            type: string
+            nullable: true
+          - name: awp
+            type: decimal(18,2)
+            nullable: true
+          - name: cap_svc
+            type: string
+            nullable: true
+          - name: cob
+            type: decimal(9,2)
+            nullable: true
+          - name: coins
+            type: decimal(9,2)
+            nullable: true
+          - name: copay
+            type: decimal(9,2)
+            nullable: true
+          - name: datatyp
+            type: smallint
+            nullable: true
+          - name: dawind
+            type: string
+            nullable: true
+          - name: daysupp
+            type: smallint
+            nullable: true
+          - name: deaclas
+            type: string
+            nullable: true
+          - name: deduct
+            type: decimal(9,2)
+            nullable: true
+          - name: dispfee
+            type: decimal(9,2)
+            nullable: true
+          - name: dobyr
+            type: smallint
+            nullable: true
+          - name: eeclass
+            type: string
+            nullable: true
+          - name: eestatu
+            type: string
+            nullable: true
+          - name: efamid
+            type: bigint
+            nullable: true
+          - name: egeoloc
+            type: string
+            nullable: true
+          - name: eidflag
+            type: string
+            nullable: true
+          - name: empcty
+            type: int
+            nullable: true
+          - name: emprel
+            type: string
+            nullable: true
+          - name: empzip
+            type: smallint
+            nullable: true
+          - name: enrflag
+            type: string
+            nullable: true
+          - name: enrolid
+            type: bigint
+            nullable: true
+          - name: fin_ind
+            type: bigint
+            nullable: true
+          - name: generid
+            type: int
+            nullable: true
+          - name: genind
+            type: string
+            nullable: true
+          - name: hlthplan
+            type: string
+            nullable: true
+          - name: indstry
+            type: string
+            nullable: true
+          - name: ingcost
+            type: decimal(9,2)
+            nullable: true
+          - name: maintin
+            type: string
+            nullable: true
+          - name: medadv
+            type: int
+            nullable: true
+          - name: metqty
+            type: decimal(18,3)
+            nullable: true
+          - name: mhsacovg
+            type: string
+            nullable: true
+          - name: msa
+            type: int
+            nullable: true
+          - name: ndcnum
+            type: string
+            nullable: true
+          - name: netpay
+            type: decimal(9,2)
+            nullable: true
+          - name: ntwkprov
+            type: string
+            nullable: true
+          - name: paidntwk
+            type: string
+            nullable: true
+          - name: patflag
+            type: string
+            nullable: true
+          - name: patid
+            type: bigint
+            nullable: true
+          - name: pay
+            type: decimal(9,2)
+            nullable: true
+          - name: pddate
+            type: date
+            nullable: true
+          - name: pddate_year
+            type: smallint
+            nullable: true
+          - name: pddate_month
+            type: smallint
+            nullable: true
+          - name: pddate_day
+            type: smallint
+            nullable: true
+          - name: pddate_sasdt
+            type: int
+            nullable: true
+          - name: pharmid
+            type: bigint
+            nullable: true
+          - name: phclass
+            type: smallint
+            nullable: true
+          - name: phrmcty
+            type: int
+            nullable: true
+          - name: phrmzip
+            type: smallint
+            nullable: true
+          - name: phyflag
+            type: string
+            nullable: true
+          - name: plankey
+            type: int
+            nullable: true
+          - name: plantyp
+            type: smallint
+            nullable: true
+          - name: qty
+            type: int
+            nullable: true
+          - name: refill
+            type: int
+            nullable: true
+          - name: region
+            type: string
+            nullable: true
+          - name: rxmr
+            type: string
+            nullable: true
+          - name: saletax
+            type: decimal(9,2)
+            nullable: true
+          - name: seqnum
+            type: bigint
+            nullable: true
+          - name: sex
+            type: string
+            nullable: true
+          - name: svcdate
+            type: date
+            nullable: true
+          - name: svcdate_year
+            type: smallint
+            nullable: true
+          - name: svcdate_month
+            type: smallint
+            nullable: true
+          - name: svcdate_day
+            type: smallint
+            nullable: true
+          - name: svcdate_sasdt
+            type: int
+            nullable: true
+          - name: thercls
+            type: smallint
+            nullable: true
+          - name: thergrp
+            type: string
+            nullable: true
+          - name: version
+            type: string
+            nullable: true
+          - name: wgtkey
+            type: smallint
+            nullable: true
+          - name: year
+            type: smallint
+            nullable: true
+      - source_table_id: 3
+        table_name: f_header
+        columns:
+          - name: age
+            type: smallint
+            nullable: true
+          - name: agegrp
+            type: string
+            nullable: true
+          - name: billtyp
+            type: string
+            nullable: true
+          - name: cap_svc
+            type: string
+            nullable: true
+          - name: caseid
+            type: bigint
+            nullable: true
+          - name: cob
+            type: decimal(14,2)
+            nullable: true
+          - name: coins
+            type: decimal(14,2)
+            nullable: true
+          - name: copay
+            type: decimal(14,2)
+            nullable: true
+          - name: datatyp
+            type: smallint
+            nullable: true
+          - name: deduct
+            type: decimal(14,2)
+            nullable: true
+          - name: dobyr
+            type: smallint
+            nullable: true
+          - name: dstatus
+            type: string
+            nullable: true
+          - name: dx1
+            type: string
+            nullable: true
+          - name: dx2
+            type: string
+            nullable: true
+          - name: dx3
+            type: string
+            nullable: true
+          - name: dx4
+            type: string
+            nullable: true
+          - name: dx5
+            type: string
+            nullable: true
+          - name: dx6
+            type: string
+            nullable: true
+          - name: dx7
+            type: string
+            nullable: true
+          - name: dx8
+            type: string
+            nullable: true
+          - name: dx9
+            type: string
+            nullable: true
+          - name: dxver
+            type: string
+            nullable: true
+          - name: eeclass
+            type: string
+            nullable: true
+          - name: eestatu
+            type: string
+            nullable: true
+          - name: efamid
+            type: bigint
+            nullable: true
+          - name: egeoloc
+            type: string
+            nullable: true
+          - name: eidflag
+            type: string
+            nullable: true
+          - name: empcty
+            type: int
+            nullable: true
+          - name: emprel
+            type: string
+            nullable: true
+          - name: empzip
+            type: smallint
+            nullable: true
+          - name: enrflag
+            type: string
+            nullable: true
+          - name: enrolid
+            type: bigint
+            nullable: true
+          - name: fachdid
+            type: bigint
+            nullable: true
+          - name: fin_ind
+            type: bigint
+            nullable: true
+          - name: hlthplan
+            type: string
+            nullable: true
+          - name: indstry
+            type: string
+            nullable: true
+          - name: mdc
+            type: string
+            nullable: true
+          - name: medadv
+            type: int
+            nullable: true
+          - name: mhsacovg
+            type: string
+            nullable: true
+          - name: msa
+            type: int
+            nullable: true
+          - name: msclmid
+            type: bigint
+            nullable: true
+          - name: netpay
+            type: decimal(14,2)
+            nullable: true
+          - name: npi
+            type: string
+            nullable: true
+          - name: ntwkprov
+            type: string
+            nullable: true
+          - name: paidntwk
+            type: string
+            nullable: true
+          - name: patflag
+            type: string
+            nullable: true
+          - name: patid
+            type: bigint
+            nullable: true
+          - name: pddate
+            type: date
+            nullable: true
+          - name: pddate_year
+            type: smallint
+            nullable: true
+          - name: pddate_month
+            type: smallint
+            nullable: true
+          - name: pddate_day
+            type: smallint
+            nullable: true
+          - name: pddate_sasdt
+            type: int
+            nullable: true
+          - name: phyflag
+            type: string
+            nullable: true
+          - name: plankey
+            type: int
+            nullable: true
+          - name: plantyp
+            type: smallint
+            nullable: true
+          - name: poadx1
+            type: string
+            nullable: true
+          - name: poadx2
+            type: string
+            nullable: true
+          - name: poadx3
+            type: string
+            nullable: true
+          - name: poadx4
+            type: string
+            nullable: true
+          - name: poadx5
+            type: string
+            nullable: true
+          - name: poadx6
+            type: string
+            nullable: true
+          - name: poadx7
+            type: string
+            nullable: true
+          - name: poadx8
+            type: string
+            nullable: true
+          - name: poadx9
+            type: string
+            nullable: true
+          - name: proc1
+            type: string
+            nullable: true
+          - name: proc2
+            type: string
+            nullable: true
+          - name: proc3
+            type: string
+            nullable: true
+          - name: proc4
+            type: string
+            nullable: true
+          - name: proc5
+            type: string
+            nullable: true
+          - name: proc6
+            type: string
+            nullable: true
+          - name: provcty
+            type: int
+            nullable: true
+          - name: provid
+            type: bigint
+            nullable: true
+          - name: provzip
+            type: smallint
+            nullable: true
+          - name: region
+            type: string
+            nullable: true
+          - name: rx
+            type: string
+            nullable: true
+          - name: seqnum
+            type: bigint
+            nullable: true
+          - name: sex
+            type: string
+            nullable: true
+          - name: stdplac
+            type: smallint
+            nullable: true
+          - name: stdprov
+            type: smallint
+            nullable: true
+          - name: svcdate
+            type: date
+            nullable: true
+          - name: svcdate_year
+            type: smallint
+            nullable: true
+          - name: svcdate_month
+            type: smallint
+            nullable: true
+          - name: svcdate_day
+            type: smallint
+            nullable: true
+          - name: svcdate_sasdt
+            type: int
+            nullable: true
+          - name: tsvcdat
+            type: date
+            nullable: true
+          - name: tsvcdat_year
+            type: smallint
+            nullable: true
+          - name: tsvcdat_month
+            type: smallint
+            nullable: true
+          - name: tsvcdat_day
+            type: smallint
+            nullable: true
+          - name: tsvcdat_sasdt
+            type: int
+            nullable: true
+          - name: unihosp
+            type: bigint
+            nullable: true
+          - name: version
+            type: string
+            nullable: true
+          - name: wgtkey
+            type: smallint
+            nullable: true
+          - name: year
+            type: smallint
+            nullable: true
+      - source_table_id: 4
+        table_name: i_inpatsum
+        columns:
+          - name: admdate
+            type: date
+            nullable: true
+          - name: admdate_year
+            type: smallint
+            nullable: true
+          - name: admdate_month
+            type: smallint
+            nullable: true
+          - name: admdate_day
+            type: smallint
+            nullable: true
+          - name: admdate_sasdt
+            type: int
+            nullable: true
+          - name: admtyp
+            type: string
+            nullable: true
+          - name: age
+            type: smallint
+            nullable: true
+          - name: agegrp
+            type: string
+            nullable: true
+          - name: caseid
+            type: bigint
+            nullable: true
+          - name: datatyp
+            type: smallint
+            nullable: true
+          - name: days
+            type: smallint
+            nullable: true
+          - name: disdate
+            type: date
+            nullable: true
+          - name: disdate_year
+            type: smallint
+            nullable: true
+          - name: disdate_month
+            type: smallint
+            nullable: true
+          - name: disdate_day
+            type: smallint
+            nullable: true
+          - name: disdate_sasdt
+            type: int
+            nullable: true
+          - name: dobyr
+            type: smallint
+            nullable: true
+          - name: drg
+            type: smallint
+            nullable: true
+          - name: dstatus
+            type: string
+            nullable: true
+          - name: dx1
+            type: string
+            nullable: true
+          - name: dx10
+            type: string
+            nullable: true
+          - name: dx11
+            type: string
+            nullable: true
+          - name: dx12
+            type: string
+            nullable: true
+          - name: dx13
+            type: string
+            nullable: true
+          - name: dx14
+            type: string
+            nullable: true
+          - name: dx15
+            type: string
+            nullable: true
+          - name: dx2
+            type: string
+            nullable: true
+          - name: dx3
+            type: string
+            nullable: true
+          - name: dx4
+            type: string
+            nullable: true
+          - name: dx5
+            type: string
+            nullable: true
+          - name: dx6
+            type: string
+            nullable: true
+          - name: dx7
+            type: string
+            nullable: true
+          - name: dx8
+            type: string
+            nullable: true
+          - name: dx9
+            type: string
+            nullable: true
+          - name: dxver
+            type: string
+            nullable: true
+          - name: eeclass
+            type: string
+            nullable: true
+          - name: eestatu
+            type: string
+            nullable: true
+          - name: efamid
+            type: bigint
+            nullable: true
+          - name: egeoloc
+            type: string
+            nullable: true
+          - name: eidflag
+            type: string
+            nullable: true
+          - name: empcty
+            type: int
+            nullable: true
+          - name: emprel
+            type: string
+            nullable: true
+          - name: empzip
+            type: smallint
+            nullable: true
+          - name: enrflag
+            type: string
+            nullable: true
+          - name: enrolid
+            type: bigint
+            nullable: true
+          - name: fin_ind
+            type: bigint
+            nullable: true
+          - name: hlthplan
+            type: string
+            nullable: true
+          - name: hospcty
+            type: int
+            nullable: true
+          - name: hospnet
+            type: decimal(14,2)
+            nullable: true
+          - name: hosppay
+            type: decimal(14,2)
+            nullable: true
+          - name: hospzip
+            type: smallint
+            nullable: true
+          - name: indstry
+            type: string
+            nullable: true
+          - name: mdc
+            type: string
+            nullable: true
+          - name: medadv
+            type: int
+            nullable: true
+          - name: mhsacovg
+            type: string
+            nullable: true
+          - name: msa
+            type: int
+            nullable: true
+          - name: patflag
+            type: string
+            nullable: true
+          - name: patid
+            type: bigint
+            nullable: true
+          - name: pdx
+            type: string
+            nullable: true
+          - name: phyflag
+            type: string
+            nullable: true
+          - name: physid
+            type: bigint
+            nullable: true
+          - name: physnet
+            type: decimal(14,2)
+            nullable: true
+          - name: physpay
+            type: decimal(14,2)
+            nullable: true
+          - name: plankey
+            type: int
+            nullable: true
+          - name: plantyp
+            type: smallint
+            nullable: true
+          - name: poadx1
+            type: string
+            nullable: true
+          - name: poadx10
+            type: string
+            nullable: true
+          - name: poadx11
+            type: string
+            nullable: true
+          - name: poadx12
+            type: string
+            nullable: true
+          - name: poadx13
+            type: string
+            nullable: true
+          - name: poadx14
+            type: string
+            nullable: true
+          - name: poadx15
+            type: string
+            nullable: true
+          - name: poadx2
+            type: string
+            nullable: true
+          - name: poadx3
+            type: string
+            nullable: true
+          - name: poadx4
+            type: string
+            nullable: true
+          - name: poadx5
+            type: string
+            nullable: true
+          - name: poadx6
+            type: string
+            nullable: true
+          - name: poadx7
+            type: string
+            nullable: true
+          - name: poadx8
+            type: string
+            nullable: true
+          - name: poadx9
+            type: string
+            nullable: true
+          - name: poapdx
+            type: string
+            nullable: true
+          - name: pproc
+            type: string
+            nullable: true
+          - name: proc1
+            type: string
+            nullable: true
+          - name: proc10
+            type: string
+            nullable: true
+          - name: proc11
+            type: string
+            nullable: true
+          - name: proc12
+            type: string
+            nullable: true
+          - name: proc13
+            type: string
+            nullable: true
+          - name: proc14
+            type: string
+            nullable: true
+          - name: proc15
+            type: string
+            nullable: true
+          - name: proc2
+            type: string
+            nullable: true
+          - name: proc3
+            type: string
+            nullable: true
+          - name: proc4
+            type: string
+            nullable: true
+          - name: proc5
+            type: string
+            nullable: true
+          - name: proc6
+            type: string
+            nullable: true
+          - name: proc7
+            type: string
+            nullable: true
+          - name: proc8
+            type: string
+            nullable: true
+          - name: proc9
+            type: string
+            nullable: true
+          - name: region
+            type: string
+            nullable: true
+          - name: rx
+            type: string
+            nullable: true
+          - name: seqnum
+            type: bigint
+            nullable: true
+          - name: sex
+            type: string
+            nullable: true
+          - name: state
+            type: string
+            nullable: true
+          - name: totcob
+            type: decimal(14,2)
+            nullable: true
+          - name: totcoins
+            type: decimal(14,2)
+            nullable: true
+          - name: totcopay
+            type: decimal(14,2)
+            nullable: true
+          - name: totded
+            type: decimal(14,2)
+            nullable: true
+          - name: totnet
+            type: decimal(14,2)
+            nullable: true
+          - name: totpay
+            type: decimal(14,2)
+            nullable: true
+          - name: unihosp
+            type: bigint
+            nullable: true
+          - name: version
+            type: string
+            nullable: true
+          - name: wgtkey
+            type: smallint
+            nullable: true
+          - name: year
+            type: smallint
+            nullable: true
+      - source_table_id: 5
+        table_name: o_outpt
+        columns:
+          - name: age
+            type: smallint
+            nullable: true
+          - name: agegrp
+            type: string
+            nullable: true
+          - name: cap_svc
+            type: string
+            nullable: true
+          - name: cob
+            type: decimal(18,2)
+            nullable: true
+          - name: coins
+            type: decimal(18,2)
+            nullable: true
+          - name: copay
+            type: decimal(18,2)
+            nullable: true
+          - name: datatyp
+            type: smallint
+            nullable: true
+          - name: deduct
+            type: decimal(18,2)
+            nullable: true
+          - name: dobyr
+            type: smallint
+            nullable: true
+          - name: dx1
+            type: string
+            nullable: true
+          - name: dx2
+            type: string
+            nullable: true
+          - name: dx3
+            type: string
+            nullable: true
+          - name: dx4
+            type: string
+            nullable: true
+          - name: dxver
+            type: string
+            nullable: true
+          - name: eeclass
+            type: string
+            nullable: true
+          - name: eestatu
+            type: string
+            nullable: true
+          - name: efamid
+            type: bigint
+            nullable: true
+          - name: egeoloc
+            type: string
+            nullable: true
+          - name: eidflag
+            type: string
+            nullable: true
+          - name: empcty
+            type: int
+            nullable: true
+          - name: emprel
+            type: string
+            nullable: true
+          - name: empzip
+            type: smallint
+            nullable: true
+          - name: enrflag
+            type: string
+            nullable: true
+          - name: enrolid
+            type: bigint
+            nullable: true
+          - name: fachdid
+            type: bigint
+            nullable: true
+          - name: facprof
+            type: string
+            nullable: true
+          - name: fin_ind
+            type: bigint
+            nullable: true
+          - name: hlthplan
+            type: string
+            nullable: true
+          - name: indstry
+            type: string
+            nullable: true
+          - name: mdc
+            type: string
+            nullable: true
+          - name: medadv
+            type: int
+            nullable: true
+          - name: mhsacovg
+            type: string
+            nullable: true
+          - name: msa
+            type: int
+            nullable: true
+          - name: msclmid
+            type: bigint
+            nullable: true
+          - name: netpay
+            type: decimal(18,2)
+            nullable: true
+          - name: npi
+            type: string
+            nullable: true
+          - name: ntwkprov
+            type: string
+            nullable: true
+          - name: paidntwk
+            type: string
+            nullable: true
+          - name: patflag
+            type: string
+            nullable: true
+          - name: patid
+            type: bigint
+            nullable: true
+          - name: pay
+            type: decimal(18,2)
+            nullable: true
+          - name: pddate
+            type: date
+            nullable: true
+          - name: pddate_year
+            type: smallint
+            nullable: true
+          - name: pddate_month
+            type: smallint
+            nullable: true
+          - name: pddate_day
+            type: smallint
+            nullable: true
+          - name: pddate_sasdt
+            type: int
+            nullable: true
+          - name: phyflag
+            type: string
+            nullable: true
+          - name: plankey
+            type: int
+            nullable: true
+          - name: plantyp
+            type: smallint
+            nullable: true
+          - name: proc1
+            type: string
+            nullable: true
+          - name: procgrp
+            type: smallint
+            nullable: true
+          - name: procmod
+            type: string
+            nullable: true
+          - name: proctyp
+            type: string
+            nullable: true
+          - name: provcty
+            type: int
+            nullable: true
+          - name: provid
+            type: bigint
+            nullable: true
+          - name: provzip
+            type: smallint
+            nullable: true
+          - name: qty
+            type: int
+            nullable: true
+          - name: region
+            type: string
+            nullable: true
+          - name: revcode
+            type: string
+            nullable: true
+          - name: rx
+            type: string
+            nullable: true
+          - name: seqnum
+            type: bigint
+            nullable: true
+          - name: sex
+            type: string
+            nullable: true
+          - name: stdplac
+            type: smallint
+            nullable: true
+          - name: stdprov
+            type: smallint
+            nullable: true
+          - name: stdsvc
+            type: smallint
+            nullable: true
+          - name: svcdate
+            type: date
+            nullable: true
+          - name: svcdate_year
+            type: smallint
+            nullable: true
+          - name: svcdate_month
+            type: smallint
+            nullable: true
+          - name: svcdate_day
+            type: smallint
+            nullable: true
+          - name: svcdate_sasdt
+            type: int
+            nullable: true
+          - name: svcscat
+            type: string
+            nullable: true
+          - name: tsvcdat
+            type: date
+            nullable: true
+          - name: tsvcdat_year
+            type: smallint
+            nullable: true
+          - name: tsvcdat_month
+            type: smallint
+            nullable: true
+          - name: tsvcdat_day
+            type: smallint
+            nullable: true
+          - name: tsvcdat_sasdt
+            type: int
+            nullable: true
+          - name: units
+            type: decimal(12,2)
+            nullable: true
+          - name: version
+            type: string
+            nullable: true
+          - name: wgtkey
+            type: smallint
+            nullable: true
+          - name: year
+            type: smallint
+            nullable: true
+      - source_table_id: 6
+        table_name: p_pop
+        columns:
+          - name: agegrp
+            type: string
+            nullable: true
+          - name: datatyp
+            type: int
+            nullable: true
+          - name: eeclass
+            type: string
+            nullable: true
+          - name: eestatu
+            type: string
+            nullable: true
+          - name: egeoloc
+            type: string
+            nullable: true
+          - name: emprel
+            type: string
+            nullable: true
+          - name: enrflag
+            type: string
+            nullable: true
+          - name: hlthplan
+            type: string
+            nullable: true
+          - name: indstry
+            type: string
+            nullable: true
+          - name: mhsacovg
+            type: string
+            nullable: true
+          - name: msa
+            type: int
+            nullable: true
+          - name: phyflag
+            type: string
+            nullable: true
+          - name: plankey
+            type: int
+            nullable: true
+          - name: plantyp
+            type: int
+            nullable: true
+          - name: popcnt
+            type: bigint
+            nullable: true
+          - name: popdate
+            type: string
+            nullable: true
+          - name: region
+            type: string
+            nullable: true
+          - name: rx
+            type: string
+            nullable: true
+          - name: sex
+            type: string
+            nullable: true
+          - name: version
+            type: string
+            nullable: true
+          - name: wgtkey
+            type: int
+            nullable: true
+          - name: year
+            type: int
+            nullable: true
+      - source_table_id: 7
+        table_name: r_lab
+        columns:
+          - name: abnormal
+            type: string
+            nullable: true
+          - name: age
+            type: smallint
+            nullable: true
+          - name: agegrp
+            type: string
+            nullable: true
+          - name: datatyp
+            type: smallint
+            nullable: true
+          - name: dobyr
+            type: smallint
+            nullable: true
+          - name: dx1
+            type: string
+            nullable: true
+          - name: dxver
+            type: string
+            nullable: true
+          - name: eeclass
+            type: string
+            nullable: true
+          - name: eestatu
+            type: string
+            nullable: true
+          - name: efamid
+            type: bigint
+            nullable: true
+          - name: egeoloc
+            type: string
+            nullable: true
+          - name: eidflag
+            type: string
+            nullable: true
+          - name: empcty
+            type: int
+            nullable: true
+          - name: emprel
+            type: string
+            nullable: true
+          - name: empzip
+            type: smallint
+            nullable: true
+          - name: enrflag
+            type: string
+            nullable: true
+          - name: enrolid
+            type: bigint
+            nullable: true
+          - name: hlthplan
+            type: string
+            nullable: true
+          - name: indstry
+            type: string
+            nullable: true
+          - name: loinccd
+            type: string
+            nullable: true
+          - name: mdc
+            type: string
+            nullable: true
+          - name: medadv
+            type: int
+            nullable: true
+          - name: mhsacovg
+            type: string
+            nullable: true
+          - name: msa
+            type: int
+            nullable: true
+          - name: orderid
+            type: bigint
+            nullable: true
+          - name: patflag
+            type: string
+            nullable: true
+          - name: patid
+            type: bigint
+            nullable: true
+          - name: pddate
+            type: date
+            nullable: true
+          - name: pddate_year
+            type: smallint
+            nullable: true
+          - name: pddate_month
+            type: smallint
+            nullable: true
+          - name: pddate_day
+            type: smallint
+            nullable: true
+          - name: pddate_sasdt
+            type: int
+            nullable: true
+          - name: phyflag
+            type: string
+            nullable: true
+          - name: plankey
+            type: int
+            nullable: true
+          - name: plantyp
+            type: smallint
+            nullable: true
+          - name: proc1
+            type: string
+            nullable: true
+          - name: proctyp
+            type: string
+            nullable: true
+          - name: provcty
+            type: int
+            nullable: true
+          - name: provid
+            type: bigint
+            nullable: true
+          - name: provzip
+            type: smallint
+            nullable: true
+          - name: refhigh
+            type: decimal(12,6)
+            nullable: true
+          - name: reflow
+            type: decimal(12,6)
+            nullable: true
+          - name: region
+            type: string
+            nullable: true
+          - name: resltcat
+            type: string
+            nullable: true
+          - name: res
+            type: decimal(18,4)
+            nullable: true
+          - name: resunit
+            type: string
+            nullable: true
+          - name: rx
+            type: string
+            nullable: true
+          - name: seqnum
+            type: bigint
+            nullable: true
+          - name: sex
+            type: string
+            nullable: true
+          - name: stdplac
+            type: smallint
+            nullable: true
+          - name: stdprov
+            type: smallint
+            nullable: true
+          - name: svcdate
+            type: date
+            nullable: true
+          - name: svcdate_year
+            type: smallint
+            nullable: true
+          - name: svcdate_month
+            type: smallint
+            nullable: true
+          - name: svcdate_day
+            type: smallint
+            nullable: true
+          - name: svcdate_sasdt
+            type: int
+            nullable: true
+          - name: testcnt
+            type: smallint
+            nullable: true
+          - name: version
+            type: string
+            nullable: true
+          - name: wgtkey
+            type: smallint
+            nullable: true
+          - name: year
+            type: smallint
+            nullable: true
+      - source_table_id: 8
+        table_name: s_inpat
+        columns:
+          - name: admdate
+            type: date
+            nullable: true
+          - name: admdate_year
+            type: smallint
+            nullable: true
+          - name: admdate_month
+            type: smallint
+            nullable: true
+          - name: admdate_day
+            type: smallint
+            nullable: true
+          - name: admdate_sasdt
+            type: int
+            nullable: true
+          - name: admtyp
+            type: string
+            nullable: true
+          - name: age
+            type: smallint
+            nullable: true
+          - name: agegrp
+            type: string
+            nullable: true
+          - name: cap_svc
+            type: string
+            nullable: true
+          - name: caseid
+            type: bigint
+            nullable: true
+          - name: cob
+            type: decimal(18,2)
+            nullable: true
+          - name: coins
+            type: decimal(18,2)
+            nullable: true
+          - name: copay
+            type: decimal(18,2)
+            nullable: true
+          - name: datatyp
+            type: smallint
+            nullable: true
+          - name: deduct
+            type: decimal(18,2)
+            nullable: true
+          - name: disdate
+            type: date
+            nullable: true
+          - name: disdate_year
+            type: smallint
+            nullable: true
+          - name: disdate_month
+            type: smallint
+            nullable: true
+          - name: disdate_day
+            type: smallint
+            nullable: true
+          - name: disdate_sasdt
+            type: int
+            nullable: true
+          - name: dobyr
+            type: smallint
+            nullable: true
+          - name: drg
+            type: smallint
+            nullable: true
+          - name: dstatus
+            type: string
+            nullable: true
+          - name: dx1
+            type: string
+            nullable: true
+          - name: dx2
+            type: string
+            nullable: true
+          - name: dx3
+            type: string
+            nullable: true
+          - name: dx4
+            type: string
+            nullable: true
+          - name: dxver
+            type: string
+            nullable: true
+          - name: eeclass
+            type: string
+            nullable: true
+          - name: eestatu
+            type: string
+            nullable: true
+          - name: efamid
+            type: bigint
+            nullable: true
+          - name: egeoloc
+            type: string
+            nullable: true
+          - name: eidflag
+            type: string
+            nullable: true
+          - name: empcty
+            type: int
+            nullable: true
+          - name: emprel
+            type: string
+            nullable: true
+          - name: empzip
+            type: smallint
+            nullable: true
+          - name: enrflag
+            type: string
+            nullable: true
+          - name: enrolid
+            type: bigint
+            nullable: true
+          - name: fachdid
+            type: bigint
+            nullable: true
+          - name: facprof
+            type: string
+            nullable: true
+          - name: fin_ind
+            type: bigint
+            nullable: true
+          - name: hlthplan
+            type: string
+            nullable: true
+          - name: hospcty
+            type: int
+            nullable: true
+          - name: hospzip
+            type: smallint
+            nullable: true
+          - name: indstry
+            type: string
+            nullable: true
+          - name: mdc
+            type: string
+            nullable: true
+          - name: medadv
+            type: int
+            nullable: true
+          - name: mhsacovg
+            type: string
+            nullable: true
+          - name: msa
+            type: int
+            nullable: true
+          - name: msclmid
+            type: bigint
+            nullable: true
+          - name: netpay
+            type: decimal(18,2)
+            nullable: true
+          - name: npi
+            type: string
+            nullable: true
+          - name: ntwkprov
+            type: string
+            nullable: true
+          - name: paidntwk
+            type: string
+            nullable: true
+          - name: patflag
+            type: string
+            nullable: true
+          - name: patid
+            type: bigint
+            nullable: true
+          - name: pay
+            type: decimal(18,2)
+            nullable: true
+          - name: pddate
+            type: date
+            nullable: true
+          - name: pddate_year
+            type: smallint
+            nullable: true
+          - name: pddate_month
+            type: smallint
+            nullable: true
+          - name: pddate_day
+            type: smallint
+            nullable: true
+          - name: pddate_sasdt
+            type: int
+            nullable: true
+          - name: pdx
+            type: string
+            nullable: true
+          - name: phyflag
+            type: string
+            nullable: true
+          - name: plankey
+            type: int
+            nullable: true
+          - name: plantyp
+            type: smallint
+            nullable: true
+          - name: pproc
+            type: string
+            nullable: true
+          - name: proc1
+            type: string
+            nullable: true
+          - name: procmod
+            type: string
+            nullable: true
+          - name: proctyp
+            type: string
+            nullable: true
+          - name: provcty
+            type: int
+            nullable: true
+          - name: provid
+            type: bigint
+            nullable: true
+          - name: provzip
+            type: smallint
+            nullable: true
+          - name: qty
+            type: int
+            nullable: true
+          - name: region
+            type: string
+            nullable: true
+          - name: revcode
+            type: string
+            nullable: true
+          - name: rx
+            type: string
+            nullable: true
+          - name: seqnum
+            type: bigint
+            nullable: true
+          - name: sex
+            type: string
+            nullable: true
+          - name: stdplac
+            type: smallint
+            nullable: true
+          - name: stdprov
+            type: smallint
+            nullable: true
+          - name: stdsvc
+            type: smallint
+            nullable: true
+          - name: svcdate
+            type: date
+            nullable: true
+          - name: svcdate_year
+            type: smallint
+            nullable: true
+          - name: svcdate_month
+            type: smallint
+            nullable: true
+          - name: svcdate_day
+            type: smallint
+            nullable: true
+          - name: svcdate_sasdt
+            type: int
+            nullable: true
+          - name: svcscat
+            type: string
+            nullable: true
+          - name: tsvcdat
+            type: date
+            nullable: true
+          - name: tsvcdat_year
+            type: smallint
+            nullable: true
+          - name: tsvcdat_month
+            type: smallint
+            nullable: true
+          - name: tsvcdat_day
+            type: smallint
+            nullable: true
+          - name: tsvcdat_sasdt
+            type: int
+            nullable: true
+          - name: unihosp
+            type: bigint
+            nullable: true
+          - name: units
+            type: decimal(12,2)
+            nullable: true
+          - name: version
+            type: string
+            nullable: true
+          - name: wgtkey
+            type: smallint
+            nullable: true
+          - name: year
+            type: smallint
+            nullable: true
+      - source_table_id: 9
+        table_name: t_enroll
+        columns:
+          - name: age
+            type: smallint
+            nullable: true
+          - name: agegrp
+            type: string
+            nullable: true
+          - name: datatyp
+            type: smallint
+            nullable: true
+          - name: dobyr
+            type: smallint
+            nullable: true
+          - name: dtend
+            type: date
+            nullable: true
+          - name: dtend_year
+            type: smallint
+            nullable: true
+          - name: dtend_month
+            type: smallint
+            nullable: true
+          - name: dtend_day
+            type: smallint
+            nullable: true
+          - name: dtend_sasdt
+            type: int
+            nullable: true
+          - name: dtstart
+            type: date
+            nullable: true
+          - name: dtstart_year
+            type: smallint
+            nullable: true
+          - name: dtstart_month
+            type: smallint
+            nullable: true
+          - name: dtstart_day
+            type: smallint
+            nullable: true
+          - name: dtstart_sasdt
+            type: int
+            nullable: true
+          - name: eeclass
+            type: string
+            nullable: true
+          - name: eestatu
+            type: string
+            nullable: true
+          - name: efamid
+            type: bigint
+            nullable: true
+          - name: egeoloc
+            type: string
+            nullable: true
+          - name: empcty
+            type: int
+            nullable: true
+          - name: emprel
+            type: string
+            nullable: true
+          - name: empzip
+            type: smallint
+            nullable: true
+          - name: enrolid
+            type: bigint
+            nullable: true
+          - name: fin_ind
+            type: bigint
+            nullable: true
+          - name: hlthplan
+            type: string
+            nullable: true
+          - name: indstry
+            type: string
+            nullable: true
+          - name: medadv
+            type: int
+            nullable: true
+          - name: memdays
+            type: smallint
+            nullable: true
+          - name: mhsacovg
+            type: string
+            nullable: true
+          - name: msa
+            type: int
+            nullable: true
+          - name: phyflag
+            type: string
+            nullable: true
+          - name: plankey
+            type: int
+            nullable: true
+          - name: plantyp
+            type: smallint
+            nullable: true
+          - name: region
+            type: string
+            nullable: true
+          - name: rx
+            type: string
+            nullable: true
+          - name: seqnum
+            type: bigint
+            nullable: true
+          - name: sex
+            type: string
+            nullable: true
+          - name: version
+            type: string
+            nullable: true
+          - name: wgtkey
+            type: smallint
+            nullable: true
+          - name: year
+            type: smallint
+            nullable: true
+
+  medicare: # Unique identifier for MarketScan Medicare dataset
+    source_data_catalog: dvmt_rwem
+    source_data_db: rwd_marketscan_medicare_{refresh} 
+
+    prerequisite_data_catalog: dvmt_rwre
+    prerequisite_data_db: rwd_reference_athena_{athena_refresh}
+    prerequisite_table_list:
+          - pre_req_table_id: 1
+            table_name: CONCEPT
+          - pre_req_table_id: 2
+            table_name: CONCEPT_ANCESTOR
+          - pre_req_table_id: 3
+            table_name: CONCEPT_CLASS
+          - pre_req_table_id: 4
+            table_name: CONCEPT_RELATIONSHIP
+          - pre_req_table_id: 5
+            table_name: CONCEPT_SYNONYM
+          - pre_req_table_id: 6
+            table_name: DOMAIN
+          - pre_req_table_id: 7
+            table_name: CONCEPT_SYNONYM
+          - pre_req_table_id: 8
+            table_name: DRUG_STRENGTH
+          - pre_req_table_id: 9
+            table_name: RELATIONSHIP
+          - pre_req_table_id: 10
+            table_name: VOCABULARY   
+          - pre_req_table_id: 11
+            table_name: CONCEPT_CPT4
+
+    prerequisite_lookup_data_catalog: dvmt_rwpl
+    prerequisite_lookup_data_db: "{source}_{dataset}_omop_{refresh}_lookup"
+    prerequisite_lookup_table_list:  
+      - pre_req_lookup_table_id: 1
+        table_name: SPECIALTY_MAPPINGS
+
+      - pre_req_lookup_table_id: 2
+        table_name: METADATA_PARAMETERS
+
+      - pre_req_lookup_table_id: 3
+        table_name: MEASUREMENT_UNIT_MAPPINGS
+
+    reference_data_catalog: dvmt_rwem
+    reference_data_db: rwd_marketscan_medicare_ref
+
+    reference_table_list:
+      - ref_table_id: 1
+        table_name: stdprov
+      - ref_table_id: 2
+        table_name: stdplac
+      - ref_table_id: 3
+        table_name: redbook
+      - ref_table_id: 4
+        table_name: geoloc
+
+    source_table_list:
+      - source_table_id: 1
+        table_name: a_enrollsum
+        columns:
+          - name: age
+            type: smallint
+            nullable: true
+          - name: agegrp
+            type: string
+            nullable: true
+          - name: dattyp1
+            type: smallint
+            nullable: true
+          - name: dattyp2
+            type: smallint
+            nullable: true
+          - name: dattyp3
+            type: smallint
+            nullable: true
+          - name: dattyp4
+            type: smallint
+            nullable: true
+          - name: dattyp5
+            type: smallint
+            nullable: true
+          - name: dattyp6
+            type: smallint
+            nullable: true
+          - name: dattyp7
+            type: smallint
+            nullable: true
+          - name: dattyp8
+            type: smallint
+            nullable: true
+          - name: dattyp9
+            type: smallint
+            nullable: true
+          - name: dattyp10
+            type: smallint
+            nullable: true
+          - name: dattyp11
+            type: smallint
+            nullable: true
+          - name: dattyp12
+            type: smallint
+            nullable: true
+          - name: dobyr
+            type: smallint
+            nullable: true
+          - name: eeclass
+            type: string
+            nullable: true
+          - name: eestatu
+            type: string
+            nullable: true
+          - name: efamid
+            type: bigint
+            nullable: true
+          - name: egeoloc
+            type: string
+            nullable: true
+          - name: empcty
+            type: int
+            nullable: true
+          - name: emprel
+            type: string
+            nullable: true
+          - name: empzip
+            type: int
+            nullable: true
+          - name: enrind1
+            type: smallint
+            nullable: true
+          - name: enrind2
+            type: smallint
+            nullable: true
+          - name: enrind3
+            type: smallint
+            nullable: true
+          - name: enrind4
+            type: smallint
+            nullable: true
+          - name: enrind5
+            type: smallint
+            nullable: true
+          - name: enrind6
+            type: smallint
+            nullable: true
+          - name: enrind7
+            type: smallint
+            nullable: true
+          - name: enrind8
+            type: smallint
+            nullable: true
+          - name: enrind9
+            type: smallint
+            nullable: true
+          - name: enrind10
+            type: smallint
+            nullable: true
+          - name: enrind11
+            type: smallint
+            nullable: true
+          - name: enrind12
+            type: smallint
+            nullable: true
+          - name: enrmon
+            type: int
+            nullable: true
+          - name: enrolid
+            type: bigint
+            nullable: true
+          - name: fin_ind
+            type: bigint
+            nullable: true
+          - name: hlthplan
+            type: string
+            nullable: true
+          - name: indstry
+            type: string
+            nullable: true
+          - name: medadv1
+            type: smallint
+            nullable: true
+          - name: medadv2
+            type: smallint
+            nullable: true
+          - name: medadv3
+            type: smallint
+            nullable: true
+          - name: medadv4
+            type: smallint
+            nullable: true
+          - name: medadv5
+            type: smallint
+            nullable: true
+          - name: medadv6
+            type: smallint
+            nullable: true
+          - name: medadv7
+            type: smallint
+            nullable: true
+          - name: medadv8
+            type: smallint
+            nullable: true
+          - name: medadv9
+            type: smallint
+            nullable: true
+          - name: medadv10
+            type: smallint
+            nullable: true
+          - name: medadv11
+            type: smallint
+            nullable: true
+          - name: medadv12
+            type: smallint
+            nullable: true
+          - name: memday1
+            type: smallint
+            nullable: true
+          - name: memday2
+            type: smallint
+            nullable: true
+          - name: memday3
+            type: smallint
+            nullable: true
+          - name: memday4
+            type: smallint
+            nullable: true
+          - name: memday5
+            type: smallint
+            nullable: true
+          - name: memday6
+            type: smallint
+            nullable: true
+          - name: memday7
+            type: smallint
+            nullable: true
+          - name: memday8
+            type: smallint
+            nullable: true
+          - name: memday9
+            type: smallint
+            nullable: true
+          - name: memday10
+            type: smallint
+            nullable: true
+          - name: memday11
+            type: smallint
+            nullable: true
+          - name: memday12
+            type: smallint
+            nullable: true
+          - name: memdays
+            type: int
+            nullable: true
+          - name: mhsacovg
+            type: string
+            nullable: true
+          - name: msa
+            type: int
+            nullable: true
+          - name: mswgtkey
+            type: string
+            nullable: true
+          - name: phyflag
+            type: string
+            nullable: true
+          - name: plnkey1
+            type: int
+            nullable: true
+          - name: plnkey2
+            type: int
+            nullable: true
+          - name: plnkey3
+            type: int
+            nullable: true
+          - name: plnkey4
+            type: int
+            nullable: true
+          - name: plnkey5
+            type: int
+            nullable: true
+          - name: plnkey6
+            type: int
+            nullable: true
+          - name: plnkey7
+            type: int
+            nullable: true
+          - name: plnkey8
+            type: int
+            nullable: true
+          - name: plnkey9
+            type: int
+            nullable: true
+          - name: plnkey10
+            type: int
+            nullable: true
+          - name: plnkey11
+            type: int
+            nullable: true
+          - name: plnkey12
+            type: int
+            nullable: true
+          - name: plntyp1
+            type: smallint
+            nullable: true
+          - name: plntyp2
+            type: smallint
+            nullable: true
+          - name: plntyp3
+            type: smallint
+            nullable: true
+          - name: plntyp4
+            type: smallint
+            nullable: true
+          - name: plntyp5
+            type: smallint
+            nullable: true
+          - name: plntyp6
+            type: smallint
+            nullable: true
+          - name: plntyp7
+            type: smallint
+            nullable: true
+          - name: plntyp8
+            type: smallint
+            nullable: true
+          - name: plntyp9
+            type: smallint
+            nullable: true
+          - name: plntyp10
+            type: smallint
+            nullable: true
+          - name: plntyp11
+            type: smallint
+            nullable: true
+          - name: plntyp12
+            type: smallint
+            nullable: true
+          - name: region
+            type: string
+            nullable: true
+          - name: rx
+            type: string
+            nullable: true
+          - name: seqnum
+            type: bigint
+            nullable: true
+          - name: sex
+            type: string
+            nullable: true
+          - name: version
+            type: string
+            nullable: true
+          - name: wgtkey
+            type: int
+            nullable: true
+          - name: year
+            type: smallint
+            nullable: true
+      - source_table_id: 2
+        table_name: d_pharm
+        columns:
+          - name: age
+            type: smallint
+            nullable: true
+          - name: agegrp
+            type: string
+            nullable: true
+          - name: awp
+            type: decimal(18,2)
+            nullable: true
+          - name: cap_svc
+            type: string
+            nullable: true
+          - name: cob
+            type: decimal(18,2)
+            nullable: true
+          - name: coins
+            type: decimal(18,2)
+            nullable: true
+          - name: copay
+            type: decimal(18,2)
+            nullable: true
+          - name: datatyp
+            type: smallint
+            nullable: true
+          - name: dawind
+            type: string
+            nullable: true
+          - name: daysupp
+            type: int
+            nullable: true
+          - name: deaclas
+            type: string
+            nullable: true
+          - name: deduct
+            type: decimal(18,2)
+            nullable: true
+          - name: dispfee
+            type: decimal(18,2)
+            nullable: true
+          - name: dobyr
+            type: smallint
+            nullable: true
+          - name: eeclass
+            type: string
+            nullable: true
+          - name: eestatu
+            type: string
+            nullable: true
+          - name: efamid
+            type: bigint
+            nullable: true
+          - name: egeoloc
+            type: string
+            nullable: true
+          - name: eidflag
+            type: string
+            nullable: true
+          - name: empcty
+            type: int
+            nullable: true
+          - name: emprel
+            type: string
+            nullable: true
+          - name: empzip
+            type: int
+            nullable: true
+          - name: enrflag
+            type: string
+            nullable: true
+          - name: enrolid
+            type: bigint
+            nullable: true
+          - name: fin_ind
+            type: bigint
+            nullable: true
+          - name: generid
+            type: int
+            nullable: true
+          - name: genind
+            type: string
+            nullable: true
+          - name: hlthplan
+            type: string
+            nullable: true
+          - name: indstry
+            type: string
+            nullable: true
+          - name: ingcost
+            type: decimal(18,2)
+            nullable: true
+          - name: maintin
+            type: string
+            nullable: true
+          - name: medadv
+            type: int
+            nullable: true
+          - name: metqty
+            type: decimal(18,3)
+            nullable: true
+          - name: mhsacovg
+            type: string
+            nullable: true
+          - name: msa
+            type: int
+            nullable: true
+          - name: ndcnum
+            type: string
+            nullable: true
+          - name: netpay
+            type: decimal(18,2)
+            nullable: true
+          - name: ntwkprov
+            type: string
+            nullable: true
+          - name: paidntwk
+            type: string
+            nullable: true
+          - name: patflag
+            type: string
+            nullable: true
+          - name: patid
+            type: bigint
+            nullable: true
+          - name: pay
+            type: decimal(18,2)
+            nullable: true
+          - name: pddate
+            type: date
+            nullable: true
+          - name: pddate_year
+            type: smallint
+            nullable: true
+          - name: pddate_month
+            type: smallint
+            nullable: true
+          - name: pddate_day
+            type: smallint
+            nullable: true
+          - name: pddate_sasdt
+            type: int
+            nullable: true
+          - name: pharmid
+            type: bigint
+            nullable: true
+          - name: phrmcty
+            type: int
+            nullable: true
+          - name: phrmzip
+            type: int
+            nullable: true
+          - name: phyflag
+            type: string
+            nullable: true
+          - name: plankey
+            type: int
+            nullable: true
+          - name: plantyp
+            type: smallint
+            nullable: true
+          - name: qty
+            type: int
+            nullable: true
+          - name: refill
+            type: int
+            nullable: true
+          - name: region
+            type: string
+            nullable: true
+          - name: rxmr
+            type: string
+            nullable: true
+          - name: saletax
+            type: decimal(18,2)
+            nullable: true
+          - name: seqnum
+            type: bigint
+            nullable: true
+          - name: sex
+            type: string
+            nullable: true
+          - name: svcdate
+            type: date
+            nullable: true
+          - name: svcdate_year
+            type: smallint
+            nullable: true
+          - name: svcdate_month
+            type: smallint
+            nullable: true
+          - name: svcdate_day
+            type: smallint
+            nullable: true
+          - name: svcdate_sasdt
+            type: int
+            nullable: true
+          - name: thercls
+            type: smallint
+            nullable: true
+          - name: thergrp
+            type: string
+            nullable: true
+          - name: version
+            type: string
+            nullable: true
+          - name: wgtkey
+            type: int
+            nullable: true
+          - name: year
+            type: smallint
+            nullable: true
+      - source_table_id: 3
+        table_name: f_header
+        columns:
+          - name: age
+            type: smallint
+            nullable: true
+          - name: agegrp
+            type: string
+            nullable: true
+          - name: billtyp
+            type: string
+            nullable: true
+          - name: cap_svc
+            type: string
+            nullable: true
+          - name: caseid
+            type: bigint
+            nullable: true
+          - name: cob
+            type: decimal(18,2)
+            nullable: true
+          - name: coins
+            type: decimal(18,2)
+            nullable: true
+          - name: copay
+            type: decimal(18,2)
+            nullable: true
+          - name: datatyp
+            type: smallint
+            nullable: true
+          - name: deduct
+            type: decimal(18,2)
+            nullable: true
+          - name: dobyr
+            type: smallint
+            nullable: true
+          - name: dstatus
+            type: string
+            nullable: true
+          - name: dx1
+            type: string
+            nullable: true
+          - name: dx2
+            type: string
+            nullable: true
+          - name: dx3
+            type: string
+            nullable: true
+          - name: dx4
+            type: string
+            nullable: true
+          - name: dx5
+            type: string
+            nullable: true
+          - name: dx6
+            type: string
+            nullable: true
+          - name: dx7
+            type: string
+            nullable: true
+          - name: dx8
+            type: string
+            nullable: true
+          - name: dx9
+            type: string
+            nullable: true
+          - name: dxver
+            type: string
+            nullable: true
+          - name: eeclass
+            type: string
+            nullable: true
+          - name: eestatu
+            type: string
+            nullable: true
+          - name: efamid
+            type: bigint
+            nullable: true
+          - name: egeoloc
+            type: string
+            nullable: true
+          - name: eidflag
+            type: string
+            nullable: true
+          - name: empcty
+            type: int
+            nullable: true
+          - name: emprel
+            type: string
+            nullable: true
+          - name: empzip
+            type: int
+            nullable: true
+          - name: enrflag
+            type: string
+            nullable: true
+          - name: enrolid
+            type: bigint
+            nullable: true
+          - name: fachdid
+            type: bigint
+            nullable: true
+          - name: fin_ind
+            type: bigint
+            nullable: true
+          - name: hlthplan
+            type: string
+            nullable: true
+          - name: indstry
+            type: string
+            nullable: true
+          - name: mdc
+            type: string
+            nullable: true
+          - name: medadv
+            type: int
+            nullable: true
+          - name: mhsacovg
+            type: string
+            nullable: true
+          - name: msa
+            type: int
+            nullable: true
+          - name: msclmid
+            type: bigint
+            nullable: true
+          - name: netpay
+            type: decimal(18,2)
+            nullable: true
+          - name: npi
+            type: string
+            nullable: true
+          - name: ntwkprov
+            type: string
+            nullable: true
+          - name: paidntwk
+            type: string
+            nullable: true
+          - name: patflag
+            type: string
+            nullable: true
+          - name: patid
+            type: bigint
+            nullable: true
+          - name: pddate
+            type: date
+            nullable: true
+          - name: pddate_year
+            type: smallint
+            nullable: true
+          - name: pddate_month
+            type: smallint
+            nullable: true
+          - name: pddate_day
+            type: smallint
+            nullable: true
+          - name: pddate_sasdt
+            type: int
+            nullable: true
+          - name: phyflag
+            type: string
+            nullable: true
+          - name: plankey
+            type: int
+            nullable: true
+          - name: plantyp
+            type: smallint
+            nullable: true
+          - name: poadx1
+            type: string
+            nullable: true
+          - name: poadx2
+            type: string
+            nullable: true
+          - name: poadx3
+            type: string
+            nullable: true
+          - name: poadx4
+            type: string
+            nullable: true
+          - name: poadx5
+            type: string
+            nullable: true
+          - name: poadx6
+            type: string
+            nullable: true
+          - name: poadx7
+            type: string
+            nullable: true
+          - name: poadx8
+            type: string
+            nullable: true
+          - name: poadx9
+            type: string
+            nullable: true
+          - name: proc1
+            type: string
+            nullable: true
+          - name: proc2
+            type: string
+            nullable: true
+          - name: proc3
+            type: string
+            nullable: true
+          - name: proc4
+            type: string
+            nullable: true
+          - name: proc5
+            type: string
+            nullable: true
+          - name: proc6
+            type: string
+            nullable: true
+          - name: provcty
+            type: int
+            nullable: true
+          - name: provid
+            type: bigint
+            nullable: true
+          - name: provzip
+            type: int
+            nullable: true
+          - name: region
+            type: string
+            nullable: true
+          - name: rx
+            type: string
+            nullable: true
+          - name: seqnum
+            type: bigint
+            nullable: true
+          - name: sex
+            type: string
+            nullable: true
+          - name: stdplac
+            type: smallint
+            nullable: true
+          - name: stdprov
+            type: smallint
+            nullable: true
+          - name: svcdate
+            type: date
+            nullable: true
+          - name: svcdate_year
+            type: smallint
+            nullable: true
+          - name: svcdate_month
+            type: smallint
+            nullable: true
+          - name: svcdate_day
+            type: smallint
+            nullable: true
+          - name: svcdate_sasdt
+            type: int
+            nullable: true
+          - name: tsvcdat
+            type: date
+            nullable: true
+          - name: tsvcdat_year
+            type: smallint
+            nullable: true
+          - name: tsvcdat_month
+            type: smallint
+            nullable: true
+          - name: tsvcdat_day
+            type: smallint
+            nullable: true
+          - name: tsvcdat_sasdt
+            type: int
+            nullable: true
+          - name: unihosp
+            type: bigint
+            nullable: true
+          - name: version
+            type: string
+            nullable: true
+          - name: wgtkey
+            type: int
+            nullable: true
+          - name: year
+            type: smallint
+            nullable: true
+      - source_table_id: 4
+        table_name: i_inpatsum
+        columns:
+          - name: admdate
+            type: date
+            nullable: true
+          - name: admdate_year
+            type: smallint
+            nullable: true
+          - name: admdate_month
+            type: smallint
+            nullable: true
+          - name: admdate_day
+            type: smallint
+            nullable: true
+          - name: admdate_sasdt
+            type: int
+            nullable: true
+          - name: admtyp
+            type: string
+            nullable: true
+          - name: age
+            type: smallint
+            nullable: true
+          - name: agegrp
+            type: string
+            nullable: true
+          - name: caseid
+            type: bigint
+            nullable: true
+          - name: datatyp
+            type: smallint
+            nullable: true
+          - name: days
+            type: int
+            nullable: true
+          - name: disdate
+            type: date
+            nullable: true
+          - name: disdate_year
+            type: smallint
+            nullable: true
+          - name: disdate_month
+            type: smallint
+            nullable: true
+          - name: disdate_day
+            type: smallint
+            nullable: true
+          - name: disdate_sasdt
+            type: int
+            nullable: true
+          - name: dobyr
+            type: smallint
+            nullable: true
+          - name: drg
+            type: int
+            nullable: true
+          - name: dstatus
+            type: string
+            nullable: true
+          - name: dx1
+            type: string
+            nullable: true
+          - name: dx2
+            type: string
+            nullable: true
+          - name: dx3
+            type: string
+            nullable: true
+          - name: dx4
+            type: string
+            nullable: true
+          - name: dx5
+            type: string
+            nullable: true
+          - name: dx6
+            type: string
+            nullable: true
+          - name: dx7
+            type: string
+            nullable: true
+          - name: dx8
+            type: string
+            nullable: true
+          - name: dx9
+            type: string
+            nullable: true
+          - name: dx10
+            type: string
+            nullable: true
+          - name: dx11
+            type: string
+            nullable: true
+          - name: dx12
+            type: string
+            nullable: true
+          - name: dx13
+            type: string
+            nullable: true
+          - name: dx14
+            type: string
+            nullable: true
+          - name: dx15
+            type: string
+            nullable: true
+          - name: dxver
+            type: string
+            nullable: true
+          - name: eeclass
+            type: string
+            nullable: true
+          - name: eestatu
+            type: string
+            nullable: true
+          - name: efamid
+            type: bigint
+            nullable: true
+          - name: egeoloc
+            type: string
+            nullable: true
+          - name: eidflag
+            type: string
+            nullable: true
+          - name: empcty
+            type: int
+            nullable: true
+          - name: emprel
+            type: string
+            nullable: true
+          - name: empzip
+            type: int
+            nullable: true
+          - name: enrflag
+            type: string
+            nullable: true
+          - name: enrolid
+            type: bigint
+            nullable: true
+          - name: fin_ind
+            type: bigint
+            nullable: true
+          - name: hlthplan
+            type: string
+            nullable: true
+          - name: hospcty
+            type: int
+            nullable: true
+          - name: hospnet
+            type: decimal(18,2)
+            nullable: true
+          - name: hosppay
+            type: decimal(18,2)
+            nullable: true
+          - name: hospzip
+            type: int
+            nullable: true
+          - name: indstry
+            type: string
+            nullable: true
+          - name: mdc
+            type: string
+            nullable: true
+          - name: medadv
+            type: int
+            nullable: true
+          - name: mhsacovg
+            type: string
+            nullable: true
+          - name: msa
+            type: int
+            nullable: true
+          - name: patflag
+            type: string
+            nullable: true
+          - name: patid
+            type: bigint
+            nullable: true
+          - name: pdx
+            type: string
+            nullable: true
+          - name: phyflag
+            type: string
+            nullable: true
+          - name: physid
+            type: bigint
+            nullable: true
+          - name: physnet
+            type: decimal(18,2)
+            nullable: true
+          - name: physpay
+            type: decimal(18,2)
+            nullable: true
+          - name: plankey
+            type: int
+            nullable: true
+          - name: plantyp
+            type: smallint
+            nullable: true
+          - name: poadx1
+            type: string
+            nullable: true
+          - name: poadx2
+            type: string
+            nullable: true
+          - name: poadx3
+            type: string
+            nullable: true
+          - name: poadx4
+            type: string
+            nullable: true
+          - name: poadx5
+            type: string
+            nullable: true
+          - name: poadx6
+            type: string
+            nullable: true
+          - name: poadx7
+            type: string
+            nullable: true
+          - name: poadx8
+            type: string
+            nullable: true
+          - name: poadx9
+            type: string
+            nullable: true
+          - name: poadx10
+            type: string
+            nullable: true
+          - name: poadx11
+            type: string
+            nullable: true
+          - name: poadx12
+            type: string
+            nullable: true
+          - name: poadx13
+            type: string
+            nullable: true
+          - name: poadx14
+            type: string
+            nullable: true
+          - name: poadx15
+            type: string
+            nullable: true
+          - name: poapdx
+            type: string
+            nullable: true
+          - name: pproc
+            type: string
+            nullable: true
+          - name: proc1
+            type: string
+            nullable: true
+          - name: proc2
+            type: string
+            nullable: true
+          - name: proc3
+            type: string
+            nullable: true
+          - name: proc4
+            type: string
+            nullable: true
+          - name: proc5
+            type: string
+            nullable: true
+          - name: proc6
+            type: string
+            nullable: true
+          - name: proc7
+            type: string
+            nullable: true
+          - name: proc8
+            type: string
+            nullable: true
+          - name: proc9
+            type: string
+            nullable: true
+          - name: proc10
+            type: string
+            nullable: true
+          - name: proc11
+            type: string
+            nullable: true
+          - name: proc12
+            type: string
+            nullable: true
+          - name: proc13
+            type: string
+            nullable: true
+          - name: proc14
+            type: string
+            nullable: true
+          - name: proc15
+            type: string
+            nullable: true
+          - name: region
+            type: string
+            nullable: true
+          - name: rx
+            type: string
+            nullable: true
+          - name: seqnum
+            type: bigint
+            nullable: true
+          - name: sex
+            type: string
+            nullable: true
+          - name: state
+            type: string
+            nullable: true
+          - name: totcob
+            type: decimal(18,2)
+            nullable: true
+          - name: totcoins
+            type: decimal(18,2)
+            nullable: true
+          - name: totcopay
+            type: decimal(18,2)
+            nullable: true
+          - name: totded
+            type: decimal(18,2)
+            nullable: true
+          - name: totnet
+            type: decimal(18,2)
+            nullable: true
+          - name: totpay
+            type: decimal(18,2)
+            nullable: true
+          - name: unihosp
+            type: bigint
+            nullable: true
+          - name: version
+            type: string
+            nullable: true
+          - name: wgtkey
+            type: int
+            nullable: true
+          - name: year
+            type: smallint
+            nullable: true
+      - source_table_id: 5
+        table_name: o_outpt
+        columns:
+          - name: age
+            type: smallint
+            nullable: true
+          - name: agegrp
+            type: string
+            nullable: true
+          - name: cap_svc
+            type: string
+            nullable: true
+          - name: cob
+            type: decimal(18,2)
+            nullable: true
+          - name: coins
+            type: decimal(18,2)
+            nullable: true
+          - name: copay
+            type: decimal(18,2)
+            nullable: true
+          - name: datatyp
+            type: smallint
+            nullable: true
+          - name: deduct
+            type: decimal(18,2)
+            nullable: true
+          - name: dobyr
+            type: smallint
+            nullable: true
+          - name: dx1
+            type: string
+            nullable: true
+          - name: dx2
+            type: string
+            nullable: true
+          - name: dx3
+            type: string
+            nullable: true
+          - name: dx4
+            type: string
+            nullable: true
+          - name: dxver
+            type: string
+            nullable: true
+          - name: eeclass
+            type: string
+            nullable: true
+          - name: eestatu
+            type: string
+            nullable: true
+          - name: efamid
+            type: bigint
+            nullable: true
+          - name: egeoloc
+            type: string
+            nullable: true
+          - name: eidflag
+            type: string
+            nullable: true
+          - name: empcty
+            type: int
+            nullable: true
+          - name: emprel
+            type: string
+            nullable: true
+          - name: empzip
+            type: int
+            nullable: true
+          - name: enrflag
+            type: string
+            nullable: true
+          - name: enrolid
+            type: bigint
+            nullable: true
+          - name: fachdid
+            type: bigint
+            nullable: true
+          - name: facprof
+            type: string
+            nullable: true
+          - name: fin_ind
+            type: bigint
+            nullable: true
+          - name: hlthplan
+            type: string
+            nullable: true
+          - name: indstry
+            type: string
+            nullable: true
+          - name: mdc
+            type: string
+            nullable: true
+          - name: medadv
+            type: int
+            nullable: true
+          - name: mhsacovg
+            type: string
+            nullable: true
+          - name: msa
+            type: int
+            nullable: true
+          - name: msclmid
+            type: bigint
+            nullable: true
+          - name: netpay
+            type: decimal(18,2)
+            nullable: true
+          - name: npi
+            type: string
+            nullable: true
+          - name: ntwkprov
+            type: string
+            nullable: true
+          - name: paidntwk
+            type: string
+            nullable: true
+          - name: patflag
+            type: string
+            nullable: true
+          - name: patid
+            type: bigint
+            nullable: true
+          - name: pay
+            type: decimal(18,2)
+            nullable: true
+          - name: pddate
+            type: date
+            nullable: true
+          - name: pddate_year
+            type: smallint
+            nullable: true
+          - name: pddate_month
+            type: smallint
+            nullable: true
+          - name: pddate_day
+            type: smallint
+            nullable: true
+          - name: pddate_sasdt
+            type: int
+            nullable: true
+          - name: phyflag
+            type: string
+            nullable: true
+          - name: plankey
+            type: int
+            nullable: true
+          - name: plantyp
+            type: smallint
+            nullable: true
+          - name: proc1
+            type: string
+            nullable: true
+          - name: procgrp
+            type: smallint
+            nullable: true
+          - name: procmod
+            type: string
+            nullable: true
+          - name: proctyp
+            type: string
+            nullable: true
+          - name: provcty
+            type: int
+            nullable: true
+          - name: provid
+            type: bigint
+            nullable: true
+          - name: provzip
+            type: int
+            nullable: true
+          - name: qty
+            type: int
+            nullable: true
+          - name: region
+            type: string
+            nullable: true
+          - name: revcode
+            type: string
+            nullable: true
+          - name: rx
+            type: string
+            nullable: true
+          - name: seqnum
+            type: bigint
+            nullable: true
+          - name: sex
+            type: string
+            nullable: true
+          - name: stdplac
+            type: smallint
+            nullable: true
+          - name: stdprov
+            type: smallint
+            nullable: true
+          - name: stdsvc
+            type: smallint
+            nullable: true
+          - name: svcdate
+            type: date
+            nullable: true
+          - name: svcdate_year
+            type: smallint
+            nullable: true
+          - name: svcdate_month
+            type: smallint
+            nullable: true
+          - name: svcdate_day
+            type: smallint
+            nullable: true
+          - name: svcdate_sasdt
+            type: int
+            nullable: true
+          - name: svcscat
+            type: string
+            nullable: true
+          - name: tsvcdat
+            type: date
+            nullable: true
+          - name: tsvcdat_year
+            type: smallint
+            nullable: true
+          - name: tsvcdat_month
+            type: smallint
+            nullable: true
+          - name: tsvcdat_day
+            type: smallint
+            nullable: true
+          - name: tsvcdat_sasdt
+            type: int
+            nullable: true
+          - name: units
+            type: decimal(12,2)
+            nullable: true
+          - name: version
+            type: string
+            nullable: true
+          - name: wgtkey
+            type: int
+            nullable: true
+          - name: year
+            type: smallint
+            nullable: true
+      - source_table_id: 6
+        table_name: p_pop
+        columns:
+          - name: agegrp
+            type: string
+            nullable: true
+          - name: datatyp
+            type: smallint
+            nullable: true
+          - name: eeclass
+            type: string
+            nullable: true
+          - name: eestatu
+            type: string
+            nullable: true
+          - name: egeoloc
+            type: string
+            nullable: true
+          - name: emprel
+            type: string
+            nullable: true
+          - name: enrflag
+            type: string
+            nullable: true
+          - name: hlthplan
+            type: string
+            nullable: true
+          - name: indstry
+            type: string
+            nullable: true
+          - name: mhsacovg
+            type: string
+            nullable: true
+          - name: msa
+            type: int
+            nullable: true
+          - name: phyflag
+            type: string
+            nullable: true
+          - name: plankey
+            type: int
+            nullable: true
+          - name: plantyp
+            type: smallint
+            nullable: true
+          - name: popcnt
+            type: bigint
+            nullable: true
+          - name: popdate
+            type: string
+            nullable: true
+          - name: region
+            type: string
+            nullable: true
+          - name: rx
+            type: string
+            nullable: true
+          - name: sex
+            type: string
+            nullable: true
+          - name: version
+            type: string
+            nullable: true
+          - name: wgtkey
+            type: int
+            nullable: true
+          - name: year
+            type: smallint
+            nullable: true
+      - source_table_id: 7
+        table_name: r_lab
+        columns:
+          - name: abnormal
+            type: string
+            nullable: true
+          - name: age
+            type: smallint
+            nullable: true
+          - name: agegrp
+            type: string
+            nullable: true
+          - name: datatyp
+            type: smallint
+            nullable: true
+          - name: dobyr
+            type: smallint
+            nullable: true
+          - name: dx1
+            type: string
+            nullable: true
+          - name: dxver
+            type: string
+            nullable: true
+          - name: eeclass
+            type: string
+            nullable: true
+          - name: eestatu
+            type: string
+            nullable: true
+          - name: efamid
+            type: bigint
+            nullable: true
+          - name: egeoloc
+            type: string
+            nullable: true
+          - name: eidflag
+            type: string
+            nullable: true
+          - name: empcty
+            type: int
+            nullable: true
+          - name: emprel
+            type: string
+            nullable: true
+          - name: empzip
+            type: smallint
+            nullable: true
+          - name: enrflag
+            type: string
+            nullable: true
+          - name: enrolid
+            type: bigint
+            nullable: true
+          - name: hlthplan
+            type: string
+            nullable: true
+          - name: indstry
+            type: string
+            nullable: true
+          - name: loinccd
+            type: string
+            nullable: true
+          - name: mdc
+            type: string
+            nullable: true
+          - name: medadv
+            type: int
+            nullable: true
+          - name: mhsacovg
+            type: string
+            nullable: true
+          - name: msa
+            type: int
+            nullable: true
+          - name: orderid
+            type: bigint
+            nullable: true
+          - name: patflag
+            type: string
+            nullable: true
+          - name: patid
+            type: bigint
+            nullable: true
+          - name: pddate
+            type: date
+            nullable: true
+          - name: pddate_year
+            type: smallint
+            nullable: true
+          - name: pddate_month
+            type: smallint
+            nullable: true
+          - name: pddate_day
+            type: smallint
+            nullable: true
+          - name: pddate_sasdt
+            type: int
+            nullable: true
+          - name: phyflag
+            type: string
+            nullable: true
+          - name: plankey
+            type: int
+            nullable: true
+          - name: plantyp
+            type: smallint
+            nullable: true
+          - name: proc1
+            type: string
+            nullable: true
+          - name: proctyp
+            type: string
+            nullable: true
+          - name: provcty
+            type: int
+            nullable: true
+          - name: provid
+            type: bigint
+            nullable: true
+          - name: provzip
+            type: smallint
+            nullable: true
+          - name: refhigh
+            type: decimal(12,6)
+            nullable: true
+          - name: reflow
+            type: decimal(12,6)
+            nullable: true
+          - name: region
+            type: string
+            nullable: true
+          - name: resltcat
+            type: string
+            nullable: true
+          - name: res
+            type: decimal(18,4)
+            nullable: true
+          - name: resunit
+            type: string
+            nullable: true
+          - name: rx
+            type: string
+            nullable: true
+          - name: seqnum
+            type: bigint
+            nullable: true
+          - name: sex
+            type: string
+            nullable: true
+          - name: stdplac
+            type: smallint
+            nullable: true
+          - name: stdprov
+            type: smallint
+            nullable: true
+          - name: svcdate
+            type: date
+            nullable: true
+          - name: svcdate_year
+            type: smallint
+            nullable: true
+          - name: svcdate_month
+            type: smallint
+            nullable: true
+          - name: svcdate_day
+            type: smallint
+            nullable: true
+          - name: svcdate_sasdt
+            type: int
+            nullable: true
+          - name: testcnt
+            type: smallint
+            nullable: true
+          - name: version
+            type: string
+            nullable: true
+          - name: wgtkey
+            type: smallint
+            nullable: true
+          - name: year
+            type: smallint
+            nullable: true
+      - source_table_id: 8
+        table_name: s_inpat
+        columns:
+          - name: admdate
+            type: date
+            nullable: true
+          - name: admdate_year
+            type: smallint
+            nullable: true
+          - name: admdate_month
+            type: smallint
+            nullable: true
+          - name: admdate_day
+            type: smallint
+            nullable: true
+          - name: admdate_sasdt
+            type: int
+            nullable: true
+          - name: admtyp
+            type: string
+            nullable: true
+          - name: age
+            type: smallint
+            nullable: true
+          - name: agegrp
+            type: string
+            nullable: true
+          - name: cap_svc
+            type: string
+            nullable: true
+          - name: caseid
+            type: bigint
+            nullable: true
+          - name: cob
+            type: decimal(18,2)
+            nullable: true
+          - name: coins
+            type: decimal(18,2)
+            nullable: true
+          - name: copay
+            type: decimal(18,2)
+            nullable: true
+          - name: datatyp
+            type: smallint
+            nullable: true
+          - name: deduct
+            type: decimal(18,2)
+            nullable: true
+          - name: disdate
+            type: date
+            nullable: true
+          - name: disdate_year
+            type: smallint
+            nullable: true
+          - name: disdate_month
+            type: smallint
+            nullable: true
+          - name: disdate_day
+            type: smallint
+            nullable: true
+          - name: disdate_sasdt
+            type: int
+            nullable: true
+          - name: dobyr
+            type: smallint
+            nullable: true
+          - name: drg
+            type: int
+            nullable: true
+          - name: dstatus
+            type: string
+            nullable: true
+          - name: dx1
+            type: string
+            nullable: true
+          - name: dx2
+            type: string
+            nullable: true
+          - name: dx3
+            type: string
+            nullable: true
+          - name: dx4
+            type: string
+            nullable: true
+          - name: dxver
+            type: string
+            nullable: true
+          - name: eeclass
+            type: string
+            nullable: true
+          - name: eestatu
+            type: string
+            nullable: true
+          - name: efamid
+            type: bigint
+            nullable: true
+          - name: egeoloc
+            type: string
+            nullable: true
+          - name: eidflag
+            type: string
+            nullable: true
+          - name: empcty
+            type: int
+            nullable: true
+          - name: emprel
+            type: string
+            nullable: true
+          - name: empzip
+            type: int
+            nullable: true
+          - name: enrflag
+            type: string
+            nullable: true
+          - name: enrolid
+            type: bigint
+            nullable: true
+          - name: fachdid
+            type: bigint
+            nullable: true
+          - name: facprof
+            type: string
+            nullable: true
+          - name: fin_ind
+            type: bigint
+            nullable: true
+          - name: hlthplan
+            type: string
+            nullable: true
+          - name: hospcty
+            type: int
+            nullable: true
+          - name: hospzip
+            type: int
+            nullable: true
+          - name: indstry
+            type: string
+            nullable: true
+          - name: mdc
+            type: string
+            nullable: true
+          - name: medadv
+            type: int
+            nullable: true
+          - name: mhsacovg
+            type: string
+            nullable: true
+          - name: msa
+            type: int
+            nullable: true
+          - name: msclmid
+            type: bigint
+            nullable: true
+          - name: netpay
+            type: decimal(18,2)
+            nullable: true
+          - name: npi
+            type: string
+            nullable: true
+          - name: ntwkprov
+            type: string
+            nullable: true
+          - name: paidntwk
+            type: string
+            nullable: true
+          - name: patflag
+            type: string
+            nullable: true
+          - name: patid
+            type: bigint
+            nullable: true
+          - name: pay
+            type: decimal(18,2)
+            nullable: true
+          - name: pddate
+            type: date
+            nullable: true
+          - name: pddate_year
+            type: smallint
+            nullable: true
+          - name: pddate_month
+            type: smallint
+            nullable: true
+          - name: pddate_day
+            type: smallint
+            nullable: true
+          - name: pddate_sasdt
+            type: int
+            nullable: true
+          - name: pdx
+            type: string
+            nullable: true
+          - name: phyflag
+            type: string
+            nullable: true
+          - name: plankey
+            type: int
+            nullable: true
+          - name: plantyp
+            type: smallint
+            nullable: true
+          - name: pproc
+            type: string
+            nullable: true
+          - name: proc1
+            type: string
+            nullable: true
+          - name: procmod
+            type: string
+            nullable: true
+          - name: proctyp
+            type: string
+            nullable: true
+          - name: provcty
+            type: int
+            nullable: true
+          - name: provid
+            type: bigint
+            nullable: true
+          - name: provzip
+            type: int
+            nullable: true
+          - name: qty
+            type: int
+            nullable: true
+          - name: region
+            type: string
+            nullable: true
+          - name: revcode
+            type: string
+            nullable: true
+          - name: rx
+            type: string
+            nullable: true
+          - name: seqnum
+            type: bigint
+            nullable: true
+          - name: sex
+            type: string
+            nullable: true
+          - name: stdplac
+            type: smallint
+            nullable: true
+          - name: stdprov
+            type: smallint
+            nullable: true
+          - name: stdsvc
+            type: smallint
+            nullable: true
+          - name: svcdate
+            type: date
+            nullable: true
+          - name: svcdate_year
+            type: smallint
+            nullable: true
+          - name: svcdate_month
+            type: smallint
+            nullable: true
+          - name: svcdate_day
+            type: smallint
+            nullable: true
+          - name: svcdate_sasdt
+            type: int
+            nullable: true
+          - name: svcscat
+            type: string
+            nullable: true
+          - name: tsvcdat
+            type: date
+            nullable: true
+          - name: tsvcdat_year
+            type: smallint
+            nullable: true
+          - name: tsvcdat_month
+            type: smallint
+            nullable: true
+          - name: tsvcdat_day
+            type: smallint
+            nullable: true
+          - name: tsvcdat_sasdt
+            type: int
+            nullable: true
+          - name: unihosp
+            type: bigint
+            nullable: true
+          - name: units
+            type: decimal(12,2)
+            nullable: true
+          - name: version
+            type: string
+            nullable: true
+          - name: wgtkey
+            type: int
+            nullable: true
+          - name: year
+            type: smallint
+            nullable: true
+      - source_table_id: 9
+        table_name: t_enroll
+        columns:
+          - name: age
+            type: smallint
+            nullable: true
+          - name: agegrp
+            type: string
+            nullable: true
+          - name: datatyp
+            type: smallint
+            nullable: true
+          - name: dobyr
+            type: smallint
+            nullable: true
+          - name: dtend
+            type: date
+            nullable: true
+          - name: dtend_year
+            type: smallint
+            nullable: true
+          - name: dtend_month
+            type: smallint
+            nullable: true
+          - name: dtend_day
+            type: smallint
+            nullable: true
+          - name: dtend_sasdt
+            type: int
+            nullable: true
+          - name: dtstart
+            type: date
+            nullable: true
+          - name: dtstart_year
+            type: smallint
+            nullable: true
+          - name: dtstart_month
+            type: smallint
+            nullable: true
+          - name: dtstart_day
+            type: smallint
+            nullable: true
+          - name: dtstart_sasdt
+            type: int
+            nullable: true
+          - name: eeclass
+            type: string
+            nullable: true
+          - name: eestatu
+            type: string
+            nullable: true
+          - name: efamid
+            type: bigint
+            nullable: true
+          - name: egeoloc
+            type: string
+            nullable: true
+          - name: empcty
+            type: int
+            nullable: true
+          - name: emprel
+            type: string
+            nullable: true
+          - name: empzip
+            type: int
+            nullable: true
+          - name: enrolid
+            type: bigint
+            nullable: true
+          - name: fin_ind
+            type: bigint
+            nullable: true
+          - name: hlthplan
+            type: string
+            nullable: true
+          - name: indstry
+            type: string
+            nullable: true
+          - name: medadv
+            type: int
+            nullable: true
+          - name: memdays
+            type: int
+            nullable: true
+          - name: mhsacovg
+            type: string
+            nullable: true
+          - name: msa
+            type: int
+            nullable: true
+          - name: phyflag
+            type: string
+            nullable: true
+          - name: plankey
+            type: int
+            nullable: true
+          - name: plantyp
+            type: smallint
+            nullable: true
+          - name: region
+            type: string
+            nullable: true
+          - name: rx
+            type: string
+            nullable: true
+          - name: seqnum
+            type: bigint
+            nullable: true
+          - name: sex
+            type: string
+            nullable: true
+          - name: version
+            type: string
+            nullable: true
+          - name: wgtkey
+            type: int
+            nullable: true
+          - name: year
+            type: smallint
+            nullable: true
+
+optum:
+  ses:
+    source_data_catalog: dvmt_rwop
+    source_data_db: rwd_optum_ses_{refresh}
+    prerequisite_data_catalog: dvmt_rwre
+    prerequisite_data_db: rwd_reference_athena_{athena_refresh}
+    prerequisite_table_list:
+    - pre_req_table_id: 1
+      table_name: CONCEPT
+    - pre_req_table_id: 2
+      table_name: CONCEPT_ANCESTOR
+    - pre_req_table_id: 3
+      table_name: CONCEPT_CLASS
+    - pre_req_table_id: 4
+      table_name: CONCEPT_RELATIONSHIP
+    - pre_req_table_id: 5
+      table_name: CONCEPT_SYNONYM
+    - pre_req_table_id: 6
+      table_name: DOMAIN
+    - pre_req_table_id: 7
+      table_name: CONCEPT_SYNONYM
+    - pre_req_table_id: 8
+      table_name: DRUG_STRENGTH
+    - pre_req_table_id: 9
+      table_name: RELATIONSHIP
+    - pre_req_table_id: 10
+      table_name: VOCABULARY
+    - pre_req_table_id: 11
+      table_name: CONCEPT_CPT4
+
+    source_table_list:
+    - source_table_id: 1
+      table_name: confinement
+      columns:
+      - name: PATID
+        type: bigint
+        nullable: true
+      - name: PAT_PLANID
+        type: bigint
+        nullable: true
+      - name: ADMIT_DATE
+        type: date
+        nullable: true
+      - name: ADMIT_DATE_DAY
+        type: smallint
+        nullable: true
+      - name: ADMIT_DATE_MONTH
+        type: smallint
+        nullable: true
+      - name: ADMIT_DATE_YEAR
+        type: smallint
+        nullable: true
+      - name: ADMIT_DATE_SASDT
+        type: int
+        nullable: true
+      - name: CHARGE
+        type: decimal(13,2)
+        nullable: true
+      - name: COINS
+        type: decimal(13,2)
+        nullable: true
+      - name: CONF_ID
+        type: string
+        nullable: true
+      - name: COPAY
+        type: decimal(13,2)
+        nullable: true
+      - name: DEDUCT
+        type: decimal(13,2)
+        nullable: true
+      - name: DIAG1
+        type: string
+        nullable: true
+      - name: DIAG2
+        type: string
+        nullable: true
+      - name: DIAG3
+        type: string
+        nullable: true
+      - name: DIAG4
+        type: string
+        nullable: true
+      - name: DIAG5
+        type: string
+        nullable: true
+      - name: DISCH_DATE
+        type: date
+        nullable: true
+      - name: DISCH_DATE_DAY
+        type: smallint
+        nullable: true
+      - name: DISCH_DATE_MONTH
+        type: smallint
+        nullable: true
+      - name: DISCH_DATE_YEAR
+        type: smallint
+        nullable: true
+      - name: DISCH_DATE_SASDT
+        type: int
+        nullable: true
+      - name: DRG
+        type: string
+        nullable: true
+      - name: DSTATUS
+        type: string
+        nullable: true
+      - name: ICD_FLAG
+        type: string
+        nullable: true
+      - name: IPSTATUS
+        type: string
+        nullable: true
+      - name: LOS
+        type: int
+        nullable: true
+      - name: POS
+        type: string
+        nullable: true
+      - name: PROC1
+        type: string
+        nullable: true
+      - name: PROC2
+        type: string
+        nullable: true
+      - name: PROC3
+        type: string
+        nullable: true
+      - name: PROC4
+        type: string
+        nullable: true
+      - name: PROC5
+        type: string
+        nullable: true
+      - name: PROV
+        type: bigint
+        nullable: true
+      - name: STD_COST
+        type: decimal(18,2)
+        nullable: true
+      - name: STD_COST_YR
+        type: string
+        nullable: true
+      - name: TOS_CD
+        type: string
+        nullable: true
+      - name: EXTRACT_YM
+        type: string
+        nullable: true
+      - name: VERSION
+        type: string
+        nullable: true
+      - name: ICU_IND
+        type: string
+        nullable: true
+      - name: ICU_SURG_IND
+        type: string
+        nullable: true
+      - name: MAJ_SURG_IND
+        type: string
+        nullable: true
+      - name: MATERNITY_IND
+        type: string
+        nullable: true
+      - name: NEWBORN_IND
+        type: string
+        nullable: true
+      - name: TOS_EXT
+        type: string
+        nullable: true
+    - source_table_id: 2
+      table_name: labresult
+      columns:
+      - name: PATID
+        type: bigint
+        nullable: true
+      - name: PAT_PLANID
+        type: bigint
+        nullable: true
+      - name: ABNL_CD
+        type: string
+        nullable: true
+      - name: ANLYTSEQ
+        type: string
+        nullable: true
+      - name: FST_DT
+        type: date
+        nullable: true
+      - name: FST_DT_DAY
+        type: smallint
+        nullable: true
+      - name: FST_DT_MONTH
+        type: smallint
+        nullable: true
+      - name: FST_DT_YEAR
+        type: smallint
+        nullable: true
+      - name: FST_DT_SASDT
+        type: int
+        nullable: true
+      - name: HI_NRML
+        type: decimal(18,4)
+        nullable: true
+      - name: LABCLMID
+        type: string
+        nullable: true
+      - name: LOINC_CD
+        type: string
+        nullable: true
+      - name: LOW_NRML
+        type: decimal(18,4)
+        nullable: true
+      - name: PROC_CD
+        type: string
+        nullable: true
+      - name: RSLT_NBR
+        type: decimal(22,6)
+        nullable: true
+      - name: RSLT_TXT
+        type: string
+        nullable: true
+      - name: RSLT_UNIT_NM
+        type: string
+        nullable: true
+      - name: SOURCE
+        type: string
+        nullable: true
+      - name: TST_DESC
+        type: string
+        nullable: true
+      - name: TST_NBR
+        type: string
+        nullable: true
+      - name: EXTRACT_YM
+        type: string
+        nullable: true
+      - name: VERSION
+        type: string
+        nullable: true
+    - source_table_id: 3
+      table_name: lu_diagnosis
+      columns:
+      - name: diag_cd
+        type: string
+        nullable: true
+      - name: diag_desc
+        type: string
+        nullable: true
+      - name: diag_fst3_cd
+        type: string
+        nullable: true
+      - name: diag_fst3_desc
+        type: string
+        nullable: true
+      - name: diag_fst4_cd
+        type: string
+        nullable: true
+      - name: diag_fst4_desc
+        type: string
+        nullable: true
+      - name: gdr_spec_cd
+        type: string
+        nullable: true
+      - name: mdc_cd_desc
+        type: string
+        nullable: true
+      - name: mdc_code
+        type: string
+        nullable: true
+      - name: icd_ver_cd
+        type: string
+        nullable: true
+    - source_table_id: 4
+      table_name: lu_ndc
+      columns:
+      - name: ahfsclss
+        type: string
+        nullable: true
+      - name: ahfsclss_desc
+        type: string
+        nullable: true
+      - name: brnd_nm
+        type: string
+        nullable: true
+      - name: dosage_fm_desc
+        type: string
+        nullable: true
+      - name: drg_strgth_desc
+        type: string
+        nullable: true
+      - name: drg_strgth_nbr
+        type: decimal(16,3)
+        nullable: true
+      - name: drg_strgth_unit_desc
+        type: string
+        nullable: true
+      - name: drg_strgth_vol_nbr
+        type: decimal(12,3)
+        nullable: true
+      - name: drg_strgth_vol_unit_desc
+        type: string
+        nullable: true
+      - name: gnrc_ind
+        type: string
+        nullable: true
+      - name: gnrc_nbr
+        type: string
+        nullable: true
+      - name: gnrc_nm
+        type: string
+        nullable: true
+      - name: gnrc_sqnc_nbr
+        type: string
+        nullable: true
+      - name: ndc
+        type: string
+        nullable: true
+      - name: ndc_drg_row_eff_dt
+        type: date
+        nullable: true
+      - name: ndc_drg_row_eff_dt_year
+        type: smallint
+        nullable: true
+      - name: ndc_drg_row_eff_dt_month
+        type: smallint
+        nullable: true
+      - name: ndc_drg_row_eff_dt_day
+        type: smallint
+        nullable: true
+      - name: ndc_drg_row_eff_dt_sasdt
+        type: int
+        nullable: true
+      - name: ndc_drg_row_end_dt
+        type: date
+        nullable: true
+      - name: ndc_drg_row_end_dt_year
+        type: smallint
+        nullable: true
+      - name: ndc_drg_row_end_dt_month
+        type: smallint
+        nullable: true
+      - name: ndc_drg_row_end_dt_day
+        type: smallint
+        nullable: true
+      - name: ndc_drg_row_end_dt_sasdt
+        type: int
+        nullable: true
+      - name: usc_id
+        type: string
+        nullable: true
+      - name: usc_med_desc
+        type: string
+        nullable: true
+    - source_table_id: 5
+      table_name: lu_procedure
+      columns:
+      - name: category_dtl_cd
+        type: string
+        nullable: true
+      - name: category_dtl_code_desc
+        type: string
+        nullable: true
+      - name: category_genl_cd
+        type: string
+        nullable: true
+      - name: category_genl_code_desc
+        type: string
+        nullable: true
+      - name: proc_cd
+        type: string
+        nullable: true
+      - name: proc_desc
+        type: string
+        nullable: true
+      - name: proc_end_date
+        type: date
+        nullable: true
+      - name: proc_end_date_year
+        type: smallint
+        nullable: true
+      - name: proc_end_date_month
+        type: smallint
+        nullable: true
+      - name: proc_end_date_day
+        type: smallint
+        nullable: true
+      - name: proc_end_date_sasdt
+        type: int
+        nullable: true
+      - name: proc_typ_cd
+        type: string
+        nullable: true
+    - source_table_id: 6
+      table_name: med_diagnosis
+      columns:
+      - name: Patid
+        type: bigint
+        nullable: true
+      - name: Pat_Planid
+        type: bigint
+        nullable: true
+      - name: Clmid
+        type: string
+        nullable: true
+      - name: Diag
+        type: string
+        nullable: true
+      - name: Diag_Position
+        type: string
+        nullable: true
+      - name: Icd_Flag
+        type: string
+        nullable: true
+      - name: Loc_cd
+        type: string
+        nullable: true
+      - name: Poa
+        type: string
+        nullable: true
+      - name: Extract_Ym
+        type: string
+        nullable: true
+      - name: Version
+        type: string
+        nullable: true
+      - name: diag_yrqr
+        type: string
+        nullable: true
+      - name: FST_DT
+        type: date
+        nullable: true
+      - name: FST_DT_DAY
+        type: smallint
+        nullable: true
+      - name: FST_DT_MONTH
+        type: smallint
+        nullable: true
+      - name: FST_DT_YEAR
+        type: smallint
+        nullable: true
+      - name: FST_DT_SASDT
+        type: int
+        nullable: true
+    - source_table_id: 7
+      table_name: med_procedure
+      columns:
+      - name: Patid
+        type: bigint
+        nullable: true
+      - name: Pat_Planid
+        type: bigint
+        nullable: true
+      - name: Clmid
+        type: string
+        nullable: true
+      - name: Icd_Flag
+        type: string
+        nullable: true
+      - name: Proc
+        type: string
+        nullable: true
+      - name: Proc_Position
+        type: string
+        nullable: true
+      - name: Extract_Ym
+        type: string
+        nullable: true
+      - name: Version
+        type: string
+        nullable: true
+      - name: proc_yrqr
+        type: string
+        nullable: true
+      - name: FST_DT
+        type: date
+        nullable: true
+      - name: FST_DT_DAY
+        type: smallint
+        nullable: true
+      - name: FST_DT_MONTH
+        type: smallint
+        nullable: true
+      - name: FST_DT_YEAR
+        type: smallint
+        nullable: true
+      - name: FST_DT_SASDT
+        type: int
+        nullable: true
+    - source_table_id: 8
+      table_name: medical
+      columns:
+      - name: PATID
+        type: bigint
+        nullable: true
+      - name: PAT_PLANID
+        type: bigint
+        nullable: true
+      - name: ADMIT_CHAN
+        type: string
+        nullable: true
+      - name: ADMIT_TYPE
+        type: string
+        nullable: true
+      - name: BILL_PROV
+        type: bigint
+        nullable: true
+      - name: CHARGE
+        type: decimal(13,2)
+        nullable: true
+      - name: CLMID
+        type: string
+        nullable: true
+      - name: CLMSEQ
+        type: string
+        nullable: true
+      - name: COB
+        type: string
+        nullable: true
+      - name: COINS
+        type: decimal(13,2)
+        nullable: true
+      - name: CONF_ID
+        type: string
+        nullable: true
+      - name: COPAY
+        type: decimal(13,2)
+        nullable: true
+      - name: DEDUCT
+        type: decimal(13,2)
+        nullable: true
+      - name: DRG
+        type: string
+        nullable: true
+      - name: DSTATUS
+        type: string
+        nullable: true
+      - name: ENCTR
+        type: string
+        nullable: true
+      - name: FST_DT
+        type: date
+        nullable: true
+      - name: FST_DT_DAY
+        type: smallint
+        nullable: true
+      - name: FST_DT_MONTH
+        type: smallint
+        nullable: true
+      - name: FST_DT_YEAR
+        type: smallint
+        nullable: true
+      - name: FST_DT_SASDT
+        type: int
+        nullable: true
+      - name: HCCC
+        type: string
+        nullable: true
+      - name: ICD_FLAG
+        type: string
+        nullable: true
+      - name: LOC_CD
+        type: string
+        nullable: true
+      - name: LST_DT
+        type: date
+        nullable: true
+      - name: LST_DT_DAY
+        type: smallint
+        nullable: true
+      - name: LST_DT_MONTH
+        type: smallint
+        nullable: true
+      - name: LST_DT_YEAR
+        type: smallint
+        nullable: true
+      - name: LST_DT_SASDT
+        type: int
+        nullable: true
+      - name: NDC
+        type: string
+        nullable: true
+      - name: PAID_DT
+        type: date
+        nullable: true
+      - name: PAID_DT_DAY
+        type: smallint
+        nullable: true
+      - name: PAID_DT_MONTH
+        type: smallint
+        nullable: true
+      - name: PAID_DT_YEAR
+        type: smallint
+        nullable: true
+      - name: PAID_DT_SASDT
+        type: int
+        nullable: true
+      - name: PAID_STATUS
+        type: string
+        nullable: true
+      - name: POS
+        type: string
+        nullable: true
+      - name: PROC_CD
+        type: string
+        nullable: true
+      - name: PROCMOD
+        type: string
+        nullable: true
+      - name: PROV
+        type: bigint
+        nullable: true
+      - name: PROV_PAR
+        type: string
+        nullable: true
+      - name: PROVCAT
+        type: string
+        nullable: true
+      - name: REFER_PROV
+        type: bigint
+        nullable: true
+      - name: RVNU_CD
+        type: string
+        nullable: true
+      - name: SERVICE_PROV
+        type: bigint
+        nullable: true
+      - name: STD_COST
+        type: decimal(18,2)
+        nullable: true
+      - name: STD_COST_YR
+        type: string
+        nullable: true
+      - name: TOS_CD
+        type: string
+        nullable: true
+      - name: UNITS
+        type: decimal(18,2)
+        nullable: true
+      - name: EXTRACT_YM
+        type: string
+        nullable: true
+      - name: VERSION
+        type: string
+        nullable: true
+      - name: ALT_UNITS
+        type: bigint
+        nullable: true
+      - name: BILL_TYPE
+        type: string
+        nullable: true
+      - name: NDC_UOM
+        type: string
+        nullable: true
+      - name: NDC_QTY
+        type: decimal(20,2)
+        nullable: true
+      - name: OP_VISIT_ID
+        type: bigint
+        nullable: true
+      - name: PROCMOD2
+        type: string
+        nullable: true
+      - name: PROCMOD3
+        type: string
+        nullable: true
+      - name: PROCMOD4
+        type: string
+        nullable: true
+      - name: TOS_EXT
+        type: string
+        nullable: true
+      - name: BILL_PROC_CD
+        type: string
+        nullable: true
+      - name: BILL_POS
+        type: string
+        nullable: true
+    - source_table_id: 9
+      table_name: member_cont_enrollment
+      columns:
+      - name: PATID
+        type: bigint
+        nullable: true
+      - name: ELIGEFF
+        type: date
+        nullable: true
+      - name: ELIGEFF_DAY
+        type: smallint
+        nullable: true
+      - name: ELIGEFF_MONTH
+        type: smallint
+        nullable: true
+      - name: ELIGEFF_YEAR
+        type: smallint
+        nullable: true
+      - name: ELIGEFF_SASDT
+        type: int
+        nullable: true
+      - name: ELIGEND
+        type: date
+        nullable: true
+      - name: ELIGEND_DAY
+        type: smallint
+        nullable: true
+      - name: ELIGEND_MONTH
+        type: smallint
+        nullable: true
+      - name: ELIGEND_YEAR
+        type: smallint
+        nullable: true
+      - name: ELIGEND_SASDT
+        type: int
+        nullable: true
+      - name: GDR_CD
+        type: string
+        nullable: true
+      - name: YRDOB
+        type: smallint
+        nullable: true
+      - name: EXTRACT_YM
+        type: string
+        nullable: true
+      - name: VERSION
+        type: string
+        nullable: true
+      - name: ETHNICITY
+        type: string
+        nullable: true
+      - name: RACE
+        type: string
+        nullable: true
+      - name: RACE_SOURCE
+        type: string
+        nullable: true
+    - source_table_id: 10
+      table_name: member_enrollment
+      columns:
+      - name: PATID
+        type: bigint
+        nullable: true
+      - name: PAT_PLANID
+        type: bigint
+        nullable: true
+      - name: ASO
+        type: string
+        nullable: true
+      - name: BUS
+        type: string
+        nullable: true
+      - name: CDHP
+        type: string
+        nullable: true
+      - name: ELIGEFF
+        type: date
+        nullable: true
+      - name: ELIGEFF_DAY
+        type: smallint
+        nullable: true
+      - name: ELIGEFF_MONTH
+        type: smallint
+        nullable: true
+      - name: ELIGEFF_YEAR
+        type: smallint
+        nullable: true
+      - name: ELIGEFF_SASDT
+        type: int
+        nullable: true
+      - name: ELIGEND
+        type: date
+        nullable: true
+      - name: ELIGEND_DAY
+        type: smallint
+        nullable: true
+      - name: ELIGEND_MONTH
+        type: smallint
+        nullable: true
+      - name: ELIGEND_YEAR
+        type: smallint
+        nullable: true
+      - name: ELIGEND_SASDT
+        type: int
+        nullable: true
+      - name: GDR_CD
+        type: string
+        nullable: true
+      - name: GROUP_NBR
+        type: string
+        nullable: true
+      - name: HEALTH_EXCH
+        type: string
+        nullable: true
+      - name: LIS_DUAL
+        type: string
+        nullable: true
+      - name: PRODUCT
+        type: string
+        nullable: true
+      - name: YRDOB
+        type: int
+        nullable: true
+      - name: EXTRACT_YM
+        type: string
+        nullable: true
+      - name: VERSION
+        type: string
+        nullable: true
+      - name: FAMILY_ID
+        type: bigint
+        nullable: true
+      - name: ETHNICITY
+        type: string
+        nullable: true
+      - name: RACE
+        type: string
+        nullable: true
+      - name: RACE_SOURCE
+        type: string
+        nullable: true
+      - name: REGION
+        type: string
+        nullable: true
+    - source_table_id: 11
+      table_name: provider
+      columns:
+      - name: PROV_UNIQUE
+        type: bigint
+        nullable: true
+      - name: BED_SZ_RANGE
+        type: string
+        nullable: true
+      - name: CRED_TYPE
+        type: string
+        nullable: true
+      - name: GRP_PRACTICE
+        type: bigint
+        nullable: true
+      - name: HOSP_AFFIL
+        type: bigint
+        nullable: true
+      - name: PROV_TYPE
+        type: string
+        nullable: true
+      - name: PROVCAT
+        type: string
+        nullable: true
+      - name: TAXONOMY1
+        type: string
+        nullable: true
+      - name: TAXONOMY2
+        type: string
+        nullable: true
+      - name: EXTRACT_YM
+        type: string
+        nullable: true
+      - name: VERSION
+        type: string
+        nullable: true
+      - name: PROV_REGION
+        type: string
+        nullable: true
+    - source_table_id: 12
+      table_name: provider_bridge
+      columns:
+      - name: PROV_UNIQUE
+        type: bigint
+        nullable: true
+      - name: DEA
+        type: string
+        nullable: true
+      - name: NPI
+        type: string
+        nullable: true
+      - name: PROV
+        type: bigint
+        nullable: true
+      - name: EXTRACT_YM
+        type: string
+        nullable: true
+      - name: VERSION
+        type: string
+        nullable: true
+    - source_table_id: 13
+      table_name: rx
+      columns:
+      - name: PATID
+        type: bigint
+        nullable: true
+      - name: PAT_PLANID
+        type: bigint
+        nullable: true
+      - name: AHFSCLSS
+        type: string
+        nullable: true
+      - name: AVGWHLSL
+        type: decimal(13,2)
+        nullable: true
+      - name: BRND_NM
+        type: string
+        nullable: true
+      - name: CHARGE
+        type: decimal(13,2)
+        nullable: true
+      - name: CHK_DT
+        type: date
+        nullable: true
+      - name: CHK_DT_DAY
+        type: smallint
+        nullable: true
+      - name: CHK_DT_MONTH
+        type: smallint
+        nullable: true
+      - name: CHK_DT_YEAR
+        type: smallint
+        nullable: true
+      - name: CHK_DT_SASDT
+        type: int
+        nullable: true
+      - name: CLMID
+        type: string
+        nullable: true
+      - name: COPAY
+        type: decimal(13,2)
+        nullable: true
+      - name: DAW
+        type: string
+        nullable: true
+      - name: DAYS_SUP
+        type: bigint
+        nullable: true
+      - name: DEA
+        type: string
+        nullable: true
+      - name: DEDUCT
+        type: decimal(13,2)
+        nullable: true
+      - name: DISPFEE
+        type: decimal(12,2)
+        nullable: true
+      - name: FILL_DT
+        type: date
+        nullable: true
+      - name: FILL_DT_DAY
+        type: smallint
+        nullable: true
+      - name: FILL_DT_MONTH
+        type: smallint
+        nullable: true
+      - name: FILL_DT_YEAR
+        type: smallint
+        nullable: true
+      - name: FILL_DT_SASDT
+        type: int
+        nullable: true
+      - name: FORM_IND
+        type: string
+        nullable: true
+      - name: FORM_TYP
+        type: string
+        nullable: true
+      - name: FST_FILL
+        type: string
+        nullable: true
+      - name: GNRC_IND
+        type: string
+        nullable: true
+      - name: GNRC_NM
+        type: string
+        nullable: true
+      - name: MAIL_IND
+        type: string
+        nullable: true
+      - name: NDC
+        type: string
+        nullable: true
+      - name: NPI
+        type: string
+        nullable: true
+      - name: PHARM
+        type: string
+        nullable: true
+      - name: PRC_TYP
+        type: string
+        nullable: true
+      - name: QUANTITY
+        type: decimal(15,3)
+        nullable: true
+      - name: RFL_NBR
+        type: string
+        nullable: true
+      - name: SPCLT_IND
+        type: string
+        nullable: true
+      - name: SPECCLSS
+        type: string
+        nullable: true
+      - name: STD_COST
+        type: decimal(18,2)
+        nullable: true
+      - name: STD_COST_YR
+        type: string
+        nullable: true
+      - name: STRENGTH
+        type: string
+        nullable: true
+      - name: EXTRACT_YM
+        type: string
+        nullable: true
+      - name: VERSION
+        type: string
+        nullable: true
+      - name: PRESCRIBER_PROV
+        type: bigint
+        nullable: true
+      - name: PRESCRIPT_ID
+        type: string
+        nullable: true
+    - source_table_id: 14
+      table_name: ses
+      columns:
+      - name: PATID
+        type: bigint
+        nullable: true
+      - name: D_EDUCATION_LEVEL_CODE
+        type: string
+        nullable: true
+      - name: D_HOME_OWNERSHIP_CODE
+        type: string
+        nullable: true
+      - name: D_HOUSEHOLD_INCOME_RANGE_CODE
+        type: string
+        nullable: true
+      - name: D_NETWORTH_RANGE_CODE
+        type: string
+        nullable: true
+      - name: EXTRACT_YM
+        type: string
+        nullable: true
+      - name: VERSION
+        type: string
+        nullable: true
+    - source_table_id: 15
+      table_name: lu_d_education_level
+      columns:
+      - name: d_education_level_code
+        type: string
+        nullable: true
+      - name: d_education_level_desc
+        type: string
+        nullable: true
+    - source_table_id: 16
+      table_name: lu_d_home_ownership
+      columns:
+      - name: d_home_ownership_code
+        type: string
+        nullable: true
+      - name: d_home_ownership_desc
+        type: string
+        nullable: true
+    - source_table_id: 17
+      table_name: lu_d_household_income_range
+      columns:
+      - name: d_household_income_range_code
+        type: string
+        nullable: true
+      - name: d_household_income_range_desc
+        type: string
+        nullable: true
+    - source_table_id: 18
+      table_name: lu_d_networth_range
+      columns:
+      - name: d_networth_range_code
+        type: string
+        nullable: true
+      - name: d_networth_range_desc
+        type: string
+        nullable: true
+    - source_table_id: 19
+      table_name: lu_pos
+      columns:
+      - name: pos
+        type: string
+        nullable: true
+      - name: description
+        type: string
+        nullable: true
+      - name: category
+        type: string
+        nullable: true
+
+  dod:
+    source_data_catalog: dvmt_rwop
+    source_data_db: rwd_optum_dodr_{refresh}
+    prerequisite_data_catalog: dvmt_rwre
+    prerequisite_data_db: rwd_reference_athena_{athena_refresh}
+    prerequisite_table_list:
+    - pre_req_table_id: 1
+      table_name: CONCEPT
+    - pre_req_table_id: 2
+      table_name: CONCEPT_ANCESTOR
+    - pre_req_table_id: 3
+      table_name: CONCEPT_CLASS
+    - pre_req_table_id: 4
+      table_name: CONCEPT_RELATIONSHIP
+    - pre_req_table_id: 5
+      table_name: CONCEPT_SYNONYM
+    - pre_req_table_id: 6
+      table_name: DOMAIN
+    - pre_req_table_id: 7
+      table_name: CONCEPT_SYNONYM
+    - pre_req_table_id: 8
+      table_name: DRUG_STRENGTH
+    - pre_req_table_id: 9
+      table_name: RELATIONSHIP
+    - pre_req_table_id: 10
+      table_name: VOCABULARY
+    - pre_req_table_id: 11
+      table_name: CONCEPT_CPT4
+      
+    source_table_list:
+    - source_table_id: 1
+      table_name: confinement
+      columns:
+      - name: PATID
+        type: bigint
+        nullable: true
+      - name: PAT_PLANID
+        type: bigint
+        nullable: true
+      - name: ADMIT_DATE
+        type: date
+        nullable: true
+      - name: ADMIT_DATE_DAY
+        type: smallint
+        nullable: true
+      - name: ADMIT_DATE_MONTH
+        type: smallint
+        nullable: true
+      - name: ADMIT_DATE_YEAR
+        type: smallint
+        nullable: true
+      - name: ADMIT_DATE_SASDT
+        type: int
+        nullable: true
+      - name: CHARGE
+        type: decimal(13,2)
+        nullable: true
+      - name: COINS
+        type: decimal(13,2)
+        nullable: true
+      - name: CONF_ID
+        type: string
+        nullable: true
+      - name: COPAY
+        type: decimal(13,2)
+        nullable: true
+      - name: DEDUCT
+        type: decimal(13,2)
+        nullable: true
+      - name: DIAG1
+        type: string
+        nullable: true
+      - name: DIAG2
+        type: string
+        nullable: true
+      - name: DIAG3
+        type: string
+        nullable: true
+      - name: DIAG4
+        type: string
+        nullable: true
+      - name: DIAG5
+        type: string
+        nullable: true
+      - name: DISCH_DATE
+        type: date
+        nullable: true
+      - name: DISCH_DATE_DAY
+        type: smallint
+        nullable: true
+      - name: DISCH_DATE_MONTH
+        type: smallint
+        nullable: true
+      - name: DISCH_DATE_YEAR
+        type: smallint
+        nullable: true
+      - name: DISCH_DATE_SASDT
+        type: int
+        nullable: true
+      - name: DRG
+        type: string
+        nullable: true
+      - name: DSTATUS
+        type: string
+        nullable: true
+      - name: ICD_FLAG
+        type: string
+        nullable: true
+      - name: IPSTATUS
+        type: string
+        nullable: true
+      - name: LOS
+        type: int
+        nullable: true
+      - name: POS
+        type: string
+        nullable: true
+      - name: PROC1
+        type: string
+        nullable: true
+      - name: PROC2
+        type: string
+        nullable: true
+      - name: PROC3
+        type: string
+        nullable: true
+      - name: PROC4
+        type: string
+        nullable: true
+      - name: PROC5
+        type: string
+        nullable: true
+      - name: PROV
+        type: bigint
+        nullable: true
+      - name: STD_COST
+        type: decimal(18,2)
+        nullable: true
+      - name: STD_COST_YR
+        type: string
+        nullable: true
+      - name: TOS_CD
+        type: string
+        nullable: true
+      - name: EXTRACT_YM
+        type: string
+        nullable: true
+      - name: VERSION
+        type: string
+        nullable: true
+      - name: ICU_IND
+        type: string
+        nullable: true
+      - name: ICU_SURG_IND
+        type: string
+        nullable: true
+      - name: MAJ_SURG_IND
+        type: string
+        nullable: true
+      - name: MATERNITY_IND
+        type: string
+        nullable: true
+      - name: NEWBORN_IND
+        type: string
+        nullable: true
+      - name: TOS_EXT
+        type: string
+        nullable: true
+    - source_table_id: 2
+      table_name: labresult
+      columns:
+      - name: PATID
+        type: bigint
+        nullable: true
+      - name: PAT_PLANID
+        type: bigint
+        nullable: true
+      - name: ABNL_CD
+        type: string
+        nullable: true
+      - name: ANLYTSEQ
+        type: string
+        nullable: true
+      - name: FST_DT
+        type: date
+        nullable: true
+      - name: FST_DT_DAY
+        type: smallint
+        nullable: true
+      - name: FST_DT_MONTH
+        type: smallint
+        nullable: true
+      - name: FST_DT_YEAR
+        type: smallint
+        nullable: true
+      - name: FST_DT_SASDT
+        type: int
+        nullable: true
+      - name: HI_NRML
+        type: decimal(18,4)
+        nullable: true
+      - name: LABCLMID
+        type: string
+        nullable: true
+      - name: LOINC_CD
+        type: string
+        nullable: true
+      - name: LOW_NRML
+        type: decimal(18,4)
+        nullable: true
+      - name: PROC_CD
+        type: string
+        nullable: true
+      - name: RSLT_NBR
+        type: decimal(22,6)
+        nullable: true
+      - name: RSLT_TXT
+        type: string
+        nullable: true
+      - name: RSLT_UNIT_NM
+        type: string
+        nullable: true
+      - name: SOURCE
+        type: string
+        nullable: true
+      - name: TST_DESC
+        type: string
+        nullable: true
+      - name: TST_NBR
+        type: string
+        nullable: true
+      - name: EXTRACT_YM
+        type: string
+        nullable: true
+      - name: VERSION
+        type: string
+        nullable: true
+    - source_table_id: 3
+      table_name: lu_diagnosis
+      columns:
+      - name: diag_cd
+        type: string
+        nullable: true
+      - name: diag_desc
+        type: string
+        nullable: true
+      - name: diag_fst3_cd
+        type: string
+        nullable: true
+      - name: diag_fst3_desc
+        type: string
+        nullable: true
+      - name: diag_fst4_cd
+        type: string
+        nullable: true
+      - name: diag_fst4_desc
+        type: string
+        nullable: true
+      - name: gdr_spec_cd
+        type: string
+        nullable: true
+      - name: mdc_cd_desc
+        type: string
+        nullable: true
+      - name: mdc_code
+        type: string
+        nullable: true
+      - name: icd_ver_cd
+        type: string
+        nullable: true
+    - source_table_id: 4
+      table_name: lu_ndc
+      columns:
+      - name: ahfsclss
+        type: string
+        nullable: true
+      - name: ahfsclss_desc
+        type: string
+        nullable: true
+      - name: brnd_nm
+        type: string
+        nullable: true
+      - name: dosage_fm_desc
+        type: string
+        nullable: true
+      - name: drg_strgth_desc
+        type: string
+        nullable: true
+      - name: drg_strgth_nbr
+        type: decimal(16,3)
+        nullable: true
+      - name: drg_strgth_unit_desc
+        type: string
+        nullable: true
+      - name: drg_strgth_vol_nbr
+        type: decimal(12,3)
+        nullable: true
+      - name: drg_strgth_vol_unit_desc
+        type: string
+        nullable: true
+      - name: gnrc_ind
+        type: string
+        nullable: true
+      - name: gnrc_nbr
+        type: string
+        nullable: true
+      - name: gnrc_nm
+        type: string
+        nullable: true
+      - name: gnrc_sqnc_nbr
+        type: string
+        nullable: true
+      - name: ndc
+        type: string
+        nullable: true
+      - name: ndc_drg_row_eff_dt
+        type: date
+        nullable: true
+      - name: ndc_drg_row_eff_dt_year
+        type: smallint
+        nullable: true
+      - name: ndc_drg_row_eff_dt_month
+        type: smallint
+        nullable: true
+      - name: ndc_drg_row_eff_dt_day
+        type: smallint
+        nullable: true
+      - name: ndc_drg_row_eff_dt_sasdt
+        type: int
+        nullable: true
+      - name: ndc_drg_row_end_dt
+        type: date
+        nullable: true
+      - name: ndc_drg_row_end_dt_year
+        type: smallint
+        nullable: true
+      - name: ndc_drg_row_end_dt_month
+        type: smallint
+        nullable: true
+      - name: ndc_drg_row_end_dt_day
+        type: smallint
+        nullable: true
+      - name: ndc_drg_row_end_dt_sasdt
+        type: int
+        nullable: true
+      - name: usc_id
+        type: string
+        nullable: true
+      - name: usc_med_desc
+        type: string
+        nullable: true
+    - source_table_id: 5
+      table_name: lu_procedure
+      columns:
+      - name: category_dtl_cd
+        type: string
+        nullable: true
+      - name: category_dtl_code_desc
+        type: string
+        nullable: true
+      - name: category_genl_cd
+        type: string
+        nullable: true
+      - name: category_genl_code_desc
+        type: string
+        nullable: true
+      - name: proc_cd
+        type: string
+        nullable: true
+      - name: proc_desc
+        type: string
+        nullable: true
+      - name: proc_end_date
+        type: date
+        nullable: true
+      - name: proc_end_date_year
+        type: smallint
+        nullable: true
+      - name: proc_end_date_month
+        type: smallint
+        nullable: true
+      - name: proc_end_date_day
+        type: smallint
+        nullable: true
+      - name: proc_end_date_sasdt
+        type: int
+        nullable: true
+      - name: proc_typ_cd
+        type: string
+        nullable: true
+    - source_table_id: 6
+      table_name: med_diagnosis
+      columns:
+      - name: Patid
+        type: bigint
+        nullable: true
+      - name: Pat_Planid
+        type: bigint
+        nullable: true
+      - name: Clmid
+        type: string
+        nullable: true
+      - name: Diag
+        type: string
+        nullable: true
+      - name: Diag_Position
+        type: string
+        nullable: true
+      - name: Icd_Flag
+        type: string
+        nullable: true
+      - name: Loc_cd
+        type: string
+        nullable: true
+      - name: Poa
+        type: string
+        nullable: true
+      - name: Extract_Ym
+        type: string
+        nullable: true
+      - name: Version
+        type: string
+        nullable: true
+      - name: diag_yrqr
+        type: string
+        nullable: true
+      - name: FST_DT
+        type: date
+        nullable: true
+      - name: FST_DT_DAY
+        type: smallint
+        nullable: true
+      - name: FST_DT_MONTH
+        type: smallint
+        nullable: true
+      - name: FST_DT_YEAR
+        type: smallint
+        nullable: true
+      - name: FST_DT_SASDT
+        type: int
+        nullable: true
+    - source_table_id: 7
+      table_name: med_procedure
+      columns:
+      - name: Patid
+        type: bigint
+        nullable: true
+      - name: Pat_Planid
+        type: bigint
+        nullable: true
+      - name: Clmid
+        type: string
+        nullable: true
+      - name: Icd_Flag
+        type: string
+        nullable: true
+      - name: Proc
+        type: string
+        nullable: true
+      - name: Proc_Position
+        type: string
+        nullable: true
+      - name: Extract_Ym
+        type: string
+        nullable: true
+      - name: Version
+        type: string
+        nullable: true
+      - name: proc_yrqr
+        type: string
+        nullable: true
+      - name: FST_DT
+        type: date
+        nullable: true
+      - name: FST_DT_DAY
+        type: smallint
+        nullable: true
+      - name: FST_DT_MONTH
+        type: smallint
+        nullable: true
+      - name: FST_DT_YEAR
+        type: smallint
+        nullable: true
+      - name: FST_DT_SASDT
+        type: int
+        nullable: true
+    - source_table_id: 8
+      table_name: medical
+      columns:
+      - name: PATID
+        type: bigint
+        nullable: true
+      - name: PAT_PLANID
+        type: bigint
+        nullable: true
+      - name: ADMIT_CHAN
+        type: string
+        nullable: true
+      - name: ADMIT_TYPE
+        type: string
+        nullable: true
+      - name: BILL_PROV
+        type: bigint
+        nullable: true
+      - name: CHARGE
+        type: decimal(13,2)
+        nullable: true
+      - name: CLMID
+        type: string
+        nullable: true
+      - name: CLMSEQ
+        type: string
+        nullable: true
+      - name: COB
+        type: string
+        nullable: true
+      - name: COINS
+        type: decimal(13,2)
+        nullable: true
+      - name: CONF_ID
+        type: string
+        nullable: true
+      - name: COPAY
+        type: decimal(13,2)
+        nullable: true
+      - name: DEDUCT
+        type: decimal(13,2)
+        nullable: true
+      - name: DRG
+        type: string
+        nullable: true
+      - name: DSTATUS
+        type: string
+        nullable: true
+      - name: ENCTR
+        type: string
+        nullable: true
+      - name: FST_DT
+        type: date
+        nullable: true
+      - name: FST_DT_DAY
+        type: smallint
+        nullable: true
+      - name: FST_DT_MONTH
+        type: smallint
+        nullable: true
+      - name: FST_DT_YEAR
+        type: smallint
+        nullable: true
+      - name: FST_DT_SASDT
+        type: int
+        nullable: true
+      - name: HCCC
+        type: string
+        nullable: true
+      - name: ICD_FLAG
+        type: string
+        nullable: true
+      - name: LOC_CD
+        type: string
+        nullable: true
+      - name: LST_DT
+        type: date
+        nullable: true
+      - name: LST_DT_DAY
+        type: smallint
+        nullable: true
+      - name: LST_DT_MONTH
+        type: smallint
+        nullable: true
+      - name: LST_DT_YEAR
+        type: smallint
+        nullable: true
+      - name: LST_DT_SASDT
+        type: int
+        nullable: true
+      - name: NDC
+        type: string
+        nullable: true
+      - name: PAID_DT
+        type: date
+        nullable: true
+      - name: PAID_DT_DAY
+        type: smallint
+        nullable: true
+      - name: PAID_DT_MONTH
+        type: smallint
+        nullable: true
+      - name: PAID_DT_YEAR
+        type: smallint
+        nullable: true
+      - name: PAID_DT_SASDT
+        type: int
+        nullable: true
+      - name: PAID_STATUS
+        type: string
+        nullable: true
+      - name: POS
+        type: string
+        nullable: true
+      - name: PROC_CD
+        type: string
+        nullable: true
+      - name: PROCMOD
+        type: string
+        nullable: true
+      - name: PROV
+        type: bigint
+        nullable: true
+      - name: PROV_PAR
+        type: string
+        nullable: true
+      - name: PROVCAT
+        type: string
+        nullable: true
+      - name: REFER_PROV
+        type: bigint
+        nullable: true
+      - name: RVNU_CD
+        type: string
+        nullable: true
+      - name: SERVICE_PROV
+        type: bigint
+        nullable: true
+      - name: STD_COST
+        type: decimal(18,2)
+        nullable: true
+      - name: STD_COST_YR
+        type: string
+        nullable: true
+      - name: TOS_CD
+        type: string
+        nullable: true
+      - name: UNITS
+        type: decimal(18,2)
+        nullable: true
+      - name: EXTRACT_YM
+        type: string
+        nullable: true
+      - name: VERSION
+        type: string
+        nullable: true
+      - name: ALT_UNITS
+        type: bigint
+        nullable: true
+      - name: BILL_TYPE
+        type: string
+        nullable: true
+      - name: NDC_UOM
+        type: string
+        nullable: true
+      - name: NDC_QTY
+        type: decimal(20,2)
+        nullable: true
+      - name: OP_VISIT_ID
+        type: bigint
+        nullable: true
+      - name: PROCMOD2
+        type: string
+        nullable: true
+      - name: PROCMOD3
+        type: string
+        nullable: true
+      - name: PROCMOD4
+        type: string
+        nullable: true
+      - name: TOS_EXT
+        type: string
+        nullable: true
+      - name: BILL_PROC_CD
+        type: string
+        nullable: true
+      - name: BILL_POS
+        type: string
+        nullable: true
+    - source_table_id: 9
+      table_name: member_cont_enrollment
+      columns:
+      - name: PATID
+        type: bigint
+        nullable: true
+      - name: ELIGEFF
+        type: date
+        nullable: true
+      - name: ELIGEFF_DAY
+        type: smallint
+        nullable: true
+      - name: ELIGEFF_MONTH
+        type: smallint
+        nullable: true
+      - name: ELIGEFF_YEAR
+        type: smallint
+        nullable: true
+      - name: ELIGEFF_SASDT
+        type: int
+        nullable: true
+      - name: ELIGEND
+        type: date
+        nullable: true
+      - name: ELIGEND_DAY
+        type: smallint
+        nullable: true
+      - name: ELIGEND_MONTH
+        type: smallint
+        nullable: true
+      - name: ELIGEND_YEAR
+        type: smallint
+        nullable: true
+      - name: ELIGEND_SASDT
+        type: int
+        nullable: true
+      - name: GDR_CD
+        type: string
+        nullable: true
+      - name: YRDOB
+        type: smallint
+        nullable: true
+      - name: EXTRACT_YM
+        type: string
+        nullable: true
+      - name: VERSION
+        type: string
+        nullable: true
+      - name: ETHNICITY
+        type: string
+        nullable: true
+      - name: RACE
+        type: string
+        nullable: true
+      - name: RACE_SOURCE
+        type: string
+        nullable: true
+    - source_table_id: 10
+      table_name: member_enrollment
+      columns:
+      - name: PATID
+        type: bigint
+        nullable: true
+      - name: PAT_PLANID
+        type: bigint
+        nullable: true
+      - name: ASO
+        type: string
+        nullable: true
+      - name: BUS
+        type: string
+        nullable: true
+      - name: CDHP
+        type: string
+        nullable: true
+      - name: ELIGEFF
+        type: date
+        nullable: true
+      - name: ELIGEFF_DAY
+        type: smallint
+        nullable: true
+      - name: ELIGEFF_MONTH
+        type: smallint
+        nullable: true
+      - name: ELIGEFF_YEAR
+        type: smallint
+        nullable: true
+      - name: ELIGEFF_SASDT
+        type: int
+        nullable: true
+      - name: ELIGEND
+        type: date
+        nullable: true
+      - name: ELIGEND_DAY
+        type: smallint
+        nullable: true
+      - name: ELIGEND_MONTH
+        type: smallint
+        nullable: true
+      - name: ELIGEND_YEAR
+        type: smallint
+        nullable: true
+      - name: ELIGEND_SASDT
+        type: int
+        nullable: true
+      - name: GDR_CD
+        type: string
+        nullable: true
+      - name: GROUP_NBR
+        type: string
+        nullable: true
+      - name: HEALTH_EXCH
+        type: string
+        nullable: true
+      - name: LIS_DUAL
+        type: string
+        nullable: true
+      - name: PRODUCT
+        type: string
+        nullable: true
+      - name: YRDOB
+        type: int
+        nullable: true
+      - name: EXTRACT_YM
+        type: string
+        nullable: true
+      - name: VERSION
+        type: string
+        nullable: true
+      - name: FAMILY_ID
+        type: bigint
+        nullable: true
+      - name: ETHNICITY
+        type: string
+        nullable: true
+      - name: RACE
+        type: string
+        nullable: true
+      - name: RACE_SOURCE
+        type: string
+        nullable: true
+      - name: REGION
+        type: string
+        nullable: true
+    - source_table_id: 11
+      table_name: provider
+      columns:
+      - name: PROV_UNIQUE
+        type: bigint
+        nullable: true
+      - name: BED_SZ_RANGE
+        type: string
+        nullable: true
+      - name: CRED_TYPE
+        type: string
+        nullable: true
+      - name: GRP_PRACTICE
+        type: bigint
+        nullable: true
+      - name: HOSP_AFFIL
+        type: bigint
+        nullable: true
+      - name: PROV_TYPE
+        type: string
+        nullable: true
+      - name: PROVCAT
+        type: string
+        nullable: true
+      - name: TAXONOMY1
+        type: string
+        nullable: true
+      - name: TAXONOMY2
+        type: string
+        nullable: true
+      - name: EXTRACT_YM
+        type: string
+        nullable: true
+      - name: VERSION
+        type: string
+        nullable: true
+      - name: PROV_REGION
+        type: string
+        nullable: true
+    - source_table_id: 12
+      table_name: provider_bridge
+      columns:
+      - name: PROV_UNIQUE
+        type: bigint
+        nullable: true
+      - name: DEA
+        type: string
+        nullable: true
+      - name: NPI
+        type: string
+        nullable: true
+      - name: PROV
+        type: bigint
+        nullable: true
+      - name: EXTRACT_YM
+        type: string
+        nullable: true
+      - name: VERSION
+        type: string
+        nullable: true
+    - source_table_id: 13
+      table_name: rx
+      columns:
+      - name: PATID
+        type: bigint
+        nullable: true
+      - name: PAT_PLANID
+        type: bigint
+        nullable: true
+      - name: AHFSCLSS
+        type: string
+        nullable: true
+      - name: AVGWHLSL
+        type: decimal(13,2)
+        nullable: true
+      - name: BRND_NM
+        type: string
+        nullable: true
+      - name: CHARGE
+        type: decimal(13,2)
+        nullable: true
+      - name: CHK_DT
+        type: date
+        nullable: true
+      - name: CHK_DT_DAY
+        type: smallint
+        nullable: true
+      - name: CHK_DT_MONTH
+        type: smallint
+        nullable: true
+      - name: CHK_DT_YEAR
+        type: smallint
+        nullable: true
+      - name: CHK_DT_SASDT
+        type: int
+        nullable: true
+      - name: CLMID
+        type: string
+        nullable: true
+      - name: COPAY
+        type: decimal(13,2)
+        nullable: true
+      - name: DAW
+        type: string
+        nullable: true
+      - name: DAYS_SUP
+        type: bigint
+        nullable: true
+      - name: DEA
+        type: string
+        nullable: true
+      - name: DEDUCT
+        type: decimal(13,2)
+        nullable: true
+      - name: DISPFEE
+        type: decimal(12,2)
+        nullable: true
+      - name: FILL_DT
+        type: date
+        nullable: true
+      - name: FILL_DT_DAY
+        type: smallint
+        nullable: true
+      - name: FILL_DT_MONTH
+        type: smallint
+        nullable: true
+      - name: FILL_DT_YEAR
+        type: smallint
+        nullable: true
+      - name: FILL_DT_SASDT
+        type: int
+        nullable: true
+      - name: FORM_IND
+        type: string
+        nullable: true
+      - name: FORM_TYP
+        type: string
+        nullable: true
+      - name: FST_FILL
+        type: string
+        nullable: true
+      - name: GNRC_IND
+        type: string
+        nullable: true
+      - name: GNRC_NM
+        type: string
+        nullable: true
+      - name: MAIL_IND
+        type: string
+        nullable: true
+      - name: NDC
+        type: string
+        nullable: true
+      - name: NPI
+        type: string
+        nullable: true
+      - name: PHARM
+        type: string
+        nullable: true
+      - name: PRC_TYP
+        type: string
+        nullable: true
+      - name: QUANTITY
+        type: decimal(15,3)
+        nullable: true
+      - name: RFL_NBR
+        type: string
+        nullable: true
+      - name: SPCLT_IND
+        type: string
+        nullable: true
+      - name: SPECCLSS
+        type: string
+        nullable: true
+      - name: STD_COST
+        type: decimal(18,2)
+        nullable: true
+      - name: STD_COST_YR
+        type: string
+        nullable: true
+      - name: STRENGTH
+        type: string
+        nullable: true
+      - name: EXTRACT_YM
+        type: string
+        nullable: true
+      - name: VERSION
+        type: string
+        nullable: true
+      - name: PRESCRIBER_PROV
+        type: bigint
+        nullable: true
+      - name: PRESCRIPT_ID
+        type: string
+        nullable: true
+    - source_table_id: 14
+      table_name: dod
+      columns:
+      - name: PATID
+        type: bigint
+        nullable: true
+      - name: YMDOD
+        type: string
+        nullable: true
+      - name: EXTRACT_YM
+        type: string
+        nullable: true
+      - name: VERSION
+        type: string
+        nullable: true
+      - name: MBR_MATCH_TYPE
+        type: string
+        nullable: true
+    - source_table_id: 15
+      table_name: lu_pos
+      columns:
+      - name: pos
+        type: string
+        nullable: true
+      - name: description
+        type: string
+        nullable: true
+      - name: category
+        type: string
+        nullable: true
+
+
+
+
+      
